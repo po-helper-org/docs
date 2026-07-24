@@ -10,6 +10,11 @@ hide:
 как пройти путь от большой идеи до подтверждённого Product-Channel Fit, объединяя классический
 Product Discovery с AI-Native операционной моделью **PAF**.
 
+!!! tip "Начать за 6 шагов"
+    Новый проект? Соберите **память агента** — персонализированный контекст, по которому
+    AI-агенты ориентируются в репозиториях вашей организации.
+    → **[Быстрый старт](quick-start.md)**
+
 <div class="grid cards" markdown>
 
 -   :material-rocket-launch: **AI-Native Discovery**
