@@ -1,0 +1,81 @@
+site_name: Методология Po-helper
+site_url: https://po-helper-org.github.io/docs/
+site_description: >-
+  Методология Po-helper — AI-Native Product Discovery и Трансформация PAF.
+  Исполняемый StepByStep-фреймворк продуктовой команды нового поколения.
+site_author: Po-helper / PAF (Тихомиров С.)
+copyright: >-
+  Материалы AI-Трансформации (PAF) — CC BY-SA 4.0, автор Тихомиров Сергей.
+  Остальное — MIT.
+
+repo_url: https://github.com/po-helper-org/docs
+repo_name: po-helper-org/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  custom_dir: docs/overrides
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search:
+      lang: ru
+  - awesome-pages
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/po-helper-org
