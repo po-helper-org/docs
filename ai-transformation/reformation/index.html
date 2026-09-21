@@ -1,0 +1,7545 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Методология Po-helper — AI-Native Product Discovery и Трансформация PAF. Исполняемый StepByStep-фреймворк продуктовой команды нового поколения.">
+      
+      
+        <meta name="author" content="Po-helper / PAF (Тихомиров С.)">
+      
+      
+        <link rel="canonical" href="https://po-helper-org.github.io/docs/ai-transformation/reformation/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../RB-STEP-1-IDEA/0.1-instruction/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>♻️ REFORMATION — План AI-трансформации Product Discovery (RB-STEP → PAF) - Методология Po-helper</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reformation-ai-product-discovery-rb-step-paf" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="Методология Po-helper" class="md-header__button md-logo" aria-label="Методология Po-helper" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Методология Po-helper
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ♻️ REFORMATION — План AI-трансформации Product Discovery (RB-STEP → PAF)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Тёмная тема"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Тёмная тема" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Светлая тема"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Светлая тема" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/po-helper-org/docs" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    po-helper-org/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Методология Po-helper
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../quick-start/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Быстрый старт: создать память агента
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai-processes/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  AI-Native Discovery
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Трансформация PAF
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Методология Po-helper" class="md-nav__button md-logo" aria-label="Методология Po-helper" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Методология Po-helper
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/po-helper-org/docs" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    po-helper-org/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Методология Po-helper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Быстрый старт: создать память агента
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ai-processes/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Native Discovery
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI-Native Discovery
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/fit-points/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚦 Fit-Points — гейты Product Discovery (Stage-Gate по Confidence Point)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/operating-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚙️ Operating Model — правила игры AI-Native продуктовой команды (PAF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/release-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚦 Release Management — управление релизами и дрейфом объёма
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 0 FOUNDATION
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 0 FOUNDATION
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-0-FOUNDATION/1.nexus-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подшаг 0.1 — Nexus Setup: настройка графа Нексусов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-0-FOUNDATION/2.cortex-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подшаг 0.2 — Cortex Setup: настройка Кортекса над Нексусами
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-0-FOUNDATION/3.roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подшаг 0.3 — Roles: AI-Native роли пода
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-0-FOUNDATION/4.progress-pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подшаг 0.4 — Progress Pulse: ритуал и Карта Целей
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-0-FOUNDATION/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 0 — Foundation: бутстрап AI-Native операционной модели
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 1 IDEA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 1 IDEA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse — PULSE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout — SCOUT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch — BUNCH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch — PITCH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute — EXECUTE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest — HARVEST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-1-IDEA/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 1: Idea &amp; Context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 2 CUSTOMER
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 2 CUSTOMER
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse — PULSE / Progress Pulse (Step 2: Customer)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout — SCOUT / Скаутинг гипотез (Step 2: Customer)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch — BUNCH / Граф Нексуса и сегменты (Step 2: Customer)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch — PITCH / Pitching of Trust (Step 2: Customer)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute — EXECUTE / Интервью и кодирование (Step 2: Customer)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest — HARVEST / Фиксация fit-точки (Step 2: Customer)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-2-CUSTOMER/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 2: Customer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 3 MARKET
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 3 MARKET
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse — PULSE / Progress Pulse (Step 3: Market)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout — SCOUT / Скаутинг рыночной среды (Step 3: Market)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch — BUNCH / Bet-узлы Strategy Lens (Step 3: Market)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch — PITCH / Pitching of Trust (Step 3: Market)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute — EXECUTE / Фиксация Нексуса рынка v1.0 (Step 3: Market)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest — HARVEST / Сбор урожая Step 3 (Step 3: Market)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-3-MARKET/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 3: Market
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 4 VALUE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 4 VALUE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. pulse.md — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. scout.md — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. bunch.md — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. pitch.md — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. execute.md — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. harvest.md — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-4-VALUE/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 4: Value
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 5 BUSINESS MODEL
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 5 BUSINESS MODEL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse — PULSE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout — SCOUT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch — BUNCH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch — PITCH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute — EXECUTE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest — HARVEST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-5-BUSINESS-MODEL/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 5: Business Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 6 GO TO MARKET
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 6 GO TO MARKET
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse — Progress Pulse: фиксация гэпа дистрибуции
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout — SCOUT: позиционирование (6.1) + скаутинг каналов (6.3)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch — BUNCH: Bale (оффер 6.2 + бизнес-Банч каналов 6.4)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch — PITCH: Pitching of Trust на офферах и бюджете
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute — EXECUTE: Bale + Germination (6.5) + скрипты (6.6)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest — HARVEST: фиксация NPV канала/оффера → цикл Sprint замыкается
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-6-GO-TO-MARKET/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 6: Go-to-Market
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 7 SOLUTION PMF
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 7 SOLUTION PMF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse — PULSE / Progress Pulse (Step 7: Solution &amp; PMF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout — SCOUT (Step 7: Solution &amp; PMF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch — BUNCH (Step 7: Solution &amp; PMF) 🔴
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch — PITCH / Pitching of Trust (Step 7: Solution &amp; PMF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute — EXECUTE (Step 7: Solution &amp; PMF) 🔴
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest — HARVEST / PMF-точка (Step 7: Solution &amp; PMF) 🔴
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-7-SOLUTION-PMF/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 7: Solution &amp; PMF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STEP 8 ACQUISITION PCF
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    STEP 8 ACQUISITION PCF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/1.pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.pulse.md — Progress Pulse: фиксация состояния Нексуса роста
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/2.scout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.scout.md — Скаутинг конфигураций привлечения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/3.bunch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.bunch.md — Банч конфигураций привлечения (в моменте)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/4.pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.pitch.md — Pitching of Trust: защита Банча конфигураций
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/5.execute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.execute.md — EXECUTE: event-based A/B, оптимизация, масштабирование
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/6.harvest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.harvest.md — HARVEST: фиксация Bale, NPV рычага, PCF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-processes/STEP-8-ACQUISITION-PCF/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overview — Step 8: Acquisition &amp; PCF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Трансформация PAF
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Трансформация PAF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ♻️ REFORMATION — План AI-трансформации Product Discovery (RB-STEP → PAF)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ♻️ REFORMATION — План AI-трансформации Product Discovery (RB-STEP → PAF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ground-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Карта источников (ground truth)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Как читать этот документ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 1 IDEA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 1 IDEA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/0.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0.1 instruction — Progress Pulse: стартовый ритуал Product Sprint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/1.0-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.0 instruction — PAF-каркас BIG Idea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/1.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 instruction — Нексус Рынка как цифровой двойник
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/1.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 instruction — Нексус Продукта через product analytics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/1.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 instruction — Нексус Роста с NPV-моделью
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/2.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 instruction — Linza Strategy через Scouting Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/2.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 instruction — Linza Business через BMC-агент
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/2.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 instruction — Linza Product через JTBD-агент
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/3.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 instruction — Консолидация = Understand-фаза Und-Id-Ex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/3.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 instruction — Confidence Point со стоимостью риска
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/3.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 instruction — Bunch Architect Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/4.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 instruction — Гипотезы через агента
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/4.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 instruction — Rapid Validation через Validation Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/4.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 instruction — Обновление CP как цикл Product Sprint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/5.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 instruction — BIG Idea Statement с anti-workslop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/5.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 instruction — Bunch Presentation как live-артефакт
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/5.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.3 instruction — Обновление Нексусов v1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/6.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 instruction — Pitching of Trust как stage-gate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-1-IDEA/6.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 instruction — Pre-mortem через агента: Монте-Карло по NPV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 2 CUSTOMER VALIDATION
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 2 CUSTOMER VALIDATION
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.0-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.0 instruction — Nexus Consumer &amp; Context Ripeness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 instruction — Hypothesis Generation via Cortex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 instruction — Confidence Point Scoring (not Backlog)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 instruction — Cortex Recruiter &amp; Mom-Test Script Builder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 instruction — Transcript Coder &amp; Real-time CP Update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.5 instruction — Nexus Builder (graph, not doc)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.6-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.6 instruction — AI Segmenter with Workslop Filter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.7-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.7 instruction — NPV Scorer &amp; Pitching of Trust Gate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-2-CUSTOMER-VALIDATION/2.META-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.META instruction — Роли AI-Native на Stage 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 3 MARKET RESEARCH
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 3 MARKET RESEARCH
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.0-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.0 instruction — Нексус рынка как живой двойник
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 instruction — Кортекс-агенты рыночных сил: Porter/PESTEL → Force-узлы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 instruction — Агент-трекер трендов vs констант
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 instruction — Агент-оценщик TAM/SAM/SOM + mNSM + верификатор цифр
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 instruction — Агент-парсинг и teardown конкурентов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5 instruction — Авто-скоринг как скаутинг (Принцип 5)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.6-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.6 instruction — CP-gate стратегии: колесо Гилада, стоимость риска, Bet-узлы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-3-MARKET-RESEARCH/3.7-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.7 instruction — Роли Stage 3 в PAF: Skill Map сектор 1+6, профстандарт D/01.7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 4 VALUE VALIDATION
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 4 VALUE VALIDATION
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-4-VALUE-VALIDATION/4.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 instruction — Генерация ценностных гипотез как фич Банча из Нексуса
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-4-VALUE-VALIDATION/4.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 instruction — Авто-скоринг ICE/RICE → Confidence Point; Pitching of Trust как gate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-4-VALUE-VALIDATION/4.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 instruction — Stage-gate валидация с динамическим CP и оценкой стоимости риска
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-4-VALUE-VALIDATION/4.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 instruction — Фиксация need/value fit как commit в цифровой профиль продукта
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-4-VALUE-VALIDATION/4.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.5 instruction — Вторичный скоринг + формулировка mNSM (монетизируемая NSM) с проверкой связи с NPV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-4-VALUE-VALIDATION/4.6-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.6 instruction — Дерево метрик с корнем = mNSM, ребром → NPV, Кортекс-валидацией каузальности и Harvesting-узлом
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 5 BUSINESS MODEL VALIDATION
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 5 BUSINESS MODEL VALIDATION
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 instruction — Узел гипотезы БМ в Нексусе роста через Кортекс-генерацию BMC и кластеризацию паттернов с CP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 instruction — Проектирование монетизации из mNSM с агент-A/B-симуляцией цен и NPV-оценкой схем
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.3 instruction — Вероятностная воронка как живой узел: агент-симулятор AARRR и агент-churn-предиктор по поведенческим сигналам
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.4 instruction — Картирование издержек агентом-COGS-калькулятором с выделением рычага AI-COGS (cost-per-token × tokens-per-user)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.5 instruction — Моделирование NPV: Monte-Carlo по распределениям, ранжирование Рычагов (Lever) по эластичности NPV, детект «убийц экономики»
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.6-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.6 instruction — Поиск бизнес-Bunch (2–3 рычага в окне) с максимальным NPV; фиксация цифрового профиля БМ в Нексусе вместо документа v1.0; CP-план поднятия доверия
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 6 GO TO MARKET STRATEGY
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 6 GO TO MARKET STRATEGY
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-6-GO-TO-MARKET-STRATEGY/6.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 instruction — Позиционирование как живой узел Нексуса рынка
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-6-GO-TO-MARKET-STRATEGY/6.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 instruction — Bale-офферы: AI-генерация УТП, AI UX Designer, гейт метапознания
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-6-GO-TO-MARKET-STRATEGY/6.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.3 instruction — Скаутинг каналов (замена приоритизации по Принципу 5)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-6-GO-TO-MARKET-STRATEGY/6.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.4 instruction — Бюджет как инвестиция в NPV: Monte-Carlo, критерии Банча, COGS токенов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-6-GO-TO-MARKET-STRATEGY/6.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.5 instruction — Germination по PAF: time-to-activation, Кортекс-Handoff, Harvesting-цикл
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-6-GO-TO-MARKET-STRATEGY/6.6-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.6 instruction — AI-скрипты продаж и NPV-план: SPIN, role-play Pitching, event-based ритуалы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 7 SOLUTION VALIDATION
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 7 SOLUTION VALIDATION
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-7-SOLUTION-VALIDATION/7.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.1 instruction — Гипотезы решения как Identify-фаза Und-Id-Ex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-7-SOLUTION-VALIDATION/7.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.2 instruction — Вайбкодинг-прототипирование
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-7-SOLUTION-VALIDATION/7.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.3 instruction — Pitching of Trust и Stage-Gate по Confidence Point
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-7-SOLUTION-VALIDATION/7.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.4 instruction — Цифровой профиль продукта (Нексус) вместо пакета требований
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-7-SOLUTION-VALIDATION/7.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.5 instruction — Product Sprint execute-фаза + вайбкодинг MVP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-7-SOLUTION-VALIDATION/7.6-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.6 instruction — Harvesting и PMF-точка
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RB STEP 8 ACQUISITION CONFIGURATION
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RB STEP 8 ACQUISITION CONFIGURATION
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.0-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.0 instruction — Stage 8 как Business Lens: Нексус системы роста
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.1-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.1 instruction — Acquisition Bunch Agent: генерация Банча конфигураций
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.2-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.2 instruction — Event-based валидация конфигураций
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.3-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.3 instruction — Мульти-эксперимент оптимизации конфигураций
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.4-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.4 instruction — Scale &amp; Budget Agent: масштабирование с контролем COGS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.5-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.5 instruction — Economics &amp; PCF Agent: фиксация, NPV, Product-Channel Fit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RB-STEP-8-ACQUISITION-CONFIGURATION/8.ops-instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.ops instruction — Product Ops на Stage 8: Нексус роста и Кортекс-процессы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sources/S5_medium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [S5] Medium / Typical Company — «Какие навыки нужны менеджеру продукта»
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ground-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Карта источников (ground truth)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Как читать этот документ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/po-helper-org/docs/edit/main/docs/ai-transformation/reformation.md" title="Редактировать страницу" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="reformation-ai-product-discovery-rb-step-paf">♻️ REFORMATION — План AI-трансформации Product Discovery (RB-STEP → PAF)<a class="headerlink" href="#reformation-ai-product-discovery-rb-step-paf" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Огромный обзорный документ:</strong> что, где и почему меняется в библиотеке продуктового discovery при переходе от <strong>классической модели PO (Scrum-эпоха)</strong> к <strong>AI-Native модели PAF (Инженер Продукта нового поколения)</strong>.
+Каждый факт маркируется источником: <strong>[S1]–[S4]</strong> = PAF ground truth (<code>AI-TRANSFORMATION/index.md</code>); ссылки на конкретные файлы <code>RB-STEP-*</code> = текущее (классическое) состояние. Ноль галлюцинаций.
+Автор методологии PAF: <strong>Тихомиров Сергей</strong> («Борода продакта»), CC BY-SA 4.0.</p>
+</blockquote>
+<hr />
+<h2 id="ground-truth">📚 Карта источников (ground truth)<a class="headerlink" href="#ground-truth" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Источник</th>
+<th>Статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[S1]</strong></td>
+<td><a href="https://productframework.ru/ops/main">productframework.ru/ops/main</a> — каркас PAF, AI Product Operations</td>
+<td>✅ полный</td>
+</tr>
+<tr>
+<td><strong>[S2]</strong></td>
+<td><a href="https://productframework.ru/ai_product_roles">productframework.ru/ai_product_roles</a> — трансформация роли в эпоху ИИ</td>
+<td>✅ полный</td>
+</tr>
+<tr>
+<td><strong>[S3]</strong></td>
+<td><a href="https://productframework.ru/skill_map">productframework.ru/skill_map</a> — карта навыков PM</td>
+<td>✅ полный</td>
+</tr>
+<tr>
+<td><strong>[S4]</strong></td>
+<td>Профстандарт 06.012 (приказ Минтруда № 636н от 16.09.2021)</td>
+<td>✅ полный</td>
+</tr>
+<tr>
+<td><strong>[S5]–[S7]</strong></td>
+<td>Medium/Typical, Google Sheet Product Mindset, Miro board</td>
+<td>❌ недоступны (см. <code>index.md</code>, раздел «Пробелы»)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Локальный ground truth:</strong>
+- Призма PAF: [[AI-TRANSFORMATION/index|index.md]]
+- Глоссарий терминов: [[sa_documentation/naming_conventions|naming_conventions.md]]
+- Эталон диагноза (STEP-2): [[PAF-ANALYSIS]]
+- Карта процесса: [[0 КАРТА ПРОЦЕССА — Product Discovery]]</p>
+<hr />
+<h2 id="0">0. Как читать этот документ<a class="headerlink" href="#0" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Часть I</strong> — зачем трансформация (2 c-level вопроса PAF).</li>
+<li><strong>Часть II</strong> — 12 измерений призмы (линза, через которую прогоняется каждый этап).</li>
+<li><strong>Часть III</strong> — сдвиг парадигмы PO → Инженер Продукта (что меняется в голове исполнителя).</li>
+<li><strong>Часть IV</strong> — 8 сквозных трансформаций, применимых ко <strong>всем</strong> этапам.</li>
+<li><strong>Часть V</strong> — трансформация по каждому из 8 RB-STEP (ядро документа: вердикт, разрывы, скоринг, Кортекс-агенты, артефакты/гейты, план инструкций, риски).</li>
+<li><strong>Часть VI</strong> — карта файлов нового поколения (что создаётся в <code>AI-TRANSFORMATION/</code>).</li>
+<li><strong>Часть VII</strong> — модель зрелости Кортекса (последовательность внедрения).</li>
+<li><strong>Часть VIII</strong> — сквозные риски трансформации.</li>
+<li><strong>Часть IX</strong> — критерии успеха.</li>
+</ol>
+<hr />
+<h1 id="i">ЧАСТЬ I. СУТЬ ТРАНСФОРМАЦИИ<a class="headerlink" href="#i" title="Permanent link">&para;</a></h1>
+<p>PAF отвечает на два c-level вопроса <strong>[S1]</strong>:</p>
+<ol>
+<li><strong>Почему продуктовый подход НЕ даёт бизнес-результата?</strong> — потому что компаниям «продали» методологии <em>разработки</em> (Scrum, Kanban) как панацею от <em>бизнес-проблем</em>. Процесс разработки ≠ процесс развития продукта. Scrum оптимизирует <strong>потери производства</strong>, а развитие продукта отвечает на другой вопрос: как создать продукт с <strong>максимальным возвратом монетизируемой ценности на инвестиции (NPV)</strong> <strong>[S1]</strong>.</li>
+<li><strong>Каким должно быть управление продуктами в эпоху ИИ?</strong> — когда практически все задачи менеджера могут быть ИИзированы. ИИ = disruptive-технология раз в сто лет. Discovery решается почти мгновенно, часть задач полностью делегируется <strong>[S1, S2]</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>Главный тезис [S2]:</strong> в эпоху ИИ конкуренция смещается с продуктов на <strong>контекст и модель управления им</strong>. <em>«У кого лучше собран контекст продукта и реализована ИИзация работы с ним — тот и будет лидером на рынке»</em>.</p>
+</blockquote>
+<p><strong>Что это значит для библиотеки RB-STEP.</strong> Библиотека <code>RB-STEP-1 … RB-STEP-8</code> — это сильная, добротная реализация <strong>классического</strong> Product Discovery (Customer Development, JTBD, Lean, AARRR, MVP по Бланку). Но почти на каждом этапе она:
+- хранит контекст как <strong>разрозненные документы</strong> (а не живой Нексус-двойник);
+- предполагает <strong>ручную</strong> работу (а не работу через Кортекс);
+- мыслит <strong>списками/приоритизацией/беклогом</strong> (а не Банчем в моменте);
+- оптимизирует <strong>скорость/потери</strong> (а не риски через Confidence Point);
+- оперирует <strong>LTV/CAC/EBITDA</strong> как самоцелью (а не NPV/mNSM как возвратом монетизируемой ценности);
+- описывает процесс как <strong>линейный каскад с каденциями</strong> (а не асинхронный event-based цикл Product Sprint);
+- использует роли <strong>«продакт-менеджер / маркетолог / SDR»</strong> (а не AI-Native роли).</p>
+<p><strong>Reformation = переписать каждый RB-STEP как AI-native инструкцию для Инженера Продукта нового поколения</strong>, сохранив методологическую силу классики, но заменив операционную модель.</p>
+<hr />
+<h1 id="ii-12-ai-">ЧАСТЬ II. ПРИЗМА — 12 ИЗМЕРЕНИЙ AI-ТРАНСФОРМАЦИИ<a class="headerlink" href="#ii-12-ai-" title="Permanent link">&para;</a></h1>
+<p>Каждый RB-STEP прогоняется через эту призму. Измерения <code>D1–D12</code> используются в скоринге (Часть V).</p>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Измерение</th>
+<th>Что должно быть (PAF)</th>
+<th>Источник</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1</strong></td>
+<td><strong>Нексус (Nexus)</strong></td>
+<td>Контекст — «живая» модель = цифровой двойник; метрика качества <strong>Context Ripeness</strong> (полнота × актуальность); этапы «созревание»/«увядание»; существует весь ЖЦ; состоит из Узлов (Nodes)</td>
+<td>[S1] III.1</td>
+</tr>
+<tr>
+<td><strong>D2</strong></td>
+<td><strong>Кортекс (Cortex)</strong></td>
+<td>ИИ как <strong>операционный интерфейс</strong> (агенты / RAG / интеграции / промпты); инженер работает <strong>только через проводника-Кортекс</strong>, не вручную</td>
+<td>[S1] III.1</td>
+</tr>
+<tr>
+<td><strong>D3</strong></td>
+<td><strong>Банч (Feature Bunch)</strong></td>
+<td>Связка фич <strong>в моменте</strong> под текущее состояние Нексуса; лимиты Bunch Size / Bunch Window; <strong>Беклог упразднён</strong></td>
+<td>[S1] VI.6, Принцип 1</td>
+</tr>
+<tr>
+<td><strong>D4</strong></td>
+<td><strong>Confidence Point</strong></td>
+<td>Управление <strong>рисками/энтропией</strong> (а не поток задач); растёт по stage-gate, падает при рисках; включает оценку стоимости риска; колесо Итамара Гилада (ICE/RICE)</td>
+<td>[S1] VI.7, Принцип 4</td>
+</tr>
+<tr>
+<td><strong>D5</strong></td>
+<td><strong>Цикл Product Sprint</strong></td>
+<td>Progress Pulse → Bunch Saturation (Und-Id-Ex) → Pitching of Trust → Build → Bale → Germination → Harvesting → цикл заново</td>
+<td>[S1] VI.4, VI.5</td>
+</tr>
+<tr>
+<td><strong>D6</strong></td>
+<td><strong>Три Линзы (3PL)</strong></td>
+<td>Продукт / Бизнес / Стратегия — этап осознаёт, в какой линзе работает и как связан с двумя другими</td>
+<td>[S1] VI.1</td>
+</tr>
+<tr>
+<td><strong>D7</strong></td>
+<td><strong>6 принципов PAF</strong></td>
+<td>Прозрачность · Совместная унификация контекста · Stagility · Риск=знание · Скаутинг вместо приоритизации · Прибыль через ценность</td>
+<td>[S1] Часть II</td>
+</tr>
+<tr>
+<td><strong>D8</strong></td>
+<td><strong>Роли AI-Native</strong></td>
+<td>Product Engineer / Product Ops / Growth Engineer / Portfolio Manager / Discovery-Launcher PM / AI UX Designer (а не PM/маркетолог)</td>
+<td>[S1] III.3, [S2] III.6</td>
+</tr>
+<tr>
+<td><strong>D9</strong></td>
+<td><strong>mNSM / NPV</strong></td>
+<td>Монетизируемая ценность как метрика (mNSM) и возврат монетизируемой ценности на инвестиции (NPV); для AI-продуктов — контроль <strong>COGS токенов</strong></td>
+<td>[S1] Принцип 6, VI.6; [S2] III.6</td>
+</tr>
+<tr>
+<td><strong>D10</strong></td>
+<td><strong>Асинхронность</strong></td>
+<td>Event-based / Kanban вместо каденций/линейности</td>
+<td>[S1] VI.2</td>
+</tr>
+<tr>
+<td><strong>D11</strong></td>
+<td><strong>Цифровой профиль + метапознание + анти-workslop</strong></td>
+<td>Документация исчезает → цифровой профиль продукта; метапознание как фильтр прироста качества от ИИ; workslop-фильтры</td>
+<td>[S2] III.4, III.5, III.7</td>
+</tr>
+<tr>
+<td><strong>D12</strong></td>
+<td><strong>Skill Map + профстандарт 06.012</strong></td>
+<td>6 секторов × 3 уровня навыков; маппинг к обобщённым функциям A/B/C/D</td>
+<td>[S3] IV, [S4] V</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="iii-po">ЧАСТЬ III. СДВИГ ПАРАДИГМЫ: PO → ИНЖЕНЕР ПРОДУКТА НОВОГО ПОКОЛЕНИЯ<a class="headerlink" href="#iii-po" title="Permanent link">&para;</a></h1>
+<p>Инструкции нового поколения (<code>N.M instruction</code>) пишутся <strong>не для классического Product Owner/Manager</strong>, а для <strong>Инженера Продукта (Product Engineer)</strong> — роли, которая управляет развитием продукта через Нексус посредством Кортекса <strong>[S1, S2]</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Классический PO (Scrum-эпоха)</th>
+<th>Инженер Продукта нового поколения (PAF)</th>
+<th>Источник</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Базовый артефакт</td>
+<td>Беклог (накопительный список)</td>
+<td><strong>Банч</strong> (в моменте, из текущего состояния Нексуса)</td>
+<td>[S1]</td>
+</tr>
+<tr>
+<td>Объект управления</td>
+<td>Поток задач в разработку</td>
+<td><strong>Нексусы</strong> (рынок/продукт/рост/…)</td>
+<td>[S1]</td>
+</tr>
+<tr>
+<td>Ключевая метрика процесса</td>
+<td>Скорость / story points / потери</td>
+<td><strong>Confidence Point</strong> (риски)</td>
+<td>[S1]</td>
+</tr>
+<tr>
+<td>Бизнес-метрика</td>
+<td>velocity, выручка, DAU</td>
+<td><strong>NPV, mNSM</strong> (+ COGS токенов для AI-продуктов)</td>
+<td>[S1, S2]</td>
+</tr>
+<tr>
+<td>Инструмент работы с продуктом</td>
+<td>Вручную (Sheets/Notion/Jira/Figma)</td>
+<td><strong>Через Кортекс</strong> (агенты/RAG/промпты)</td>
+<td>[S1]</td>
+</tr>
+<tr>
+<td>Способ принятия решений</td>
+<td>Приоритизация списка задач</td>
+<td><strong>Скаутинг возможностей и угроз</strong></td>
+<td>[S1] Принцип 5</td>
+</tr>
+<tr>
+<td>Знания</td>
+<td>Разрозненные документы</td>
+<td><strong>Цифровой профиль продукта</strong> (единая точка)</td>
+<td>[S2]</td>
+</tr>
+<tr>
+<td>Ритм работы</td>
+<td>Каденции (спринты, PI)</td>
+<td><strong>Event-based / Kanban</strong></td>
+<td>[S1]</td>
+</tr>
+<tr>
+<td>Компетенции</td>
+<td>T-shaped</td>
+<td><strong>Comb-shaped</strong> (гребёнка за счёт Кортекса)</td>
+<td>[S2]</td>
+</tr>
+<tr>
+<td>Команда</td>
+<td>Scrum-team (7±2)</td>
+<td><strong>Pod</strong> (может быть из 1 человека)</td>
+<td>[S1, S2]</td>
+</tr>
+<tr>
+<td>Критический навык</td>
+<td>Процессная дисциплина</td>
+<td><strong>Метапознание</strong> (валидация ИИ)</td>
+<td>[S2] III.4</td>
+</tr>
+<tr>
+<td>Bottleneck системы</td>
+<td>Discovery / разработка</td>
+<td><strong>Дистрибуция (последняя миля)</strong></td>
+<td>[S2] III.5 (Голдратт)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Ключевой фильтр [S2]:</strong> рост качества от ИИ — <strong>только</strong> при достаточном метапознании. Junior без метапознания + ИИ = нулевой прирост. Компетентный, но забивший на верификацию = «убедительные, но неверные» результаты (Harvard × BCG). Поэтому каждая инструкция нового поколения содержит <strong>явные чекпоинты метапознания</strong> и <strong>анти-workslop гейты</strong>.</p>
+</blockquote>
+<hr />
+<h1 id="iv-8">ЧАСТЬ IV. 8 СКВОЗНЫХ ТРАНСФОРМАЦИЙ (применимы ко всем этапам)<a class="headerlink" href="#iv-8" title="Permanent link">&para;</a></h1>
+<p>Эти 8 сдвигов повторяются на каждом RB-STEP. Ниже — что меняется, где (в каких файлах) и почему.</p>
+<h3 id="1">Сквозная 1. Документ → Нексус (живой цифровой двойник)<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> разрозненные markdown/Sheets-документы → структурированный граф Узлов Нексуса с метаданными (<code>источник</code>, <code>Confidence Point</code>, <code>timestamp</code>, <code>статус увядания</code>); Context Ripeness = полнота × актуальность как <strong>вычисляемая</strong> метрика <strong>[S1] III.1</strong>.</li>
+<li><strong>Где:</strong> Нексус рынка (<code>1.1</code>, <code>3.x</code>), Нексус потребителя (<code>2.5</code>), Нексус продукта (<code>1.2</code>, <code>7.4</code>), Нексус системы роста (<code>1.3</code>, <code>5.x</code>, <code>6.x</code>, <code>8.x</code>).</li>
+<li><strong>Почему:</strong> «контекст — новый способ конкуренции» <strong>[S1] Принцип 2</strong>; без живого двойника Кортекс «усиливает мусор».</li>
+</ul>
+<h3 id="2">Сквозная 2. Ручная работа → Кортекс (ИИ как ОС)<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> ручное заполнение шаблонов → Кортекс-агенты (RAG по Нексусам, генерация/анализ/скоринг/симуляция); инженер = постановщик задач + валидатор <strong>[S1] III.1</strong>.</li>
+<li><strong>Где:</strong> <strong>все</strong> этапы — на каждом подшаге определяется, какой Кортекс-агент его ведёт (см. Часть V, блок «Кортекс-инструменты»).</li>
+<li><strong>Почему:</strong> «Discovery решается почти мгновенно» <strong>[S1]</strong>; 3 оптимизации роли — автоматизация / аугментация / агентизация <strong>[S2] III.4</strong>.</li>
+</ul>
+<h3 id="3">Сквозная 3. Беклог/приоритизация → Банч (связка в моменте)<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> списки гипотез, матрицы MoSCoW, «спринт-беклоги», «волны», «банк гипотез» → Банч фич/конфигураций <strong>в моменте</strong>, формируемый анализом текущего состояния Нексуса под Карту Целей; с лимитами Bunch Size/Window <strong>[S1] VI.6</strong>.</li>
+<li><strong>Где:</strong> <code>2.1</code>, <code>4.1</code>–<code>4.2</code>, <code>5.6</code>, <code>6.3</code>, <code>7.4</code>–<code>7.5</code>, <code>8.1</code>.</li>
+<li><strong>Почему:</strong> Принцип 1 (Беклог упразднён) и Принцип 5 (скаутинг, не приоритизация). <em>Запрещённые синонимы</em> — <code>naming_conventions.md</code>.</li>
+</ul>
+<h3 id="4-confidence-point">Сквозная 4. Скорость/потери → Confidence Point (управление рисками)<a class="headerlink" href="#4-confidence-point" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> «уверенность 1–10», 5-балльные матрицы, go/no-go-чекбоксы → единый <strong>Confidence Point</strong>, растущий по колесу Гилада (ICE/RICE) и падающий при срабатывании рисков; включает <strong>стоимость риска</strong>; CP = критерий stage-gate <strong>[S1] VI.7, Принцип 4</strong>.</li>
+<li><strong>Где:</strong> <code>2.2</code>, <code>3.6</code>, <code>4.2</code>–<code>4.3</code>, <code>6.3</code>, <code>7.3</code>, <code>8.1</code>–<code>8.5</code>.</li>
+<li><strong>Почему:</strong> управление продуктом = <strong>возделывание, оптимизация рисков (энтропии)</strong>, а не потерь <strong>[S1] Принцип 4</strong>.</li>
+</ul>
+<h3 id="5-product-sprint">Сквозная 5. Линейный каскад → Цикл Product Sprint<a class="headerlink" href="#5-product-sprint" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> линейные N.1→N.6 каскады с каденциями → цикл Progress Pulse → Bunch Saturation (Und-Id-Ex) → Pitching of Trust → Build → Bale → Germination → Harvesting <strong>[S1] VI.4–VI.5</strong>.</li>
+<li><strong>Где:</strong> <strong>все</strong> <code>index.md</code> этапов (сегодня все линейны).</li>
+<li><strong>Почему:</strong> PAF — циклический и асинхронный; «эффект асинхронности» ломает каденции <strong>[S1] VI.2</strong>.</li>
+</ul>
+<h3 id="6-3pl">Сквозная 6. Изолированный этап → Три Линзы (3PL)<a class="headerlink" href="#6-3pl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> этап как изолированный конвейер → этап явно привязан к линзе (Продукт/Бизнес/Стратегия) и связан с двумя другими через Карту Целей <strong>[S1] VI.1</strong>.</li>
+<li><strong>Где:</strong> Customer/Value/Solution Validation → Product Lens; Market → Strategy Lens; BizModel/GTM/Acquisition → Business/Growth Lens.</li>
+<li><strong>Почему:</strong> инженер переключается между горизонтами через 3PL <strong>[S1]</strong>.</li>
+</ul>
+<h3 id="7-mnsm-npv-cogs">Сквозная 7. Метрики ради метрик → mNSM / NPV (+ COGS токенов)<a class="headerlink" href="#7-mnsm-npv-cogs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> LTV/CAC/EBITDA/NSM как самоцель, vanity-метрики → <strong>mNSM</strong> (монетизируемая NSM), <strong>NPV</strong> (возврат монетизируемой ценности на инвестиции), для AI-продуктов — контроль <strong>COGS токенов</strong> как отдельного рычага <strong>[S1] Принцип 6; [S2] III.6</strong>.</li>
+<li><strong>Где:</strong> <code>3.3</code> (SOM→mNSM-потенциал), <code>4.5</code>–<code>4.6</code> (NSM→mNSM), <code>5.5</code> (NPV как вершина), <code>6.4</code> (бюджет как инвестиция в NPV), <code>7.6</code> (PMF→mNSM/NPV), <code>8.5</code> (PCF→NPV рычага).</li>
+<li><strong>Почему:</strong> Принцип 6 и целевая функция PM из <strong>[S3]</strong>.</li>
+</ul>
+<h3 id="8-workslop">Сквозная 8. Документация → Цифровой профиль + метапознание + анти-workslop<a class="headerlink" href="#8-workslop" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Что:</strong> «база знаний»/презентации как финальный артефакт → <strong>цифровой профиль продукта</strong> (аналог claude.md, единая точка); каждый Кортекс-агент имеет <strong>метапознание-чекпоинт</strong> и <strong>workslop-фильтр</strong> <strong>[S2] III.4, III.5, III.7</strong>.</li>
+<li><strong>Где:</strong> фиксирующие подшаги (<code>3.6</code>, <code>4.4</code>, <code>5.6</code>, <code>7.4</code>, <code>8.5</code>); генерирующие подшаги (<code>3.3</code>, <code>4.1</code>, <code>6.2</code>, <code>6.6</code>, <code>7.2</code>, <code>8.1</code>).</li>
+<li><strong>Почему:</strong> workslop ≈ 15,4 % материалов перекладывают когнитивную нагрузку; MIT — 95 % не получают отдачи от инвестиций в ИИ именно из-за workslop <strong>[S2] III.7</strong>.</li>
+</ul>
+<hr />
+<h1 id="v">ЧАСТЬ V. ТРАНСФОРМАЦИЯ ПО ЭТАПАМ<a class="headerlink" href="#v" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Сводный скоринг по 12 измерениям (итог — взвешенная оценка с учётом методологической силы этапа):</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Этап</th>
+<th>Тема</th>
+<th>% PAF</th>
+<th>Краткий профиль</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RB-STEP-1</strong></td>
+<td>BIG IDEA</td>
+<td><strong>~58%</strong></td>
+<td>Уже на PAF-терминологии (Нексус/Банч/CP/3 Linza/Pitching); не хватает Кортекса-как-ОС, NPV, метапознания, модели зрелости</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-2</strong></td>
+<td>Customer Validation</td>
+<td><strong>~18%</strong></td>
+<td>Классический CustDev+JTBD+The Mom Test; Нексус/Кортекс/Банч/CP/Sprint/роли — отсутствуют</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-3</strong></td>
+<td>Market Research</td>
+<td><strong>~28%</strong></td>
+<td>Сильные «эхо» PAF (TAM/SAM/SOM, тренды, go/no-go), но Нексус рынка/Кортекс/CP/mNSM/роли — нет</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-4</strong></td>
+<td>Value Validation</td>
+<td><strong>~42%</strong></td>
+<td>Лучший — есть NSM, Value Stream, дельта ценности, отбраковка vanity; не хватает mNSM (монетизируемости), Нексуса, Кортекса, Банча</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-5</strong></td>
+<td>Business Model</td>
+<td><strong>~35%</strong></td>
+<td>Сильная финмодель (CAC/LTV/EBITDA/breakeven); нет NPV как главной метрики, Рычагов (Lever), COGS токенов, бизнес-Банча</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-6</strong></td>
+<td>Go-To-Market</td>
+<td><strong>~28%</strong></td>
+<td>Сильный классический GTM (Blue Ocean, SPIN, AARRR); нет Bale/Germination/Harvesting, Кортекса, mNSM/NPV/COGS, ролей</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-7</strong></td>
+<td>Solution Validation</td>
+<td><strong>~38%</strong></td>
+<td>Сильный MVP (как стратегия) и PMF (retention/Шон Эллис); нет Банча (вместо backlog/MoSCoW), Нексуса, Кортекса, mNSM/NPV, вайбкодинга</td>
+</tr>
+<tr>
+<td><strong>RB-STEP-8</strong></td>
+<td>Acquisition Config</td>
+<td><strong>~38%</strong></td>
+<td>Сильная PCF-механика (LTV/CAC, байесовский A/B); нет Нексуса системы роста, Кортекса, CP как ядра, COGS токенов, ролей</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Вывод:</strong> методологическое <strong>ядро</strong> классики сильное на всех этапах — трансформация не «переписать с нуля», а <strong>заменить операционную модель</strong> (Нексус + Кортекс + Банч + CP + Product Sprint + AI-Native роли), сохранив проверенные методы (JTBD, TAM/SAM/SOM, VPC Остервальдера, BMC, Blue Ocean, SPIN, AARRR, MVP, A/B).</p>
+</blockquote>
+<hr />
+<h2 id="rb-step-1-big-idea">🟦 RB-STEP-1 — BIG IDEA (прелюдия)<a class="headerlink" href="#rb-step-1-big-idea" title="Permanent link">&para;</a></h2>
+<h3 id="10">1.0 Вердикт<a class="headerlink" href="#10" title="Permanent link">&para;</a></h3>
+<p><strong>~58% PAF.</strong> Стадия <strong>уже построена на PAF-терминологии</strong> (три Нексуса <code>1.1–1.3</code>, скаутинг через 3 Линзы <code>2.1–2.3</code>, Банч <code>3.3</code>, Confidence Point <code>3.2</code>, Pitching of Trust <code>6.1</code>, Pre-mortem <code>6.2</code>). Самый высокий скоринг в библиотеке. Но: Кортекс — точечный промпт (<code>3.3</code>), а не ОС; нет NPV Банча; нет Context Ripeness как live-метрики; нет метапознания/анти-workslop; нет маппинга к Skill Map и профстандарту; нет модели зрелости Кортекса; Product Sprint не встроен (линейный pipeline 0→5).</p>
+<h3 id="11">1.1 Что сейчас<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>Полностью переработанный discovery, изложенный в PAF-терминах (<code>index.md</code>, <code>1.0 Базовые концепции</code>). Три Нексуса определяются явно; используется скаутинг через Strategy/Business/Product; формируется Банч через AI-анализ (<code>3.3</code>); шкала CP 1–10; Pitching of Trust — gate. Роль — «Product Engineer». Процесс — линейный по фазам; Кортекс = «ChatGPT/Claude как Кортекс» в одном файле.</p>
+<h3 id="12-paf-">1.2 Цель в PAF-оптике<a class="headerlink" href="#12-paf-" title="Permanent link">&para;</a></h3>
+<p>Первый цикл <strong>насыщения Нексусов рынка/продукта/роста</strong> (Context Ripeness 0→≥60%) и <strong>первый проход Und-Id-Ex на null base</strong> (нет продукта → discovery с нуля). BIG Idea Statement = артикуляция <strong>Видения (Vision)</strong>; Банч 5–7 фич = первая связка для закрытия <strong>Гэпа (gap)</strong>; Pitching of Trust = stage-gate поднятия CP через коллективную критику.</p>
+<h3 id="13">1.3 Критические разрывы<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Кортекс — точечный промпт, не ОС</strong> [<code>3.3</code>] — PAF: инженер работает только через Кортекс. Менять: агенты/RAG на каждом подшаге.</li>
+<li><strong>Context Ripeness — ручной чеклист, не live-метрика</strong> [<code>1.1</code> Step 5.2] — нет «увядания». Менять: вычисляемая метрика, привязанная к gate.</li>
+<li><strong>NPV отсутствует; mNSM — качественный (low/med/high)</strong> [<code>3.3</code>] — Принцип 6 + VI.6 (комплексный NPV Банча). Менять: NPV-калькулятор в Нексусе Роста.</li>
+<li><strong>Product Sprint не встроен</strong> — нет Progress Pulse, Und-Id-Ex, Bale, Germination, Harvesting. Менять: обернуть этап в цикл.</li>
+<li><strong>Роли не развёрнуты</strong> — Product Engineer есть, но Growth Engineer/Portfolio Manager/Product Ops не инстанциированы в подшагах.</li>
+<li><strong>6 принципов не операционализированы</strong> — Stagility/прозрачность/унификация не сформулированы.</li>
+<li><strong>Каденции фаз, не event-based</strong> [<code>index.md</code>] — переход к Kanban с триггерами.</li>
+<li><strong>Нет метапознания/анти-workslop/цифрового профиля</strong> [<code>3.3</code>] — <code>3.3</code> даже не проверяет ответ ИИ на галлюцинации.</li>
+<li><strong>Нет Skill Map/профстандарта</strong> — собственная градация «Новичок/Эксперт» не связана с PAF.</li>
+<li><strong>Нет модели зрелости Кортекса</strong> (3 фазы, [S1] Часть VII).</li>
+</ol>
+<h3 id="14-scorecard">1.4 Scorecard<a class="headerlink" href="#14-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+<th>Комментарий</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус</td>
+<td>70</td>
+<td>3 Нексуса определены, есть узлы; нет live-метрики CR, нет «увядания»</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>25</td>
+<td>Точечный промпт в <code>3.3</code>; не ОС</td>
+</tr>
+<tr>
+<td>D3 Банч</td>
+<td>85</td>
+<td>Формируется из текущего состояния, есть Size/Window/mNSM-impact; нет NPV Банча</td>
+</tr>
+<tr>
+<td>D4 Confidence Point</td>
+<td>80</td>
+<td>Шкала 1–10, рост по gate; нет «стоимости риска» и явного колеса Гилада</td>
+</tr>
+<tr>
+<td>D5 Product Sprint</td>
+<td>35</td>
+<td>Pitching есть; Progress Pulse/Und-Id-Ex/Bale/Germination/Harvesting — нет</td>
+</tr>
+<tr>
+<td>D6 3PL</td>
+<td>90</td>
+<td>Сильнейшее место — Strategy/Business/Product явно</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>40</td>
+<td>Скаутинг + риск=знание; Stagility/прозрачность/унификация не сформулированы</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>45</td>
+<td>Product Engineer есть; Growth/Portfolio/Ops — нет</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV</td>
+<td>45</td>
+<td>mNSM качественный; NPV отсутствует</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>20</td>
+<td>Каденции фаз</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop</td>
+<td>10</td>
+<td>Не упоминаются</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт</td>
+<td>5</td>
+<td>Не упоминаются</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~58%</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="15-">1.5 Кортекс-инструменты<a class="headerlink" href="#15-" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nexus-Builder Agent</strong> — заполняет узлы 3 Нексусов из внешних источников (отчёты, G2/Reddit, product analytics); считает Context Ripeness; флаг «увядания».</li>
+<li><strong>Scouting Agent</strong> — 3 Линзы: ERRC-канвас, BMC, JTBD-анализ транскриптов → opportunities/threats.</li>
+<li><strong>Bunch Architect Agent</strong> — RAG по 3 Нексусам → Банч 5–7 фич с NPV-оценкой, Bunch Size/Window, anti-workslop фильтр.</li>
+<li><strong>Validation Agent</strong> — автогенерация smoke test/прототипа (вайбкодинг), сбор сигналов, обновление CP по колесу Гилада.</li>
+<li><strong>Red-Team Agent</strong> — для Pitching of Trust: скептические вопросы, симуляция «kill it».</li>
+<li><strong>Nexus RAG</strong> + <strong>JTBD RAG</strong> — индексы по Нексусам и корпусу транскриптов.</li>
+<li><strong>NPV-калькулятор</strong> (интеграция в Нексус Роста).</li>
+</ul>
+<h3 id="16">1.6 Артефакты и гейты<a class="headerlink" href="#16" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Узлы:</strong> Нексус Рынка (TAM/SAM/SOM, конкуренты 4 типов, тренды, opportunities/threats); Нексус Продукта (Current State, Vision, Gap); Нексус Роста (BM, unit-economics, growth levers).</li>
+<li><strong>CP gate:</strong> Pitching of Trust (<code>6.1</code>) — фичи CP&lt;5 drop, CP≥5 approved.</li>
+<li><strong>Fit-точка:</strong> BIG Idea Statement (<code>5.1</code>) + Bunch v2.0 (<code>4.3</code>) + Go-Decision из Pre-mortem (<code>6.2</code>); на выходе Нексусы v1.0 (CR≥60%).</li>
+</ul>
+<h3 id="17">1.7 Инструкции нового поколения (план)<a class="headerlink" href="#17" title="Permanent link">&para;</a></h3>
+<p><code>0.1 instruction</code> Progress Pulse · <code>1.0 instruction</code> PAF-каркас BIG Idea · <code>1.1</code> Нексус Рынка-двойник · <code>1.2</code> Нексус Продукта через analytics · <code>1.3</code> Нексус Роста с NPV-моделью · <code>2.1</code> Linza Strategy через Scouting Agent · <code>2.2</code> Linza Business через BMC-агент · <code>2.3</code> Linza Product через JTBD-агент · <code>3.1</code> Консолидация = Understand (Und-Id-Ex) · <code>3.2</code> CP со стоимостью риска · <code>3.3</code> Bunch Architect Agent · <code>4.1</code> Гипотезы через агента · <code>4.2</code> Rapid Validation через Validation Agent · <code>4.3</code> Обновление CP как цикл Sprint · <code>5.1</code> BIG Idea с anti-workslop · <code>5.2</code> Bunch Presentation как live-артефакт · <code>5.3</code> Обновление Нексусов v1.0 · <code>6.1</code> Pitching of Trust как stage-gate · <code>6.2</code> Pre-mortem через Монте-Карло по NPV.</p>
+<h3 id="18">1.8 Риски трансформации<a class="headerlink" href="#18" title="Permanent link">&para;</a></h3>
+<p>Workslop при генерации Нексусов (TAM-цифры) · галлюцинации в JTBD/конкурентном анализе · метапознание как bottleneck (этап для «новичка») · иллюзия «Кортекс = один промпт» · NPV-модель как чёрный ящик · линейность против асинхронности · Skill Map как формальность.</p>
+<hr />
+<h2 id="rb-step-2-customer-validation-stage-1">🟩 RB-STEP-2 — CUSTOMER VALIDATION (Stage 1)<a class="headerlink" href="#rb-step-2-customer-validation-stage-1" title="Permanent link">&para;</a></h2>
+<h3 id="20">2.0 Вердикт<a class="headerlink" href="#20" title="Permanent link">&para;</a></h3>
+<p><strong>~18% PAF.</strong> Добротный классический CustDev (CustDev + JTBD + The Mom Test), который <em>называет</em> себя PAF, но структурно остаётся линейным ручным процессом. Ни Нексуса как двойника, ни Кортекса, ни Банча, ни Product Sprint, ни AI-Native ролей. Лишь «эхо» терминов (Context Ripeness, единый контекст, WTP). <em>Существующий <code>PAF-ANALYSIS.md</code> давал ~17% — подтверждается.</em></p>
+<h3 id="21">2.1 Что сейчас<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>Последовательный 7-шаговый конвейер: <code>2.1</code> Гипотезы → <code>2.2</code> Скоринг (ICE/RICE) → <code>2.3</code> Подготовка интервью → <code>2.4</code> Проведение → <code>2.5</code> Фиксация контекста → <code>2.6</code> Профили сегментов → <code>2.7</code> Скоринг сегментов + выбор фокуса. Навигация (<code>index.md</code>, <code>.INDEX.md</code>, <code>quick-start.md</code>, <code>templates.md</code>, <code>examples.md</code>) дублирует теорию. Повсюду «беклог гипотез»/«спринт-беклог» (<code>2.1</code>, <code>2.2</code>, <code>2.4</code>); ручной рекрутинг, ручная транскрипция (<code>2.3</code> упоминает лишь Otter.ai/Fireflies как утилиты); ручная кластеризация сегментов (<code>2.6</code>); мультипликативный скоринг 1×3 (<code>2.7</code>). Роль — безымянный «ты».</p>
+<h3 id="22-paf-">2.2 Цель в PAF-оптике<a class="headerlink" href="#22-paf-" title="Permanent link">&para;</a></h3>
+<p>Не «проверить гипотезы и выбрать сегмент», а <strong>насыщение Нексуса потребителя</strong> контекстом до <strong>Context Ripeness</strong>, чтобы Кортекс генерировал идеи с максимальным CP, формировал Банч и проводил Pitching of Trust. Null-base продукт стартует с <strong>Understand</strong> (анализ Нексуса, а не «беготня по интервью»). Результат — не «профиль в Notion», а <strong>живой узловой подграф Нексуса потребителя</strong>, чья спелость = критерий Stage-Gate.</p>
+<h3 id="23">2.3 Критические разрывы<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Контекст — статичный текст, не двойник</strong> [<code>2.5</code> Step 4.1] → рефактор в граф узлов (Сегмент/Триггер/Состояние/Путь/Проблема/Причина/Мотивация) с метаданными.</li>
+<li><strong>Кортекс отсутствует</strong> [<code>2.3</code> Phase 7] → агенты на каждый подшаг.</li>
+<li><strong>«Беклог гипотез» вместо Банча</strong> [<code>2.1</code>, <code>2.2</code>, <code>2.4</code>] → карта возможностей + Банч в моменте.</li>
+<li><strong>ICE/RICE как число, не CP</strong> [<code>2.2</code>] → прокси CP + gate + связь с NPV.</li>
+<li><strong>Линейность, нет Product Sprint/Und-Id-Ex/Pitching/Harvesting</strong> → обернуть 2.x в цикл.</li>
+<li><strong>Изолирован от 3PL</strong> (нет бизнес-линзы mNSM, нет стратегической) → mNSM-слой на сегмент.</li>
+<li><strong>Принципы не интегрированы</strong> (приоритизация, беклог) → скаутинг, риск=знание.</li>
+<li><strong>Роль «ты/PM»</strong> → Product Engineer + Product Ops + Growth Engineer.</li>
+<li><strong>Каденции</strong> [<code>2.3</code> Phase 7.2, <code>quick-start.md</code>] → Kanban с событийными триггерами.</li>
+<li><strong>Нет метапознания/анти-workslop</strong> → защита от AI-сгенерированных персон.</li>
+<li><strong>Нет Skill Map/профстандарта</strong> (CV = сектор 1 Discovery, ≈ B/01.5).</li>
+<li><strong>WTP есть, mNSM/NPV — нет</strong> [<code>templates.md</code>, <code>examples.md</code>].</li>
+</ol>
+<h3 id="24-scorecard">2.4 Scorecard<a class="headerlink" href="#24-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D3 Банч</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D4 Confidence Point</td>
+<td>25</td>
+</tr>
+<tr>
+<td>D5 Product Sprint</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D6 3PL</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~18%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="25">2.5 Трансформация по подшагам<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2.1</code></td>
+<td>Ручные 15–30 гипотез в Notion</td>
+<td>Генератор гипотез (RAG по Нексусу Рынка + Big Idea) → кандидат-узлы с initial CP</td>
+</tr>
+<tr>
+<td><code>2.2</code></td>
+<td>Ручной ICE/RICE</td>
+<td>CP-скорер (колесо Гилада) → Банч гипотез-кандидатов в моменте + стоимость риска</td>
+</tr>
+<tr>
+<td><code>2.3</code></td>
+<td>Ручной рекрутинг, ручной скрипт</td>
+<td>Рекрутёр-агент + Скрипт-билдер (маппинг вопрос→гипотеза→узел), Mom-Test защита</td>
+</tr>
+<tr>
+<td><code>2.4</code></td>
+<td>Интервью вдвоём, ручная транскрипция</td>
+<td>Кодировщик транскриптов: ASR→кодирование→авто-валидация→event-driven обновление CP</td>
+</tr>
+<tr>
+<td><code>2.5</code></td>
+<td>Сборка «единого контекста» в один документ</td>
+<td>Nexus-билдер: граф узлов (8 сущностей) + Context Ripeness как метрика</td>
+</tr>
+<tr>
+<td><code>2.6</code></td>
+<td>Ручная кластеризация, CJM/Empathy Map</td>
+<td>Сегментатор с <strong>workslop-фильтром</strong> (персона ≥4 интервью) + метапознание-чек</td>
+</tr>
+<tr>
+<td><code>2.7</code></td>
+<td>Мультипликативный скоринг 1×3</td>
+<td>NPV-скорер: + гипотеза mNSM + NPV-параметр → Pitching of Trust gate</td>
+</tr>
+</tbody>
+</table>
+<h3 id="26-">2.6 Кортекс-инструменты<a class="headerlink" href="#26-" title="Permanent link">&para;</a></h3>
+<p>Генератор гипотез · CP-скорер · Рекрутёр · Скрипт-билдер · Кодировщик транскриптов · Nexus-билдер · Сегментатор (workslop-фильтр) · NPV-скорер · Product Ops-панель (метапознание-гейт, флаги увядания).</p>
+<h3 id="27">2.7 Артефакты и гейты<a class="headerlink" href="#27" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы Нексуса потребителя:</strong> Сегмент (поведенческий), Триггер, Начальное/Целевое состояние, Альтернативный путь, Проблема+Причина, Мотивация, Value Stream+дельта, Иерархия JTBD, <strong>Гипотеза mNSM (новый)</strong>, Цитата-доказательство. Каждый узел: <code>источник-интервью[]</code>, CP, timestamp, статус увядания.
+<strong>CP gate</strong> (конец <code>2.7</code>): CR Нексуса ≥ порога + CP фокус-гипотез ≥ gate + валидированная mNSM.
+<strong>Fit-точка:</strong> Фокус-сегмент + фокус-проблема + гипотеза mNSM + early adopters как <strong>спелый подграф Нексуса</strong>.</p>
+<h3 id="28">2.8 Инструкции нового поколения<a class="headerlink" href="#28" title="Permanent link">&para;</a></h3>
+<p><code>2.0</code> Nexus Consumer &amp; Context Ripeness · <code>2.1</code> Hypothesis Generation via Cortex · <code>2.2</code> Confidence Point Scoring (not Backlog) · <code>2.3</code> Cortex Recruiter &amp; Mom-Test Script Builder · <code>2.4</code> Transcript Coder &amp; Real-time CP Update · <code>2.5</code> Nexus Builder (graph, not doc) · <code>2.6</code> AI Segmenter with Workslop Filter · <code>2.7</code> NPV Scorer &amp; Pitching of Trust Gate · <code>2.META</code> Роли AI-Native на Stage 1.</p>
+<h3 id="29">2.9 Риски<a class="headerlink" href="#29" title="Permanent link">&para;</a></h3>
+<p><strong>Workslop — AI-сгенерированные «персоны»</strong> (главный риск) → правило «персона ≥4 интервью» · метапознание как фильтр · галлюцинации в генерации гипотез → только из RAG по существующим узлам · искажение интервью ИИ-интервьюером → на ранней зрелости ИИ только кодировщик · дофаминовая петля ИИ · увядание контекста без автообновления · суррогатная валидация по форумам/отзывам.</p>
+<hr />
+<h2 id="rb-step-3-market-research-stage-2">🟨 RB-STEP-3 — MARKET RESEARCH (Stage 2)<a class="headerlink" href="#rb-step-3-market-research-stage-2" title="Permanent link">&para;</a></h2>
+<h3 id="30">3.0 Вердикт<a class="headerlink" href="#30" title="Permanent link">&para;</a></h3>
+<p><strong>~28% PAF.</strong> Пред-PAF-стадия: сильное терминологическое «эхо» PAF (прямые пересказы [S1] по TAM/SAM/SOM, трендам, конкурентам, области потребностей, go/no-go), рудимент Context Ripeness. Но Нексус рынка как двойник, Кортекс, Банч/CP, роли, Product Sprint, mNSM/NPV — отсутствуют.</p>
+<h3 id="31">3.1 Что сейчас<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>Линейный каскад 6 раннбуков: <code>3.1</code> Porter+PESTEL → <code>3.2</code> каталог трендов + реестр констант → <code>3.3</code> TAM/SAM/SOM (top-down/bottom-up + правило ФРИИ «10%») → <code>3.4</code> карта конкурентов 4 типов + teardown → <code>3.5</code> взвешенный скоринг 1–5 → <code>3.6</code> фиксация в профиле + go/no-go. Артефакты — разрозненные документы в Obsidian; ИИ — лишь «ускоритель первичного поиска» (<code>3.1</code>, <code>3.2</code> Phase 0).</p>
+<h3 id="32-paf-">3.2 Цель в PAF-оптике<a class="headerlink" href="#32-paf-" title="Permanent link">&para;</a></h3>
+<p>Не «собрать рыночный отчёт», а <strong>насытить Нексус рынка</strong> узлами до Спелости, достаточной для <strong>скаутинга возможностей/угроз</strong> (Принцип 5) и поднятия CP рыночных гипотез до CP-gate стратегической линзы. Рынок = объект <strong>Strategy Lens</strong> (Strategic Sprint → Нексус рынка → Ставки/Bets). TAM/тренды/конкуренты — аргументы насыщения Банча (Understand-фаза Und-Id-Ex). Оценка рынка = оценка <strong>монетизируемой ценности → mNSM/NPV</strong>; go/no-go = <strong>CP-gate</strong>, а не чекбокс.</p>
+<h3 id="33">3.3 Критические разрывы<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Нексус рынка — декоративная шкала CR, не двойник</strong> [<code>index.md</code> 90–97] → структура Узлов (Force/Trend/Constant/TAM-SAM-SOM/Competitor/Gap/Bet) + авто-метрика CR.</li>
+<li><strong>ИИ — «ускоритель поиска», не ОС</strong> [<code>3.1</code>, <code>3.2</code> Phase 0] → агенты парсинга/верификации/оценки.</li>
+<li><strong>TAM/SAM/SOM без mNSM/NPV</strong> [<code>3.3</code>] → SOM через потенциал mNSM, «драйвер роста»→<strong>Рычаг (Lever)</strong>.</li>
+<li><strong>go/no-go по объёму, не по CP</strong> [<code>3.6</code>] → CP (колесо Гилада) + стоимость риска.</li>
+<li><strong>Нет Банча/Bunch Saturation</strong> [<code>3.6</code>] → каждый узел маппится в аргумент Банча.</li>
+<li><strong>Роли «ты»/«команда»</strong> → Product Engineer/Product Ops/Portfolio Manager (Strategy Lens = Bets).</li>
+<li><strong>Линейный каскад</strong> [<code>index.md</code>] → event-based насыщение узлов.</li>
+<li><strong>Шаблоны-документы = будущий workslop</strong> [<code>3.4</code>, <code>3.6</code>] → Узлы цифрового профиля с верификацией источника.</li>
+</ol>
+<h3 id="34-scorecard">3.4 Scorecard<a class="headerlink" href="#34-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус</td>
+<td>35</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D3 Банч</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D4 CP</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D5 Product Sprint</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D6 3PL (Strategy Lens)</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>40</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~28%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="35">3.5 Трансформация по подшагам<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>3.1</code></td>
+<td>Ручной Porter+PESTEL</td>
+<td>Агент рыночных сил → Force-узлы с CP; периодический refresh</td>
+</tr>
+<tr>
+<td><code>3.2</code></td>
+<td>ChatGPT-черновик + ручная верификация</td>
+<td>Агент-трекер трендов (Trends/RSS/LLM) → Trend-узлы со свежестью; константы — отдельный тип</td>
+</tr>
+<tr>
+<td><code>3.3</code></td>
+<td>Таблицы TAM/SAM/SOM вручную</td>
+<td>Агент-оценщик: мульти-метод + автосверка + потенциал mNSM/NPV + <strong>верификатор цифр</strong></td>
+</tr>
+<tr>
+<td><code>3.4</code></td>
+<td>Профили + teardown + 50+ отзывов вручную</td>
+<td>Агент-парсинг (G2/Capterra/App Store/SimilarWeb) → Competitor-узлы; кластер отзывов</td>
+</tr>
+<tr>
+<td><code>3.5</code></td>
+<td>Взвешенная матрица 1–5 вручную</td>
+<td>Авто-скоринг по Узлам; веса = Рычаг; «ближайшие» → аргументы Банча</td>
+</tr>
+<tr>
+<td><code>3.6</code></td>
+<td>Дописать раздел в профиль, go/no-go</td>
+<td>CP-gate стратегии + Bet-узлы (Strategy Lens); замена чекбокса на управление рисками</td>
+</tr>
+</tbody>
+</table>
+<h3 id="36-">3.6 Кортекс-инструменты<a class="headerlink" href="#36-" title="Permanent link">&para;</a></h3>
+<p>Агент рыночных сил · Агент-трекер трендов/констант · Агент-оценщик TAM/SAM/SOM · <strong>Агент-верификатор рыночных цифр</strong> (критический анти-workslop) · Агент-парсинг конкурентов · Агент-teardown · Агент-скаутинг возможностей · Агент-CP-gate.</p>
+<h3 id="37">3.7 Артефакты и гейты<a class="headerlink" href="#37" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы Нексуса рынка:</strong> Force-узел, Trend-узел, Constant-узел, TAM/SAM/SOM-узел, Competitor-узел, Gap-узел, <strong>Bet-узел (Ставка, Strategy Lens)</strong>.
+<strong>CP gate:</strong> <code>{CP ≥ порог} ∧ {стоимость риска приемлема} ∧ {mNSM-потенциал SOM &gt; 0}</code>; отказ — осознанный.</p>
+<h3 id="38">3.8 Инструкции нового поколения<a class="headerlink" href="#38" title="Permanent link">&para;</a></h3>
+<p><code>3.0</code> Нексус рынка-двойник · <code>3.1</code> Агенты рыночных сил · <code>3.2</code> Трекер трендов vs констант · <code>3.3</code> Оценщик TAM/SAM/SOM + mNSM + верификатор цифр · <code>3.4</code> Парсинг/teardown конкурентов · <code>3.5</code> Авто-скоринг как скаутинг · <code>3.6</code> CP-gate стратегии + Bet-узлы · <code>3.7</code> Роли Stage 3 (Skill Map сектор 1+6, профстандарт D/01.7).</p>
+<h3 id="39">3.9 Риски<a class="headerlink" href="#39" title="Permanent link">&para;</a></h3>
+<p><strong>ИИ-галлюцинации рыночных цифр (TAM — критический риск всей библиотеки)</strong> → каждый числовой Узел обязан хранить URL+дату; CP=0 без верификации · workslop на teardown/отзывах · устаревание данных (CR-увядание) · метапознание оператора · иллюзия точности (псевдо-NPV без данных) · подмена Strategy Lens продуктовой.</p>
+<hr />
+<h2 id="rb-step-4-value-validation-stage-3">🟧 RB-STEP-4 — VALUE VALIDATION (Stage 3)<a class="headerlink" href="#rb-step-4-value-validation-stage-3" title="Permanent link">&para;</a></h2>
+<h3 id="40">4.0 Вердикт<a class="headerlink" href="#40" title="Permanent link">&para;</a></h3>
+<p><strong>~42% PAF — лучший этап в библиотеке.</strong> Прямо использует NSM, Value Stream, дельту ценности, границы продукта, Context Ripeness, pivot, различает «оффер ≠ ценность» и «NSM ≠ выручка/DAU». Но критические конструкты отсутствуют: Нексус-двойник, Кортекс, Банч (вместо списка гипотез), Confidence Point (вместо 5-балльного скоринга), <strong>mNSM (монетизируемая NSM)</strong> вместо классической NSM, Product Sprint/3PL/Und-Id-Ex, роли.</p>
+<h3 id="41">4.1 Что сейчас<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>Линейный каскад: <code>4.1</code> гипотезы ЦП → <code>4.2</code> первичный скоринг (матрица 5 критериев × 1–5 × веса) → <code>4.3</code> валидация (smoke/лендинг/fake door/пилот + 4 сценария) → <code>4.4</code> фиксация need-value fit в базе знаний + VPC Остервальдера → <code>4.5</code> вторичный скоринг + NSM через «чёрный ящик» (потребитель+рынок) → <code>4.6</code> дерево метрик (корень=NSM, 3 уровня, каузальность). PAF-термины точечны; роль не названа.</p>
+<h3 id="42-paf-">4.2 Цель в PAF-оптике<a class="headerlink" href="#42-paf-" title="Permanent link">&para;</a></h3>
+<p><strong>Валидация монетизируемой ценности и фиксация need/value fit через насыщение Нексуса продукта до CP, достаточного для входа в Product Sprint.</strong> Ценностное предложение — не «карточка в базе», а <strong>Банч фич</strong>, насыщаемый Und-Id-Ex, с <strong>mNSM</strong> как целевой функцией и <strong>NPV</strong> как возвратом. Гипотезы = скаутинг на карте целей; скоринг = рост CP по колесу Гилада; фиксация = commit в Нексус; NSM должна быть <strong>монетизируемой</strong>.</p>
+<h3 id="43">4.3 Критические разрывы<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Context Ripeness — галочный чеклист, не метрика двойника</strong> (все файлы, ≥60–75%) → запись/обновление узлов; фиксация <code>4.4</code> = commit в Нексус.</li>
+<li><strong>Кортекс отсутствует</strong> (Notion/Obsidian/Sheets/Tilda) → агенты генерации/скоринга/валидации/дерева.</li>
+<li><strong>Список карточек + «банк гипотез» = Беклог</strong> [<code>4.1</code>, <code>4.2</code>] → Банч фич под gap.</li>
+<li><strong>5-балльный скоринг вместо CP</strong> [<code>4.2</code>] → CP с колесом Гилада, динамический gate.</li>
+<li><strong>NSM вместо mNSM — КЛЮЧЕВОЙ разрыв D9</strong> [<code>4.5</code>, <code>4.6</code>] → шаг mNSM-проверки (монетизируема ли?); корень дерева = mNSM + ребро → NPV.</li>
+<li><strong>Линейный поток, нет Product Sprint/3PL</strong> [<code>index.md</code>] → каданс Sprint + Pitching of Trust gate + Harvesting.</li>
+<li><strong>Роли «менеджер продукта»</strong> → Product Engineer/Product Ops/Growth Engineer.</li>
+<li><strong>«База знаний» = документация, не цифровой профиль</strong> [<code>4.4</code>] → цифровой профиль + анти-workslop формулировок.</li>
+</ol>
+<h3 id="44-scorecard">4.4 Scorecard<a class="headerlink" href="#44-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус</td>
+<td>25</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>0</td>
+</tr>
+<tr>
+<td>D3 Банч</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D4 CP</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D5 Product Sprint</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D6 3PL</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>45</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D9 mNSM vs vanity</td>
+<td>35</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~42%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="45">4.5 Трансформация по подшагам<a class="headerlink" href="#45" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>4.1</code></td>
+<td>Карточки ЦП по Остервальдеру</td>
+<td>Генерация ценностных гипотез из Нексуса (Understand→Identify) как фичи Банча</td>
+</tr>
+<tr>
+<td><code>4.2</code></td>
+<td>Матрица 5×1–5×веса</td>
+<td>Авто-скоринг ICE/RICE → CP (Гилад) + Pitching of Trust gate</td>
+</tr>
+<tr>
+<td><code>4.3</code></td>
+<td>4 ручных метода + 4 сценария</td>
+<td>Stage-gate с динамическим CP; Кортекс генерит лендинги/офферы, парсит интервью; стоимость риска</td>
+</tr>
+<tr>
+<td><code>4.4</code></td>
+<td>Запись в базу знаний + VPC</td>
+<td>Commit в цифровой профиль: VP/VPC/CP-узлы; need/value fit = CP ≥ gate</td>
+</tr>
+<tr>
+<td><code>4.5</code></td>
+<td>Скоринг + NSM «чёрный ящик»</td>
+<td>+ шаг <strong>mNSM-проверки</strong> (монетизируема ли → NPV); владелец Growth Engineer</td>
+</tr>
+<tr>
+<td><code>4.6</code></td>
+<td>Дерево с корнем NSM</td>
+<td>Дерево с корнем <strong>mNSM + ребро → NPV</strong>; Кортекс-валидация каузальности; Harvesting-узел</td>
+</tr>
+</tbody>
+</table>
+<h3 id="46-">4.6 Кортекс-инструменты<a class="headerlink" href="#46-" title="Permanent link">&para;</a></h3>
+<p>Агент-генерация ценностных гипотез · Агент-скоринг ICE/RICE→CP · Агент-валидатор экспериментов (отличает «оффер сработал» от «ценность подтверждена») · Агент-фиксация в Нексус (версионирование, anti-workslop) · <strong>Агент-mNSM</strong> (проверка монетизируемости) · Агент-дерева метрик (каузальность, гигиена A/B α/β/MDE, ребро mNSM→NPV).</p>
+<h3 id="47">4.7 Артефакты и гейты<a class="headerlink" href="#47" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы:</strong> VP-node, Hypothesis-node (+CP), Experiment-node (+CP-дельта), VPC-node, NSM-node/<strong>mNSM-node</strong>, MetricTree-node, NPV-node.
+<strong>CP gate</strong> (<code>4.2</code>→<code>4.3</code>): CP ≥ порога; <strong>Pitching of Trust</strong> (<code>4.2</code>). <strong>Need/value fit</strong> (<code>4.4</code>): CP ≥ gate. <strong>mNSM-точка</strong> (<code>4.5</code>): NSM прошла монетизируемость. <strong>Harvesting</strong> (после <code>4.6</code>): фиксация NPV → цикл.</p>
+<h3 id="48">4.8 Инструкции нового поколения<a class="headerlink" href="#48" title="Permanent link">&para;</a></h3>
+<p><code>4.1</code> Генерация ценностных гипотез как фич Банча · <code>4.2</code> Авто-скоринг→CP + Pitching of Trust gate · <code>4.3</code> Stage-gate валидация с динамическим CP · <code>4.4</code> Need/value fit как commit в цифровой профиль · <code>4.5</code> Вторичный скоринг + <strong>mNSM</strong> · <code>4.6</code> Дерево метрик с корнем mNSM + ребро NPV.</p>
+<h3 id="49">4.9 Риски<a class="headerlink" href="#49" title="Permanent link">&para;</a></h3>
+<p><strong>Vanity-метрики / NSM↔mNSM-путаница</strong> (главный риск — NSM «успешные уроки» ценностна, но может быть не монетизируема) · галлюцинации генерации гипотез (трассировка на узлы, без доказательной базы CP=1) · workslop формулировок VP · CP как новая vanity (растёт только от снижения неопределённости) · Банч без Bunch Size/Window.</p>
+<hr />
+<h2 id="rb-step-5-business-model-validation-stage-4">🟥 RB-STEP-5 — BUSINESS MODEL VALIDATION (Stage 4)<a class="headerlink" href="#rb-step-5-business-model-validation-stage-4" title="Permanent link">&para;</a></h2>
+<h3 id="50">5.0 Вердикт<a class="headerlink" href="#50" title="Permanent link">&para;</a></h3>
+<p><strong>~35% PAF.</strong> Сильная классическая финмодель бизнес-модели, но без Нексуса/Кортекса как ОС, без NPV как главной метрики (используется LTV/CAC/EBITDA), без Рычагов (Lever), без бизнес-Банча, без COGS-контроля AI-фич, без цифрового профиля БМ.</p>
+<h3 id="51">5.1 Что сейчас<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<p>Линейный каскад: <code>5.1</code> гипотеза БМ (BMC Остервальдера + паттерн из 6 типов) → <code>5.2</code> схема монетизации (тип/предмет/плательщик/коридор из 3 методов/тарифы/момент оплаты) → <code>5.3</code> Customer Funnel Map по AARRR + модель оттока → <code>5.4</code> издержки 7 групп + налоги + возвраты (матрица влияния на CAC/LTV/Margin) → <code>5.5</code> финмодель в Sheets (параметры→метрики→P&amp;L→3 сценария + sensitivity ±50%) → <code>5.6</code> breakeven (статич./динамич.) + перебор 6–9 конфигураций + фиксация «БМ v1.0». Context Ripeness помечается; ИИ — лишь внешний API в издержках (<code>5.4</code>).</p>
+<h3 id="52-paf-">5.2 Цель в PAF-оптике<a class="headerlink" href="#52-paf-" title="Permanent link">&para;</a></h3>
+<p><strong>Проектирование и насыщение Нексуса системы роста/операционной модели</strong> (живой двойник БМ). Инженер по развитию бизнеса/Growth Engineer работает через <strong>Кортекс</strong> (симуляция, моделирование, оценка COGS), формируя <strong>бизнес-Банч</strong> — связку рычагов в моменте. Главная метрика — <strong>NPV</strong> и <strong>mNSM</strong>; для AI-продуктов — критический контроль <strong>COGS токенов</strong>. Результат — не «БМ v1.0», а <strong>цифровой профиль БМ</strong> с CP по business-model fit, поднимаемый через Business Sprint (Рычаги → NPV).</p>
+<h3 id="53">5.3 Критические разрывы<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Нексуса системы роста нет</strong> (BMC в Miro, монетизация в Notion, финмодель в Sheets) → узлы (Монетизация/Воронка/Издержки/Юнит-экономика/Breakeven/Прогноз) + агрегирующий профиль.</li>
+<li><strong>Кортекса нет</strong> (ИИ только как внешний API <code>5.4</code>) → агенты симуляции/моделирования/COGS.</li>
+<li><strong>NPV отсутствует; нет Рычагов</strong> → NPV как вершина; sensitivity → ранжирование Рычагов по эластичности NPV.</li>
+<li><strong>Матрица 6–9 конфигураций = Беклог</strong> [<code>5.6</code>] → бизнес-Банч (2–3 рычага в окне) с NPV.</li>
+<li><strong>COGS токенов не выделен как рычаг</strong> [<code>5.4</code>, <code>5.5</code>] (спрятан в «серверы/OpenAI API») → AI-COGS = cost-per-token × tokens-per-user + стресс-тест «COGS-эксплозия».</li>
+<li><strong>CP не используется как гейт</strong> (есть Sanity Check) → CP по гипотезам БМ + gate business-model fit.</li>
+<li><strong>Роли обезличенные</strong> → Bizdev Architect (Нексус БМ), Growth Engineer (mNSM+COGS), Product Ops.</li>
+<li><strong>Линейный каскад</strong> → event-based обновление узлов (реальный Churn из Soft Launch → пересчёт).</li>
+</ol>
+<h3 id="54-scorecard">5.4 Scorecard<a class="headerlink" href="#54-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус</td>
+<td>25</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D3 Банч</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D4 CP</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D5 Business Sprint (Рычаги→NPV)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D6 3PL (Business Lens)</td>
+<td>45</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV/COGS</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D11 Профиль БМ+метапознание+workslop</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт (сектор 6)</td>
+<td>35</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~35%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="55">5.5 Трансформация по подшагам<a class="headerlink" href="#55" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>5.1</code></td>
+<td>Ручной BMC + паттерн</td>
+<td>Агент-BMC из Нексуса рынка (узлы конкурентов), CP по блокам</td>
+</tr>
+<tr>
+<td><code>5.2</code></td>
+<td>Ручной выбор схемы + коридор</td>
+<td>Агент-проектировщик монетизации из mNSM + агент-A/B-симулятор цен</td>
+</tr>
+<tr>
+<td><code>5.3</code></td>
+<td>Ручная AARRR + модель оттока</td>
+<td>Агент-симулятор вероятностной воронки + churn-предиктор</td>
+</tr>
+<tr>
+<td><code>5.4</code></td>
+<td>Ручное картирование 7 групп</td>
+<td>Агент-COGS-калькулятор + отдельный модуль <strong>AI-COGS</strong></td>
+</tr>
+<tr>
+<td><code>5.5</code></td>
+<td>Ручная финмодель + sensitivity ±50%</td>
+<td>Агент-моделирования NPV: Monte-Carlo + ранжирование Рычагов + детект «убийц экономики»</td>
+</tr>
+<tr>
+<td><code>5.6</code></td>
+<td>Перебор 6–9 конфигураций + «БМ v1.0»</td>
+<td>Агент-оптимизатор бизнес-Банча (макс NPV при Size/Window) + запись профиля БМ в Нексус</td>
+</tr>
+</tbody>
+</table>
+<h3 id="56-">5.6 Кортекс-инструменты<a class="headerlink" href="#56-" title="Permanent link">&para;</a></h3>
+<p>Агент-BMC-генератор · Агент-проектировщик монетизации · Агент-A/B-симулятор цен (синтетические агенты-клиенты = 4-я роль «секретарь/адъютант» [S2]) · Агент-симулятор воронки · Агент-churn-предиктор · Агент-COGS-калькулятор (+ AI-COGS) · Агент-моделирования NPV (Monte-Carlo, Рычаги) · Агент-оптимизатор бизнес-Банча · Агент-санити-чек/анти-workslop · Агент-налог-движок.</p>
+<h3 id="57">5.7 Артефакты и гейты<a class="headerlink" href="#57" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы:</strong> <code>bm-hypothesis</code>, <code>monetization</code>, <code>funnel</code>, <code>cost-structure</code> (+AI-COGS), <code>unit-economics</code> (Рычаги NPV), <code>breakeven-forecast</code> (бизнес-Банч), <code>business-model-profile</code>.
+<strong>Гейты:</strong> CP gate монетизации (<code>5.2</code>) → CP gate юнит-экономики (<code>5.5</code>: LTV/CAC≥3 <strong>и</strong> NPV&gt;0) → <strong>CP gate business-model fit</strong> (<code>5.6</code>: бизнес-Банч NPV&gt;0, AI-COGS-стресс пройден) → осознанный отказ при NPV&lt;0. <strong>Контрольная точка [S2]:</strong> COGS помимо CAC/LTV.</p>
+<h3 id="58">5.8 Инструкции нового поколения<a class="headerlink" href="#58" title="Permanent link">&para;</a></h3>
+<p><code>5.1</code> Узел гипотезы БМ в Нексусе роста · <code>5.2</code> Монетизация из mNSM + A/B-симуляция цен · <code>5.3</code> Вероятностная воронка как живой узел · <code>5.4</code> Издержки с рычагом <strong>AI-COGS</strong> · <code>5.5</code> Моделирование NPV (Monte-Carlo, Рычаги) · <code>5.6</code> Бизнес-Банч (макс NPV) + профиль БМ в Нексусе.</p>
+<h3 id="59">5.9 Риски<a class="headerlink" href="#59" title="Permanent link">&para;</a></h3>
+<p>Workslop в финмоделях («убедительные, но неверные» числа; каскадная ошибка в breakeven) · <strong>галлюцинации цифр</strong> (бенчмарки/налоги — только из RAG, маркировка факт/гипотеза/бенчмарк) · <strong>COGS-эксплозия AI-фич</strong> (спрятана → ложный breakeven) · ложное ощущение готовности (синтетика ≠ a posteriori) · дофаминовая петля ИИ · утрата стратегического контроля (NPV-моделирование — зона человека, агенты = инструменты).</p>
+<hr />
+<h2 id="rb-step-6-go-to-market-strategy-stage-5">🟪 RB-STEP-6 — GO-TO-MARKET STRATEGY (Stage 5)<a class="headerlink" href="#rb-step-6-go-to-market-strategy-stage-5" title="Permanent link">&para;</a></h2>
+<h3 id="60">6.0 Вердикт<a class="headerlink" href="#60" title="Permanent link">&para;</a></h3>
+<p><strong>~28% PAF.</strong> Сильная классическая GTM-методология (позиционирование по Blue Ocean, SPIN-продажи, AARRR, Service Blueprint). Нексус/Кортекс/Банч/CP/mNSM/NPV/Germination — точечно (поле «Context Ripeness» в шаблонах как самооценка), не как операционная модель.</p>
+<h3 id="61">6.1 Что сейчас<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>Линейный фазовый GTM-конвейер: (1) конкурентное позиционирование (<code>6.1</code> карта 4 типов, Strategy Canvas, Perceptual Map, 4 Product Forces); (2) стратегия привлечения (<code>6.2</code> УТП Максвелл/4U/AIDA, офферы, <code>6.3</code> каналы + Buyer Persona + CJM, <code>6.4</code> бюджет CAC/LTV + 15–20% на эксперименты); (3) стратегия продаж (<code>6.5</code> воронка Visits→Activated + Service Blueprint + Handoff + онбординг, <code>6.6</code> SPIN 6 этапов + банк возражений + план MRR/Churn). Артефакты — статичные шаблоны; роль — «маркетолог/SDR/менеджер продаж»; ИИ не используется как интерфейс; метрики CPL/CAC/CR/MRR без mNSM/NPV/COGS.</p>
+<h3 id="62-paf-">6.2 Цель в PAF-оптике<a class="headerlink" href="#62-paf-" title="Permanent link">&para;</a></h3>
+<p>Bottleneck сместился на <strong>дистрибуцию (последняя миля)</strong> [S2, Голдратт]. GTM — не «упаковка готового продукта», а проектирование <strong>Bale</strong> (инкремент + оффер + план дистрибуции) и <strong>Germination</strong> (онбординг/привычка). Цель: <strong>максимизация mNSM (Growth Engineer) и NPV (Business Pod) через управление CP</strong> по каналам/офферам/скриптам. Позиционирование — не разовый артефакт, а <strong>узел Нексуса рынка</strong>, обновляемый Кортексом после каждого Harvesting.</p>
+<h3 id="63">6.3 Критические разрывы<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Дистрибуция не показана как bottleneck</strong> [<code>index.md</code>] → явный тезис Голдратта; метрика стадии = mNSM + COGS дистрибуции.</li>
+<li><strong>Нет Bale как связки «оффер + дистрибуция в моменте»</strong> (4 независимых артефакта) → Bale с критериями Size/Window/mNSM/CP/NPV.</li>
+<li><strong>Нексуса рынка/роста нет как двойника</strong> (Context Ripeness = самооценка документа) → узлы + метрика полнота×актуальность.</li>
+<li><strong>Кортекса нет</strong> (только классическая автоматизация <code>6.5</code>) → агенты на каждую GTM-операцию.</li>
+<li><strong>Нет CP как gate</strong> (эксперименты — потоковая логика) → CP-гейт перед масштабированием.</li>
+<li><strong>CPL/CAC/CR/MRR вместо mNSM/NPV/COGS</strong> → mNSM как северная метрика; бюджет = инвестиция в NPV; COGS токенов на AI-привлечение.</li>
+<li><strong>Нет цикла Sprint (Harvesting/Germination)</strong> → Harvesting после запуска; онбординг <code>6.5</code> = Germination с time-to-activation.</li>
+<li><strong>Роли классические</strong> → Growth Engineer/Product Engineer/Product Ops/<strong>AI UX Designer</strong> (tone-of-voice офферов).</li>
+<li><strong>Матрицы приоритизации каналов</strong> [<code>6.3</code>] → скаутинг (Принцип 5).</li>
+<li><strong>Workslop-риск не идентифицирован</strong> → офферы <code>6.2</code> и скрипты <code>6.6</code> — топ-зоны workslop; гейт метапознания.</li>
+</ol>
+<h3 id="64-scorecard">6.4 Scorecard<a class="headerlink" href="#64-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D3 Банч/Bale</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D4 CP</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D5 Product Sprint (Bale+Germination)</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D6 3PL</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV/COGS</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт (сектор 5)</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~28%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="65">6.5 Трансформация по подшагам<a class="headerlink" href="#65" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>6.1</code></td>
+<td>Ручные Strategy Canvas/Perceptual Map</td>
+<td>Агент-позиционирование: непрерывный скрейпинг конкурентов/отзывов, авто-обновление узлов, Perceptual Map по эмбеддингам</td>
+</tr>
+<tr>
+<td><code>6.2</code></td>
+<td>4 формулы УТП вручную + A/B</td>
+<td>Агент-генерация офферов (4 формулы из Нексуса) + AI UX Designer tone-of-voice + <strong>гейт метапознания</strong> (анти-workslop)</td>
+</tr>
+<tr>
+<td><code>6.3</code></td>
+<td>Реестр каналов + матрица приоритизации</td>
+<td><strong>Скаутинг каналов</strong> (замена приоритизации); Persona/CJM как узлы Нексуса роста; event-based обновление</td>
+</tr>
+<tr>
+<td><code>6.4</code></td>
+<td>Бюджет CAC_max=LTV/3 + 15–20% эксперименты</td>
+<td>Агент-симуляция воронки/бюджета: бюджет как инвестиция в NPV; Monte-Carlo CPL/CAC; контроль <strong>COGS токенов</strong></td>
+</tr>
+<tr>
+<td><code>6.5</code></td>
+<td>Воронка + Service Blueprint + email-онбординг</td>
+<td><strong>Germination по PAF</strong>: минимизация time-to-activation; Кортекс ведёт Handoff (без повтора контекста клиентом)</td>
+</tr>
+<tr>
+<td><code>6.6</code></td>
+<td>SPIN-скрипт + банк возражений + план MRR</td>
+<td>Агент-скрипты продаж из Нексуса; <strong>role-play Pitching of Trust</strong> (ИИ-клиент «заваливает» аргументы); план как NPV/mNSM-модель; event-based ритуалы</td>
+</tr>
+</tbody>
+</table>
+<h3 id="66-">6.6 Кортекс-инструменты<a class="headerlink" href="#66-" title="Permanent link">&para;</a></h3>
+<p>Агент-позиционирование (скрейпинг) · Агент-генерация офферов/копирайтинга (гейт метапознания) · Агент-Persona/CJM (скаутинг каналов) · Агент-симуляция воронки/бюджета (COGS токенов) · Агент-Germination/активации (Handoff) · Агент-скрипты продаж (role-play Pitching) · Product Ops-агент (модель зрелости).</p>
+<h3 id="67">6.7 Артефакты и гейты<a class="headerlink" href="#67" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы:</strong> Нексус рынка (карта конкурентов, Strategy Canvas, Perceptual Map, позиционирование, 4 Forces); Нексус системы роста (Marketing Mix, Buyer Persona, CJM, воронка активации, бюджет как NPV-модель, скрипт+возражения).
+<strong>Гейты:</strong> Gate-A (запуск канала: CP ≥ порога по скаутингу) · Gate-B (масштабирование: CP вырос + CAC≤CAC_max + mNSM подтверждена; иначе осознанный отказ) · Gate-C (релиз скрипта: role-play Pitching of Trust). <strong>Bale-точка</strong> = оффер+дистрибуция+скрипт; <strong>Germination-точка</strong> = онбординг (time-to-activation); <strong>Harvesting-точка</strong> = NPV канала → Нексус роста.</p>
+<h3 id="68">6.8 Инструкции нового поколения<a class="headerlink" href="#68" title="Permanent link">&para;</a></h3>
+<p><code>6.1</code> Позиционирование как живой узел Нексуса рынка · <code>6.2</code> Bale-офферы (AI-генерация + AI UX Designer + гейт метапознания) · <code>6.3</code> Скаутинг каналов (замена приоритизации) · <code>6.4</code> Бюджет как инвестиция в NPV + COGS токенов · <code>6.5</code> Germination (time-to-activation, Handoff через Кортекс) · <code>6.6</code> AI-скрипты продаж + role-play Pitching + NPV-план.</p>
+<h3 id="69">6.9 Риски<a class="headerlink" href="#69" title="Permanent link">&para;</a></h3>
+<p><strong>Workslop на офферах и скриптах (главный риск)</strong> → гейт метапознания + проверяемость каждой цифры/гарантии · недостаток метапознания · галлюцинации в позиционировании · <strong>последняя миля как bottleneck</strong> (COGS токенов) · дофаминовая петля в ритуалах продаж · асинхронность vs каденции · «цифровой профиль» подменяется документацией.</p>
+<hr />
+<h2 id="rb-step-7-solution-validation-stage-6">🟫 RB-STEP-7 — SOLUTION VALIDATION (Stage 6)<a class="headerlink" href="#rb-step-7-solution-validation-stage-6" title="Permanent link">&para;</a></h2>
+<h3 id="70">7.0 Вердикт<a class="headerlink" href="#70" title="Permanent link">&para;</a></h3>
+<p><strong>~38% PAF.</strong> Сильный методологический фундамент (прототипы, MVP как «стратегия разработки», PMF по retention/Шону Эллису) и отдельные PAF-следы (MVP «не минимум фич», PMF-критерии). Но не интегрирован с каркасом PAF: нет Нексуса продукта, нет Кортекса, нет Банча (вместо него backlog/MoSCoW), нет цикла Product Sprint, роли классические.</p>
+<h3 id="71">7.1 Что сейчас<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<p>Линейная двухфазная последовательность: Фаза А — проектирование и проверка (<code>7.1</code> Solution Hypothesis Cards + CJM + User Flow + Lean UX Canvas + RAT-приоритизация; <code>7.2</code> прототипы бумага→wireframe→кликабельный→консьерж→Волшебник Оз→no-code→Soft Launch; <code>7.3</code> юзабилити-тесты ≥5 + скоринг ценность/стратегия/ресурсы); Фаза Б — разработка (<code>7.4</code> User Stories/Use Cases/NFR/MoSCoW/DoD/Test Cases; <code>7.5</code> Entity Model + Sequence/State + MVP-разработка с параллельной верификацией; <code>7.6</code> AARRR + когортный retention + опрос Шона Эллиса + Aha Moment + критерии PMF). PMF-оптика корректна, но изолирована от Нексуса/Кортекса/Банча.</p>
+<h3 id="72-paf-">7.2 Цель в PAF-оптике<a class="headerlink" href="#72-paf-" title="Permanent link">&para;</a></h3>
+<p><strong>Запустить цикл Product Sprint до точки PMF</strong>, где Solution Validation растворяется в механизме: Solution Hypothesis Cards (<code>7.1</code>) = <strong>Identify-фаза Und-Id-Ex</strong>; прототипы (<code>7.2</code>) = <strong>скаутинг</strong> для поднятия CR Нексуса продукта; валидация (<code>7.3</code>) = <strong>Pitching of Trust</strong> (CP как gate); требования (<code>7.4</code>) = <strong>цифровой профиль продукта</strong>, с которым работают агенты; MVP (<code>7.5</code>) = <strong>execute-фаза + вайбкодинг</strong> через Кортекс (Discovery/Launcher PM); аналитика/PMF (<code>7.6</code>) = <strong>Harvesting</strong> (NPV/mNSM как инкремент контекста). Артефакт — <strong>спелый Нексус продукта</strong> с измеримой mNSM, а не «пакет требований v0.1».</p>
+<h3 id="73">7.3 Критические разрывы<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Банч vs Backlog</strong> [<code>7.4</code> MoSCoW, <code>7.5</code> Sprint Plan] → Банч из текущего состояния + Size/Window.</li>
+<li><strong>Цикл Product Sprint отсутствует</strong> (линейный waterfall А/Б) → Progress Pulse/Pitching/Bale/Germination/Harvesting.</li>
+<li><strong>Нет Нексуса продукта</strong> (спецификация-контракт в Notion) → живой двойник с CR.</li>
+<li><strong>Нет Кортекса</strong> (Figma/Miro/Linear; точечные Otter.ai/ManyChat) → агенты генерации/прототипов/тестов/требований/PMF.</li>
+<li><strong>Роли «PM»</strong> → Product Engineer/<strong>Discovery-Launcher PM (вайбкодинг)</strong>/<strong>AI UX Designer</strong>/Product Ops.</li>
+<li><strong>PMF-критерии не привязаны к mNSM/NPV</strong> [<code>7.6</code> NSM = «завершённые уроки»] → NSM→<strong>mNSM</strong>; NPV как критерий.</li>
+<li><strong>CP не используется как gate-механизм</strong> (разовые оценки 1–10) → единый CP, растущий по колесу Гилада.</li>
+<li><strong>Вайбкодинг/anti-workslop не учтены</strong> (<code>7.2</code>, <code>7.5</code> — естественная зона вайбкодинга).</li>
+</ol>
+<h3 id="74-scorecard">7.4 Scorecard<a class="headerlink" href="#74-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус продукта</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D3 Банч vs MVP-чеклист</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D4 CP</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D5 Product Sprint (MVP как стратегия)</td>
+<td>35</td>
+</tr>
+<tr>
+<td>D6 3PL (Product Lens)</td>
+<td>25</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>40</td>
+</tr>
+<tr>
+<td>D8 Роли</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV (PMF)</td>
+<td>45</td>
+</tr>
+<tr>
+<td>D10 Асинхронность (Kanban)</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop</td>
+<td>10</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт (сектора 2+3)</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~38%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="75">7.5 Трансформация по подшагам<a class="headerlink" href="#75" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>7.1</code></td>
+<td>Hypothesis Cards + CJM + RAT</td>
+<td>Identify-фаза Und-Id-Ex: Кортекс генерит фичи Банча из Нексуса; AI UX Designer проектирует ИИ-метафоры; скаутинг</td>
+</tr>
+<tr>
+<td><code>7.2</code></td>
+<td>Ручные прототипы 7 типов</td>
+<td>Вайбкодинг-агент/MVP-builder: кликабельные/no-code из цифрового профиля по запросу; rapid-итерации поднимают CR</td>
+</tr>
+<tr>
+<td><code>7.3</code></td>
+<td>Юзабилити ≥5 + Affinity + скоринг</td>
+<td>Pitching of Trust + Stage-Gate по CP (Гилад); скоринг через mNSM/NPV</td>
+</tr>
+<tr>
+<td><code>7.4</code></td>
+<td>Пакет требований v0.1 (Stories/Cases/NFR/MoSCoW)</td>
+<td>Цифровой профиль продукта (Нексус): узлы = сущности+экраны+метрики+состояния; MoSCoW → Банч</td>
+</tr>
+<tr>
+<td><code>7.5</code></td>
+<td>Entity/Sequence/State + MVP-спринты + параллельная верификация</td>
+<td>Execute-фаза + вайбкодинг: Launcher PM строит инкремент через Кортекс; цикл Build→Change Log; асинхронный Kanban</td>
+</tr>
+<tr>
+<td><code>7.6</code></td>
+<td>AARRR + retention + Шон Эллис + Aha Moment</td>
+<td>Harvesting: фиксация <strong>NPV/mNSM</strong> как инкремента контекста; PMF-детектор; NSM→<strong>mNSM</strong>; цикл замыкается</td>
+</tr>
+</tbody>
+</table>
+<h3 id="76-">7.6 Кортекс-инструменты<a class="headerlink" href="#76-" title="Permanent link">&para;</a></h3>
+<p>Агент-генерация гипотез решения · AI UX Designer-агент (метафоры ИИ-взаимодействия: намерение→черновик→уточнение; ошибка=новый промпт [S2] III.8) · Вайбкодинг-агент/MVP-builder · Агент-модератор юзабилити-тестов · Pitching of Trust-агент · Агент-требования→цифровой профиль · PMF-детектор-агент · Product Ops-агент.</p>
+<h3 id="77">7.7 Артефакты и гейты<a class="headerlink" href="#77" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы Нексуса продукта:</strong> гипотезы решения (+CP), CJM/User Flow, прототипы (+smoke-результаты), сущности и состояния, экраны и переходы, метрики (mNSM, иерархия, AARRR, Aha Moment), результаты PMF.
+<strong>Гейты:</strong> Gate 7.1→7.2 (CP Understand→Identify) · 7.2→7.3 (CP после smoke) · 7.3→7.4 (<strong>Pitching of Trust пройден</strong>) · 7.4→7.5 (CR Нексуса ≥ порога) · 7.5→7.6 (инкремент→Change Log) · 7.6→Harvesting (<strong>PMF-точка</strong>).
+<strong>PMF-точка:</strong> retention-плато/воронка+referral (количественно, привязано к mNSM) + ≥40% «очень расстроюсь» (качественно) + <strong>NPV&gt;0</strong> воспроизводимо.</p>
+<h3 id="78">7.8 Инструкции нового поколения<a class="headerlink" href="#78" title="Permanent link">&para;</a></h3>
+<p><code>7.1</code> Гипотезы решения как Identify (Und-Id-Ex) + AI UX Designer · <code>7.2</code> Вайбкодинг-прототипирование + anti-workslop · <code>7.3</code> Pitching of Trust + Stage-Gate по CP · <code>7.4</code> Цифровой профиль продукта вместо пакета требований · <code>7.5</code> Execute-фаза + вайбкодинг MVP + Kanban · <code>7.6</code> Harvesting и PMF-точка (NPV/mNSM).</p>
+<h3 id="79">7.9 Риски<a class="headerlink" href="#79" title="Permanent link">&para;</a></h3>
+<p>Workslop в коде/требованиях (вайбкодинг ~15,4%) · метапознание как bottleneck (Launcher PM валидирует ИИ) · галлюцинации Кортекс-агентов (трассировка до Нексуса) · <strong>premature PMF-объявление</strong> (конвергенция ≥3 сигналов: retention + опрос + рекомендация без стимулов + NPV&gt;0) · иллюзия живого Нексуса · сопротивление backlog→Банч · <strong>bottleneck смещается на дистрибуцию</strong> (Germination, COGS).</p>
+<hr />
+<h2 id="rb-step-8-acquisition-configuration-stage-7">⬛ RB-STEP-8 — ACQUISITION CONFIGURATION (Stage 7)<a class="headerlink" href="#rb-step-8-acquisition-configuration-stage-7" title="Permanent link">&para;</a></h2>
+<h3 id="80">8.0 Вердикт<a class="headerlink" href="#80" title="Permanent link">&para;</a></h3>
+<p><strong>~38% PAF.</strong> Честно работает с тем же объектом, что и PAF (конфигурация сегмент-канал-оффер, Product-Channel Fit, CAC/LTV), опирается на первоисточник <code>productframework.ru/activities/acquisition_configuration_research</code>. Но реализована как линейный классический discovery с ручными карточками, фиксированными волнами и кадровыми ритуалами, без Нексуса, Кортекса, CP как ядра, метрики CR и AI-Native ролей.</p>
+<h3 id="81">8.1 Что сейчас<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<p><code>index.md</code> определяет объект = «конфигурация сегмент–канал–оффер», цель — Product/Channel Fit. Линейно: <code>8.1</code> карточки гипотез (7 полей, «Уверенность 1–10») → <code>8.2</code> валидация 3 фазы (Demand/Purchase/Unit Economics) → <code>8.3</code> оптимизация «одна переменная за раз» → <code>8.4</code> «лестница бюджетов» +20–30% → <code>8.5</code> фиксация + взвешенный скоринг + количественный CAC/LTV для PCF. Роли — «продакт-менеджер/маркетолог-Growth/аналитик»; A/B — классическое 95% или байесовское P2BB≥75%; артефакты — карточки в Sheets/Notion.</p>
+<h3 id="82-paf-">8.2 Цель в PAF-оптике<a class="headerlink" href="#82-paf-" title="Permanent link">&para;</a></h3>
+<p>Bottleneck сместился на <strong>дистрибуцию</strong> — именно сюда попадает Stage 8 [S2, Голдратт]. Цель = <strong>Harvesting модели роста</strong>: каждая конфигурация = <strong>Бейл</strong> (Bale = инкремент + оффер + план дистрибуции), финал (PCF) = точка, где <strong>NPV модели роста положителен</strong> (LTV окупает CAC). Конфигурация = узлы <strong>Нексуса системы роста</strong>; перебор = <strong>скаутинг</strong>; управление рисками = рост/падение <strong>CP</strong> по колесу Гилада; Кортекс ведёт весь цикл Und-Id-Ex.</p>
+<h3 id="83">8.3 Критические разрывы<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Нексуса системы роста нет</strong> (CR = декоративная метрика, карточки в Sheets) → узлы с двумя фазами (созревание/увядание); авто-обновление метрик.</li>
+<li><strong>Кортекса нет</strong> (всё вручную) → агенты на каждую операцию.</li>
+<li><strong>«Уверенность 1–10» вместо CP</strong> [<code>8.1</code>] → единый CP со стоимостью риска; уровни <code>8.4</code> = рост CP.</li>
+<li><strong>Список гипотез + «волны» = Беклог</strong> [<code>8.1</code>] → Банч конфигураций в моменте.</li>
+<li><strong>Линейность вместо event-based</strong> [<code>8.1</code>→<code>8.5</code>] → Kanban: событие «CP вырос» → следующий гейт.</li>
+<li><strong>Роли PM/маркетолог</strong> [<code>8.1</code> Phase 0] → Product Engineer/<strong>Growth PM (time-to-activation, LTV, COGS токенов)</strong>/Product Ops.</li>
+<li><strong>3PL не привязаны</strong> → явно Business Lens (рычаг дистрибуции → NPV); PCF связан со Ставками портфеля.</li>
+</ol>
+<h3 id="84-scorecard">8.4 Scorecard<a class="headerlink" href="#84-scorecard" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Измерение</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Нексус системы роста</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D2 Кортекс</td>
+<td>0</td>
+</tr>
+<tr>
+<td>D3 Банч vs список</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D4 CP</td>
+<td>25</td>
+</tr>
+<tr>
+<td>D5 Product Sprint (Harvesting/NPV/Germination)</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D6 3PL (Business/Growth Lens)</td>
+<td>25</td>
+</tr>
+<tr>
+<td>D7 6 принципов</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D8 Роли (Growth PM/COGS/Product Ops)</td>
+<td>15</td>
+</tr>
+<tr>
+<td>D9 mNSM/NPV/COGS (PCF)</td>
+<td>55</td>
+</tr>
+<tr>
+<td>D10 Асинхронность</td>
+<td>20</td>
+</tr>
+<tr>
+<td>D11 Профиль+метапознание+workslop (A/B-ловушки)</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D12 Skill Map+профстандарт (сектор 4)</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>ИТОГО</strong></td>
+<td><strong>~38%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="85">8.5 Трансформация по подшагам<a class="headerlink" href="#85" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Подшаг</th>
+<th>Сейчас</th>
+<th>AI-native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>8.1</code></td>
+<td>Карточки 7 полей + сводная + «волны»</td>
+<td>Acquisition Bunch Agent: генерация Банча из Нексуса роста (Understand→Identify); CP как критерий отбора</td>
+</tr>
+<tr>
+<td><code>8.2</code></td>
+<td>Ручной запуск + чеклист + A/B 95%/P2BB</td>
+<td>Event-based валидация: агент автозапуска тестов, непрерывный мониторинг CP, агент-A/B-дизайн + статанализ с метапознание-валидацией</td>
+</tr>
+<tr>
+<td><code>8.3</code></td>
+<td>«Одна переменная за раз» + журнал</td>
+<td>Мульти-эксперимент (байесовский/multi-armed bandit) по узлам воронки; авто-журнал в Нексус; детектор предела оптимизации</td>
+</tr>
+<tr>
+<td><code>8.4</code></td>
+<td>«Лестница бюджетов» +20–30% вручную</td>
+<td>Scale &amp; Budget Agent: авто-лестница по событию «CP стабилен», lookalike, прогноз деградации/ёмкости, контроль <strong>COGS токенов</strong></td>
+</tr>
+<tr>
+<td><code>8.5</code></td>
+<td>Ручной скоринг + ручной CAC/LTV</td>
+<td>Economics &amp; PCF Agent: авто-когортный CAC/LTV, NPV рычага, PCF как CP gate; фиксация узла Нексуса; триггер Germination</td>
+</tr>
+</tbody>
+</table>
+<h3 id="86-">8.6 Кортекс-инструменты<a class="headerlink" href="#86-" title="Permanent link">&para;</a></h3>
+<p>Acquisition Bunch Agent · Experiment Design Agent (метапознание-валидация «убедительные, но неверные») · Funnel Pulse Agent (event-based мониторинг, авто-прокси-метрика) · Scale &amp; Budget Agent (COGS токенов) · Economics &amp; PCF Agent (NPV рычага) · Product Ops-агент.</p>
+<h3 id="87">8.7 Артефакты и гейты<a class="headerlink" href="#87" title="Permanent link">&para;</a></h3>
+<p><strong>Узлы Нексуса системы роста:</strong> каталог каналов/сегментов/офферов; Банч активных конфигураций (в моменте); журнал экспериментов с CP; когортные CAC/LTV; оценка ёмкости сегмента; зафиксированная конфигурация (Bale).
+<strong>CP gate</strong> (по уровням <code>8.4</code>): Микро→Малая→Средняя→Полное масштабирование = рост CP; gate либо пропускает, либо даёт осознанный отказ.
+<strong>Product-Channel Fit-точка</strong> (<code>8.5</code>): LTV/CAC≥3 + стабильность при масштабировании = <strong>Harvesting модели роста</strong> (NPV рычага положителен). Это <strong>gate из Discovery в Product Growth</strong>. CR ≥85%.</p>
+<h3 id="88">8.8 Инструкции нового поколения<a class="headerlink" href="#88" title="Permanent link">&para;</a></h3>
+<p><code>8.0</code> Stage 8 как Business Lens (Нексус роста, Банч, PCF как Harvesting/NPV) · <code>8.1</code> Acquisition Bunch Agent · <code>8.2</code> Event-based валидация + агент-A/B с метапознанием · <code>8.3</code> Мульти-эксперимент (bandit) + детектор предела · <code>8.4</code> Scale &amp; Budget Agent + COGS токенов · <code>8.5</code> Economics &amp; PCF Agent (NPV рычага, gate) · <code>8.ops</code> Product Ops на Stage 8.</p>
+<h3 id="89">8.9 Риски<a class="headerlink" href="#89" title="Permanent link">&para;</a></h3>
+<p><strong>Workslop (AI-креативы/офферы)</strong> → A/B-проверка каждого AI-оффера, маркировка workslop · <strong>ошибки 1/2 рода в ИИ-A/B</strong> (I: ложный победитель → масштабирование непродукта; II: пропуск рабочей конфигурации) → P2BB≥75% + sequential + запрет подглядывания · метапознание (доверие AI-расчёту CAC/LTV без проверки = ложный PCF) · <strong>COGS-эксплозия при масштабировании</strong> → COGS токенов в полный CAC · дофаминовая петля ИИ.</p>
+<hr />
+<h1 id="vi">ЧАСТЬ VI. КАРТА ФАЙЛОВ НОВОГО ПОКОЛЕНИЯ<a class="headerlink" href="#vi" title="Permanent link">&para;</a></h1>
+<p><code>AI-TRANSFORMATION/</code> после завершения трансформации:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>AI-TRANSFORMATION/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── index.md                    ← теория PAF (уже есть)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── reformation.md              ← ЭТОТ документ (план трансформации)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── RB-STEP-1-IDEA/             ← инструкции нового поколения для прелюдии
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── 0.1 instruction — Progress Pulse
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── 1.0 instruction — PAF-каркас BIG Idea
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   ├── 1.1 … 1.3 instruction  (Нексусы Рынка/Продукта/Роста как двойники)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   ├── 2.1 … 2.3 instruction  (3 Линзы через Кортекс-агентов)
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ├── 3.1 … 3.3 instruction  (Und-Id-Ex / CP / Bunch Architect)
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   ├── 4.1 … 4.3 instruction  (гипотезы / Rapid Validation / обновление CP)
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   ├── 5.1 … 5.3 instruction  (BIG Idea / Presentation / Нексусы v1.0)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   └── 6.1 … 6.2 instruction  (Pitching of Trust gate / Pre-mortem)
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├── RB-STEP-2-CUSTOMER-VALIDATION/
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│   ├── 2.0 instruction — Nexus Consumer &amp; Context Ripeness
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│   ├── 2.1 … 2.7 instruction
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│   └── 2.META instruction — роли AI-Native на Stage 1
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>├── RB-STEP-3-MARKET-RESEARCH/
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│   ├── 3.0 … 3.7 instruction
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>├── RB-STEP-4-VALUE-VALIDATION/
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│   ├── 4.1 … 4.6 instruction
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>├── RB-STEP-5-BUSINESS-MODEL-VALIDATION/
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│   ├── 5.1 … 5.6 instruction
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>├── RB-STEP-6-GO-TO-MARKET-STRATEGY/
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│   ├── 6.1 … 6.6 instruction
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>├── RB-STEP-7-SOLUTION-VALIDATION/
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│   ├── 7.1 … 7.6 instruction
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>└── RB-STEP-8-ACQUISITION-CONFIGURATION/
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    ├── 8.0 … 8.5 instruction
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    └── 8.ops instruction — Product Ops на Stage 8
+</code></pre></div>
+<h3 id="_1">Соглашения об именовании<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Физическая структура:</strong> по подкаталогам на стадию (зеркалит источник <code>RB-STEP-*</code>, исключает коллизию номеров — у STEP-1 внутренняя нумерация 1.x/2.x/…/6.x пересекается с нумерацией STEPs 2–8).</li>
+<li><strong>Содержимое каждого <code>N.M instruction</code>:</strong> Цель в PAF-оптике · Роль (Product Engineer / …) · Что делает Кортекс-агент · Что делает человек (метапознание) · Артефакт = узлы Нексуса · CP-гейт · Связь с 3PL · Анти-workslop чекпоинт · Маппинг к Skill Map/профстандарту · Связь с исходным <code>RB-STEP-N/N.M</code> (преемственность методов).</li>
+<li><strong>Терминология:</strong> строго по [[sa_documentation/naming_conventions|naming_conventions.md]] (запрещённые синонимы: Беклог→Банч, PM→Product Engineer, приоритизация→скаутинг, потери→риски, T-shaped→Comb-shaped, «документация»→цифровой профиль, метрики разработки→mNSM/NPV/CP).</li>
+<li><strong>Альтернатива (плоская структура):</strong> если предпочтительнее единый список без подкаталогов, использовать схему <code>N.M</code> где N=стадия, M=подшаг по порядку (1.1–1.18 для STEP-1, 2.1–2.7, 3.1–3.6, …). Решение за владельцем.</li>
+</ul>
+<hr />
+<h1 id="vii">ЧАСТЬ VII. МОДЕЛЬ ЗРЕЛОСТИ КОРТЕКСА (последовательность внедрения)<a class="headerlink" href="#vii" title="Permanent link">&para;</a></h1>
+<p>Трансформация — не «всё сразу». Кортекс разворачивается по <strong>3 фазам</strong> по объекту ИИзации <strong>[S1] Часть VII</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Фаза</th>
+<th>Объект ИИзации</th>
+<th>Что появляется в инструкциях</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Отдельные задачи</td>
+<td>Промпт-шаблоны (генерация гипотез, скоринг, разбор интервью). Кортекс = ассистент.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Процессы работы команд</td>
+<td>RAG по Нексусам + специализированные агенты (Nexus-Builder, Bunch Architect, Segmenter, NPV Scorer…). Кортекс = проводник.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Процессы всей компании</td>
+<td>Сквозной event-based Кортекс: агенты обновляют Нексусы событийно, CP пересчитывается автоматически, осознанный отказ — gate.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>В каждой фазе — 3 уровня процессов</strong> (стратегический / операционный / отдельной команды) <strong>[S1]</strong>. Миссия <strong>Product Ops</strong> — двигать команду по этой модели <strong>[S2]</strong>.</p>
+<p><strong>Рекомендуемая последовательность внедрения по этапам:</strong>
+1. <strong>Сначала Нексус, потом Кортекс</strong> <strong>[S1] Часть IX</strong> — без спелого контекста Кортекс усиливает мусор. Поэтому Phase-0 любой инструкции = построение Нексуса стадии.
+2. <strong>STEP-1 (58%)</strong> — ближайший к PAF; поднять Кортекс с фазы 1→2 (Bunch Architect, Nexus-Builder), добавить NPV и метапознание.
+3. <strong>STEP-4 (42%)</strong> — добавить mNSM (монетизируемость NSM) и Кортекс-агентов; наивысший ROI.
+4. <strong>STEP-2 (18%)</strong> — самый большой разрыв; рефакторить артефакт <code>2.5</code> в Нексус потребителя + Transcript Coder.
+5. <strong>STEP-3/5/6/7/8</strong> — агенты и Нексусы по приоритету дистрибуции-bottleneck (6, 8) и финмодели-NPV (5).</p>
+<hr />
+<h1 id="viii">ЧАСТЬ VIII. СКВОЗНЫЕ РИСКИ ТРАНСФОРМАЦИИ<a class="headerlink" href="#viii" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Риск</th>
+<th>Где острее всего</th>
+<th>Контрмера (по [S2])</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Workslop</strong> (~15,4 %; MIT: 95 % без отдачи)</td>
+<td><code>3.3</code> TAM-цифры · <code>2.6</code> AI-персоны · <code>6.2</code>/<code>6.6</code> офферы/скрипты · <code>7.2</code>/<code>7.5</code> вайбкодинг · <code>8.1</code> AI-креативы</td>
+<td>Anti-workslop гейт в каждом агенте; трассировка каждого утверждения до источника; Human-in-the-loop перед публикацией</td>
+</tr>
+<tr>
+<td><strong>Метапознание — критический фильтр</strong></td>
+<td>Все генерирующие подшаги</td>
+<td>Метапознание-чекпоинт в каждой инструкции; Product Ops как верификатор; ограничение автономии агентов для junior</td>
+</tr>
+<tr>
+<td><strong>Галлюцинации ИИ</strong></td>
+<td><code>3.3</code> рыночные цифры · <code>2.1</code>/<code>4.1</code> гипотезы · <code>5.5</code> финмодель · <code>7.6</code> PMF-детекция</td>
+<td>RAG только по верифицированным источникам; CP=0 без источника; маркировка факт/гипотеза/бенчмарк</td>
+</tr>
+<tr>
+<td><strong>COGS-эксплозия AI-фич</strong></td>
+<td><code>5.4</code>/<code>5.5</code> · <code>6.4</code> · <code>8.4</code></td>
+<td>AI-COGS как отдельный рычаг (cost-per-token × tokens-per-user); стресс-тест «usage ×2/×5»; COGS токенов в полный CAC</td>
+</tr>
+<tr>
+<td><strong>Bottleneck на дистрибуции</strong></td>
+<td><code>6.x</code> · <code>8.x</code></td>
+<td>Явный тезис Голдратта; Germination + COGS; рост adoption/usage под контролем</td>
+</tr>
+<tr>
+<td><strong>Дофаминовая петля ИИ</strong></td>
+<td>Все этапы при росте доли ИИ</td>
+<td>Явное разделение зон человека (стратегия, синхронизация) и ИИ (транскрипция, скоринг); метрика ритуала = изменение CP/NPV</td>
+</tr>
+<tr>
+<td><strong>Ложное ощущение готовности</strong></td>
+<td><code>5.5</code> (симуляция) · <code>7.6</code> (premature PMF) · <code>8.5</code> (ложный PCF)</td>
+<td>Конвергенция ≥3 сигналов; Soft Launch обязателен; CP не поднимается без реальных данных</td>
+</tr>
+<tr>
+<td><strong>Иллюзия живого Нексуса</strong></td>
+<td><code>7.4</code> цифровой профиль · все фиксирующие подшаги</td>
+<td>CR как метрика с фазами созревание/увядание; обновление только через агентов, не ручное редактирование</td>
+</tr>
+<tr>
+<td><strong>Утрата стратегического контроля</strong></td>
+<td><code>5.5</code> NPV-моделирование · <code>8.5</code> фиксация PCF</td>
+<td>Стратегическое планирование и синхронизация людей — всегда за человеком; агенты = инструменты, не акторы <strong>[S2] III.4</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="ix">ЧАСТЬ IX. КРИТЕРИИ УСПЕХА ТРАНСФОРМАЦИИ<a class="headerlink" href="#ix" title="Permanent link">&para;</a></h1>
+<p>Трансформация этапа считается завершённой, когда:
+- ✅ Каждый <code>N.M instruction</code> ведёт <strong>Инженера Продукта</strong> (не PM) через <strong>Кортекс</strong> над <strong>Нексусом</strong>.
+- ✅ Результат этапа = <strong>узлы Нексуса</strong> с метрикой <strong>Context Ripeness</strong>, а не разрозненный документ.
+- ✅ Решения принимаются через <strong>Confidence Point</strong> (gate) с оценкой <strong>стоимости риска</strong>, а не через приоритизацию/чекбокс.
+- ✅ Метрики этапа выражены через <strong>mNSM / NPV</strong> (+ COGS токенов для AI-продуктов), а не vanity.
+- ✅ Каждый Кортекс-агент имеет <strong>метапознание-чекпоинт</strong> и <strong>анти-workslop гейт</strong>.
+- ✅ Этап встроен в <strong>цикл Product Sprint</strong> (Progress Pulse … Harvesting) и привязан к <strong>3PL</strong>.
+- ✅ Указан <strong>маппинг к Skill Map (6×3) и профстандарту 06.012 (A/B/C/D)</strong>.</p>
+<p><strong>Целевой скоринг PAF после трансформации: ≥85 % по каждому этапу.</strong></p>
+<hr />
+<p><strong>Version:</strong> 1.0
+<strong>Last updated:</strong> 2026-06-20
+<strong>Источники:</strong> [S1]–[S4] (см. <code>index.md</code>); диагнозы по этапам — анализ файлов <code>RB-STEP-1 … RB-STEP-8</code> через 12-мерную призму PAF.
+<strong>Maintained by:</strong> AI-KORTEX
+<strong>Связанные:</strong> [[AI-TRANSFORMATION/index|index.md]] · [[sa_documentation/naming_conventions|naming_conventions.md]] · [[PAF-ANALYSIS]] · [[0 КАРТА ПРОЦЕССА — Product Discovery]]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Материалы AI-Трансформации (PAF) — CC BY-SA 4.0, автор Тихомиров Сергей. Остальное — MIT.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/po-helper-org" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
