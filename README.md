@@ -9,8 +9,10 @@
 
 | Раздел | Что внутри |
 |--------|------------|
+| `docs/paf-product-ops/` | **PAF Product Ops для корпоративного PO**: теория, Playbook личной трансформации, механика в девяти шагах, приложения (лестница, гейты, сроки годности, файлы, команды) и практика в организации |
 | `docs/ai-processes/` | AI-Native фреймворк Product Discovery: 9 вех (Step 0…8) × движок Product Sprint + опер-модель и fit-точки |
 | `docs/ai-transformation/` | Принципы AI-Native команды по PAF (Тихомиров С.), источники `[S1]–[S7]` |
+| `po-methodology/` | Исходная редакция методологии в Word |
 
 ## Локальный запуск
 
@@ -30,6 +32,7 @@ mkdocs serve          # http://127.0.0.1:8000
 
 ## Лицензии
 
-- Материалы **AI-Трансформации (PAF)** (`docs/ai-transformation/`) —
-  [CC BY-SA 4.0](LICENSE-CC-BY-SA), автор **Тихомиров Сергей**.
-- Остальное — [MIT](LICENSE).
+- Всё содержимое `docs/` — адаптация и производные материалы **Product Architecture Framework** (Тихомиров Сергей), распространяется под
+  [CC BY-SA 4.0](LICENSE-CC-BY-SA): `docs/ai-transformation/` (автор — Тихомиров С.), `docs/ai-processes/`, `docs/paf-product-ops/`
+  (адаптация — Алексей Ишманов) и быстрый старт. Адаптации **не являются официальной версией PAF**.
+- Конфигурация сайта, скрипты и CI (`mkdocs.yml`, `.github/`, `requirements.txt`) — [MIT](LICENSE).
