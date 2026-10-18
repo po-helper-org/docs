@@ -17,7 +17,7 @@ tags: []
 # overview — Step 6: Go-to-Market
 
 > **Веха Discovery · Линза: Business (+ Product) · Fit-точка: — (дистрибуция = bottleneck по Голдратту [S2])**
-> Источник: PAF [S1]–[S4]; методы — `TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY` (index + 6.1–6.6); «почему» — `AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY` (6 инструкций). Терминология — [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: PAF [S1]–[S4]; методы — `TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY` (index + 6.1–6.6); «почему» — `AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY` (6 инструкций). Терминология — naming_conventions.
 
 ---
 
@@ -84,11 +84,11 @@ Fit-точки на шаге нет, но внутри него работают
 
 ## 🔗 Референсы
 
-**Методы (TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY):** [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/index]] · [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.1 Стратегия позиционирования и точки дифференциации|6.1]] · [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.2 Уникальное торговое предложение и офферы|6.2]] · [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.3 Стратегия привлечения: каналы и целевая аудитория|6.3]] · [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.4 Планирование маркетингового бюджета|6.4]] · [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.5 Стратегия активации и процессы работы с клиентом|6.5]] · [[TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.6 Скрипты продаж и план продаж|6.6]]
+**Методы (TRADITIONAL/RB-STEP-6-GO-TO-MARKET-STRATEGY):** index · 6.1 · 6.2 · 6.3 · 6.4 · 6.5 · 6.6
 
-**«Почему» (AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY):** [[AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.1 instruction|6.1 (позиционирование/скрейпинг)]] · [[AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.2 instruction|6.2 (офферы + AI UX Designer tone-of-voice)]] · [[AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.3 instruction|6.3 (Persona/CJM скаутинг каналов)]] · [[AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.4 instruction|6.4 (симуляция воронки/бюджета + COGS)]] · [[AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.5 instruction|6.5 (Germination/Handoff)]] · [[AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.6 instruction|6.6 (скрипты/role-play Pitching)]] · [[AI-TRANSFORMATION/reformation]] · [[AI-TRANSFORMATION/index]]
+**«Почему» (AI-TRANSFORMATION/RB-STEP-6-GO-TO-MARKET-STRATEGY):** [6.1 (позиционирование/скрейпинг)](../../ai-transformation/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.1-instruction.md) · [6.2 (офферы + AI UX Designer tone-of-voice)](../../ai-transformation/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.2-instruction.md) · [6.3 (Persona/CJM скаутинг каналов)](../../ai-transformation/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.3-instruction.md) · [6.4 (симуляция воронки/бюджета + COGS)](../../ai-transformation/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.4-instruction.md) · [6.5 (Germination/Handoff)](../../ai-transformation/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.5-instruction.md) · [6.6 (скрипты/role-play Pitching)](../../ai-transformation/RB-STEP-6-GO-TO-MARKET-STRATEGY/6.6-instruction.md) · [reformation](../../ai-transformation/reformation.md) · [index](../../ai-transformation/index.md)
 
-**Каркас:** [[README]] · [[operating-model]] · [[fit-points]] · [[STEP-5-BUSINESS-MODEL/overview]] (назад) · [[STEP-7-SOLUTION-PMF/overview]] (вперёд)
+**Каркас:** [README](../README.md) · [operating-model](../operating-model.md) · [fit-points](../fit-points.md) · [overview](../STEP-5-BUSINESS-MODEL/overview.md) (назад) · [overview](../STEP-7-SOLUTION-PMF/overview.md) (вперёд)
 
 ---
 

@@ -17,7 +17,7 @@ tags: []
 # overview — Step 3: Market
 
 > Веха Discovery · Линза: **Strategy** · Fit-точка: — (первый гейт — Need/Value Fit в конце Step 4)
-> Источник: [[operating-model]] (5 столпов, 3PL, CP, роли) · Термины — по [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: [operating-model](../operating-model.md) (5 столпов, 3PL, CP, роли) · Термины — по naming_conventions.
 > Версия Нексуса рынка: **v0.x (Stage 1) → v1.0 (Stage 3, CR ≥ 60%)**.
 
 ---
@@ -52,7 +52,7 @@ tags: []
 ## 📥 Вход / 📤 Выход
 
 **Вход (из Step 0–2):**
-- Нексус рынка v0.x (декларативный, из Stage 1 [[1.1 Нексус Рынка]]) + Нексус потребителя (сегменты, гипотеза mNSM из Step 2).
+- Нексус рынка v0.x (декларативный, из Stage 1 1.1 Нексус Рынка) + Нексус потребителя (сегменты, гипотеза mNSM из Step 2).
 - Карта Целей (Goal Map) [S1] VI.1 — связь 3 Линз.
 - Область потребностей конкретного сегмента (не «рынок в целом»).
 
@@ -107,10 +107,10 @@ Step 3 = объект **Strategy Lens** [S1] VI.1 → **ведущая роль 
 
 ## 🔗 Референсы
 
-- **Методы:** [[RB-STEP-3-MARKET-RESEARCH/index]] + 3.1 (рыночная среда) · 3.2 (тренды) · 3.3 (TAM/SAM/SOM) · 3.4 (конкуренты) · 3.5 (скоринг) · 3.6 (фиксация).
-- **«Почему»:** [[AI-TRANSFORMATION/RB-STEP-3-MARKET-RESEARCH/3.0 instruction]] · [[3.1 instruction]] · [[3.2 instruction]] · [[3.3 instruction]] · [[3.4 instruction]] · [[3.5 instruction]] · [[3.6 instruction]] · [[3.7 instruction]] · [[AI-TRANSFORMATION/reformation|reformation §3]].
-- Фазы шага: [[1.pulse]] · [[2.scout]] · [[3.bunch]] · [[4.pitch]] · [[5.execute]] · [[6.harvest]].
-- Назад: [[STEP-2-CUSTOMER/overview]] · Дальше: [[STEP-4-VALUE-VALIDATION/overview]] (Need/Value Fit).
+- **Методы:** index + 3.1 (рыночная среда) · 3.2 (тренды) · 3.3 (TAM/SAM/SOM) · 3.4 (конкуренты) · 3.5 (скоринг) · 3.6 (фиксация).
+- **«Почему»:** [3.0 instruction](../../ai-transformation/RB-STEP-3-MARKET-RESEARCH/3.0-instruction.md) · [3.1 instruction](../../ai-transformation/RB-STEP-1-IDEA/3.1-instruction.md) · [3.2 instruction](../../ai-transformation/RB-STEP-1-IDEA/3.2-instruction.md) · [3.3 instruction](../../ai-transformation/RB-STEP-1-IDEA/3.3-instruction.md) · [3.4 instruction](../../ai-transformation/RB-STEP-3-MARKET-RESEARCH/3.4-instruction.md) · [3.5 instruction](../../ai-transformation/RB-STEP-3-MARKET-RESEARCH/3.5-instruction.md) · [3.6 instruction](../../ai-transformation/RB-STEP-3-MARKET-RESEARCH/3.6-instruction.md) · [3.7 instruction](../../ai-transformation/RB-STEP-3-MARKET-RESEARCH/3.7-instruction.md) · [reformation §3](../../ai-transformation/reformation.md).
+- Фазы шага: [1.pulse](1.pulse.md) · [2.scout](2.scout.md) · [3.bunch](3.bunch.md) · [4.pitch](4.pitch.md) · [5.execute](5.execute.md) · [6.harvest](6.harvest.md).
+- Назад: [overview](../STEP-2-CUSTOMER/overview.md) · Дальше: overview (Need/Value Fit).
 
 ---
 

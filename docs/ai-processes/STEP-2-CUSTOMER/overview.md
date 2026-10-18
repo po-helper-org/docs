@@ -17,7 +17,7 @@ tags: []
 # overview — Step 2: Customer
 
 > Веха Discovery · Линза: **Product** (контекст: Business/Strategy) · Fit-точка: — (первый гейт — Need/Value Fit в конце Step 4)
-> Источник правил: [[operating-model]] (5 столпов, цикл Sprint, 3PL, роли, гвардраилы). Термины — по [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник правил: [operating-model](../operating-model.md) (5 столпов, цикл Sprint, 3PL, роли, гвардраилы). Термины — по naming_conventions.
 
 ---
 
@@ -79,7 +79,7 @@ tags: []
 
 ## 🚦 Гейт Step 2 (CP-gate, без fit-точки фреймворка)
 
-Step 2 не несёт fit-точки из [[fit-points]] (первый гейт — 🟧 Need/Value Fit в конце Step 4). Но у Step 2 есть **внутренний CP-gate стадии** [2.7]:
+Step 2 не несёт fit-точки из [fit-points](../fit-points.md) (первый гейт — 🟧 Need/Value Fit в конце Step 4). Но у Step 2 есть **внутренний CP-gate стадии** [2.7]:
 - CR Нексуса потребителя ≥ порога ∧ CP фокус-гипотез ≥ gate ∧ валидированная mNSM ∧ Pitching of Trust пройден.
 - **Результат:** либо пропуск дальше (Step 3), либо **осознанный отказ** (pivot/смена сегмента) [S1] VI.3. «Серой зоны» нет.
 
@@ -93,10 +93,10 @@ Step 2 не несёт fit-точки из [[fit-points]] (первый гейт
 
 ## 🔗 Референсы
 
-- **Методы:** [[TRADITIONAL/RB-STEP-2-CUSTOMER-VALIDATION/index]] + `2.1`–`2.7` (CustDev, JTBD, The Mom Test, ICE/RICE, скоринг сегментов).
-- **«Почему» + Кортекс-агенты:** [[AI-TRANSFORMATION/RB-STEP-2-CUSTOMER-VALIDATION/2.0 instruction]] · `2.1`–`2.7` · `2.META` (9 агентов: Nexus-Builder, Генератор гипотез, CP-скорер, Рекрутёр, Скрипт-билдер, Кодировщик транскриптов, Nexus-Builder сборка, Сегментатор, NPV-скорер).
-- **PAF-анализ расхождений:** [[TRADITIONAL/RB-STEP-2-CUSTOMER-VALIDATION/PAF-ANALYSIS]].
-- **Каркас:** [[AI-TRANSFORMATION/index]] Часть VI (процессы) · [[AI-TRANSFORMATION/reformation|reformation]] §2.
+- **Методы:** index + `2.1`–`2.7` (CustDev, JTBD, The Mom Test, ICE/RICE, скоринг сегментов).
+- **«Почему» + Кортекс-агенты:** [2.0 instruction](../../ai-transformation/RB-STEP-2-CUSTOMER-VALIDATION/2.0-instruction.md) · `2.1`–`2.7` · `2.META` (9 агентов: Nexus-Builder, Генератор гипотез, CP-скорер, Рекрутёр, Скрипт-билдер, Кодировщик транскриптов, Nexus-Builder сборка, Сегментатор, NPV-скорер).
+- **PAF-анализ расхождений:** PAF-ANALYSIS.
+- **Каркас:** [index](../../ai-transformation/index.md) Часть VI (процессы) · [reformation](../../ai-transformation/reformation.md) §2.
 
 ---
 

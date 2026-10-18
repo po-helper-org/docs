@@ -17,7 +17,7 @@ tags: []
 # overview — Step 1: Idea & Context
 
 > **Веха Discovery · Линза: Strategy + Business + Product (все 3 Линзы) · Fit-точка: — (входная веха)**
-> Источник: PAF [S1]–[S4]; методы — `RB-STEP-1-IDEA` (TRADITIONAL); «почему» — `AI-TRANSFORMATION/RB-STEP-1-IDEA` (19 инструкций). Терминология — [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: PAF [S1]–[S4]; методы — `RB-STEP-1-IDEA` (TRADITIONAL); «почему» — `AI-TRANSFORMATION/RB-STEP-1-IDEA` (19 инструкций). Терминология — naming_conventions.
 
 ---
 
@@ -104,11 +104,11 @@ Step 1 — единственный шаг, где **активны все тр�
 
 ## 🔗 Референсы
 
-**Методы (TRADITIONAL/RB-STEP-1-IDEA):** [[TRADITIONAL/RB-STEP-1-IDEA/index]] · [[TRADITIONAL/RB-STEP-1-IDEA/1.0 Базовые концепции]] · [[TRADITIONAL/RB-STEP-1-IDEA/2.1 Linza Strategy]] · [[TRADITIONAL/RB-STEP-1-IDEA/2.2 Linza Business]] · [[TRADITIONAL/RB-STEP-1-IDEA/2.3 Linza Product]] · [[TRADITIONAL/RB-STEP-1-IDEA/3.3 AI Bunch Formation]] · [[TRADITIONAL/RB-STEP-1-IDEA/5.1 BIG Idea Statement]] · [[TRADITIONAL/RB-STEP-1-IDEA/6.1 Pitching of Trust]]
+**Методы (TRADITIONAL/RB-STEP-1-IDEA):** index · 1.0 Базовые концепции · 2.1 Linza Strategy · 2.2 Linza Business · 2.3 Linza Product · 3.3 AI Bunch Formation · 5.1 BIG Idea Statement · 6.1 Pitching of Trust
 
-**«Почему» (AI-TRANSFORMATION/RB-STEP-1-IDEA):** [[AI-TRANSFORMATION/RB-STEP-1-IDEA/0.1 instruction]] (Pulse) · [[AI-TRANSFORMATION/RB-STEP-1-IDEA/2.1 instruction]] (Scouting) · [[AI-TRANSFORMATION/RB-STEP-1-IDEA/3.3 instruction]] (Bunch Architect) · [[AI-TRANSFORMATION/RB-STEP-1-IDEA/5.1 instruction]] (Vision-Synth) · [[AI-TRANSFORMATION/RB-STEP-1-IDEA/6.1 instruction]] (Red-Team) · [[AI-TRANSFORMATION/reformation]] · [[AI-TRANSFORMATION/index]]
+**«Почему» (AI-TRANSFORMATION/RB-STEP-1-IDEA):** [0.1 instruction](../../ai-transformation/RB-STEP-1-IDEA/0.1-instruction.md) (Pulse) · [2.1 instruction](../../ai-transformation/RB-STEP-1-IDEA/2.1-instruction.md) (Scouting) · [3.3 instruction](../../ai-transformation/RB-STEP-1-IDEA/3.3-instruction.md) (Bunch Architect) · [5.1 instruction](../../ai-transformation/RB-STEP-1-IDEA/5.1-instruction.md) (Vision-Synth) · [6.1 instruction](../../ai-transformation/RB-STEP-1-IDEA/6.1-instruction.md) (Red-Team) · [reformation](../../ai-transformation/reformation.md) · [index](../../ai-transformation/index.md)
 
-**Каркас:** [[README]] · [[operating-model]] · [[fit-points]] · [[STEP-0-FOUNDATION/overview]]
+**Каркас:** [README](../README.md) · [operating-model](../operating-model.md) · [fit-points](../fit-points.md) · [overview](../STEP-0-FOUNDATION/overview.md)
 
 ---
 

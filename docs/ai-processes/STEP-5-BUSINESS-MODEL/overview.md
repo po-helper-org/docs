@@ -17,7 +17,7 @@ tags: []
 # overview — Step 5: Business Model
 
 > **Веха Discovery · Линза: Business (Рычаги/Lever → NPV, Business Sprint) · Fit-точка: 🟥 Biz-model fit**
-> Источник: PAF [S1]–[S4]; методы — `TRADITIONAL/RB-STEP-5-BUSINESS-MODEL-VALIDATION` (index + 5.1–5.6); «почему» — `AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION` (6 инструкций). Терминология — [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: PAF [S1]–[S4]; методы — `TRADITIONAL/RB-STEP-5-BUSINESS-MODEL-VALIDATION` (index + 5.1–5.6); «почему» — `AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION` (6 инструкций). Терминология — naming_conventions.
 
 ---
 
@@ -25,7 +25,7 @@ tags: []
 
 Спроектировать и насытить **Нексус системы роста** [S1] III.1 — живой цифровой профиль бизнес-модели, в котором **NPV (Net Present Value) является вершиной метрик** [S1, S2], а не LTV/CAC как самоцель. Шаг переводит валидированную на Step 4 ценность в **математически доказанную окупаемую и масштабируемую бизнес-модель** через систему Рычагов (Lever):
 
-- **NPV** = возврат монетизируемой ценности на инвестиции; решающий критерий (LTV/CAC≥3 — лишь необходимое) [[fit-points#🟥 Biz-model fit]];
+- **NPV** = возврат монетизируемой ценности на инвестиции; решающий критерий (LTV/CAC≥3 — лишь необходимое) [fit-points](../fit-points.md);
 - **Рычаги (Lever)** = измеримые свойства Б-модели, рост NPV при инвестиции [naming_conventions]; операциональная единица Business Sprint (Рычаги/Lever → NPV [S1] VI.1);
 - **AI-COGS** = отдельный рычаг, не спрятанный в «серверах»: `AI-COGS = cost-per-token × tokens-per-user × active-users` [reformation §5.3]; контрольная точка помимо CAC/LTV [S2] III.6;
 - **Monte-Carlo** по распределениям входных параметров **заменяет ручной sensitivity ±50%** [5.5] → распределение NPV (P10/P50/P90), а не точечные сценарии.
@@ -65,7 +65,7 @@ tags: []
 ## 📥 Вход / 📤 Выход (узлы Нексуса системы роста)
 
 **Вход (из Step 4 — Value):**
-- Нексус продукта: валидированное ценностное предложение, **🟧 Need/Value Fit** пройден [[fit-points]];
+- Нексус продукта: валидированное ценностное предложение, **🟧 Need/Value Fit** пройден [fit-points](../fit-points.md);
 - Узел **mNSM** (монетизируемая NSM) из 4.6 — корневая метрика, в которую упирается каждая схема монетизации;
 - VP-node, VPC-node с CP ≥ порога stage-gate.
 
@@ -93,11 +93,11 @@ tags: []
 
 ## 🔗 Референсы
 
-**Методы (TRADITIONAL/RB-STEP-5-BUSINESS-MODEL-VALIDATION):** [[TRADITIONAL/RB-STEP-5-BUSINESS-MODEL-VALIDATION/index]] · [[5.1 Формирование гипотезы бизнес-модели]] (BMC Остервальдера, 6 паттернов БМ, Lean Canvas) · [[5.2 Схема монетизации]] (5 измерений, 3 метода ценового коридора) · [[5.3 Структура воронки потребителя]] (AARRR, Channel Mix, Aha-moment, churn) · [[5.4 Издержки цепочки создания ценности]] (7 групп, CAC/COGS/SG&A) · [[5.5 Юнит-экономика и моделирование]] (LTV/CAC, sensitivity ±50%, прямая/обратная задача) · [[5.6 Точка безубыточности, прогноз роста и фиксация]]
+**Методы (TRADITIONAL/RB-STEP-5-BUSINESS-MODEL-VALIDATION):** index · 5.1 Формирование гипотезы бизнес-модели (BMC Остервальдера, 6 паттернов БМ, Lean Canvas) · 5.2 Схема монетизации (5 измерений, 3 метода ценового коридора) · 5.3 Структура воронки потребителя (AARRR, Channel Mix, Aha-moment, churn) · 5.4 Издержки цепочки создания ценности (7 групп, CAC/COGS/SG&A) · 5.5 Юнит-экономика и моделирование (LTV/CAC, sensitivity ±50%, прямая/обратная задача) · 5.6 Точка безубыточности, прогноз роста и фиксация
 
-**«Почему» (AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION):** [[AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.1 instruction]] (BMC-генератор, Pattern Clusterer) · [[AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.2 instruction]] (проектировщик монетизации, A/B-симулятор цен, NPV-оценщик схем) · [[AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.3 instruction]] (симулятор AARRR, churn-предиктор) · [[AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.4 instruction]] (COGS-калькулятор + AI-COGS) · [[AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.5 instruction]] (NPV Monte-Carlo, ранжирование Рычагов) · [[AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.6 instruction]] (оптимизатор бизнес-Банча) · [[AI-TRANSFORMATION/reformation|reformation]] §5
+**«Почему» (AI-TRANSFORMATION/RB-STEP-5-BUSINESS-MODEL-VALIDATION):** [5.1 instruction](../../ai-transformation/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.1-instruction.md) (BMC-генератор, Pattern Clusterer) · [5.2 instruction](../../ai-transformation/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.2-instruction.md) (проектировщик монетизации, A/B-симулятор цен, NPV-оценщик схем) · [5.3 instruction](../../ai-transformation/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.3-instruction.md) (симулятор AARRR, churn-предиктор) · [5.4 instruction](../../ai-transformation/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.4-instruction.md) (COGS-калькулятор + AI-COGS) · [5.5 instruction](../../ai-transformation/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.5-instruction.md) (NPV Monte-Carlo, ранжирование Рычагов) · [5.6 instruction](../../ai-transformation/RB-STEP-5-BUSINESS-MODEL-VALIDATION/5.6-instruction.md) (оптимизатор бизнес-Банча) · [reformation](../../ai-transformation/reformation.md) §5
 
-**Каркас:** [[README]] · [[operating-model]] · [[fit-points]] · [[STEP-4-VALUE/overview]]
+**Каркас:** [README](../README.md) · [operating-model](../operating-model.md) · [fit-points](../fit-points.md) · [overview](../STEP-4-VALUE/overview.md)
 
 ---
 

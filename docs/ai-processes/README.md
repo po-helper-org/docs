@@ -29,7 +29,7 @@ tags: []
 **Три слоя фреймворка:**
 1. **Хребет (spine):** 9 вех Product Discovery — `Step 0 … Step 8`.
 2. **Движок (engine):** цикл **Product Sprint** крутится внутри каждого шага: `PULSE → SCOUT → BUNCH → PITCH → EXECUTE → HARVEST`.
-3. **Опер.модель:** [[operating-model]] — правила игры (Нексус, Кортекс, Банч, CP, роли, гвардраилы).
+3. **Опер.модель:** [operating-model](operating-model.md) — правила игры (Нексус, Кортекс, Банч, CP, роли, гвардраилы).
 
 ---
 
@@ -37,17 +37,17 @@ tags: []
 
 | Step | Веха | Что насыщаем/валидируем | RB-источник (методы) | Fit-точка (гейт) |
 |---|---|---|---|---|
-| **0** | [Foundation](STEP-0-FOUNDATION/overview) | Бутстрап AI-native опер.модели (Нексус+Кортекс+роли+Progress Pulse) | новое | — |
-| **1** | [Idea & Context](STEP-1-IDEA/overview) | BIG Idea, 3 Линзы, первые Нексусы (рынок/продукт/рост) | RB-STEP-1 | — |
-| **2** | [Customer](STEP-2-CUSTOMER/overview) | Нексус потребителя, сегменты, гипотеза mNSM | RB-STEP-2 | — |
-| **3** | [Market](STEP-3-MARKET/overview) | Нексус рынка, TAM/SAM/SOM→mNSM, Ставки (Bets); 7 типов Узлов (Force/Trend/Constant/TAM-SAM-SOM/Competitor/Gap/Bet) | RB-STEP-3 | — |
-| **4** | [Value](STEP-4-VALUE/overview) | Ценностное предложение, need/value fit | RB-STEP-4 | **🟧 Need/Value Fit** |
-| **5** | [Business Model](STEP-5-BUSINESS-MODEL/overview) | Нексус системы роста, NPV, рычаги, AI-COGS | RB-STEP-5 | 🟥 Biz-model fit |
-| **6** | [Go-to-Market](STEP-6-GO-TO-MARKET/overview) | Bale + Germination, позиционирование, каналы | RB-STEP-6 | — |
-| **7** | [Solution & PMF](STEP-7-SOLUTION-PMF/overview) | Product Sprint до PMF, прототип/MVP/Harvesting | RB-STEP-7 | **🟫 PMF** |
-| **8** | [Acquisition & PCF](STEP-8-ACQUISITION-PCF/overview) | Harvesting модели роста, дистрибуция | RB-STEP-8 | **⬛ PCF (Discovery завершён)** |
+| **0** | [Foundation](STEP-0-FOUNDATION/overview.md) | Бутстрап AI-native опер.модели (Нексус+Кортекс+роли+Progress Pulse) | новое | — |
+| **1** | [Idea & Context](STEP-1-IDEA/overview.md) | BIG Idea, 3 Линзы, первые Нексусы (рынок/продукт/рост) | RB-STEP-1 | — |
+| **2** | [Customer](STEP-2-CUSTOMER/overview.md) | Нексус потребителя, сегменты, гипотеза mNSM | RB-STEP-2 | — |
+| **3** | [Market](STEP-3-MARKET/overview.md) | Нексус рынка, TAM/SAM/SOM→mNSM, Ставки (Bets); 7 типов Узлов (Force/Trend/Constant/TAM-SAM-SOM/Competitor/Gap/Bet) | RB-STEP-3 | — |
+| **4** | [Value](STEP-4-VALUE/overview.md) | Ценностное предложение, need/value fit | RB-STEP-4 | **🟧 Need/Value Fit** |
+| **5** | [Business Model](STEP-5-BUSINESS-MODEL/overview.md) | Нексус системы роста, NPV, рычаги, AI-COGS | RB-STEP-5 | 🟥 Biz-model fit |
+| **6** | [Go-to-Market](STEP-6-GO-TO-MARKET/overview.md) | Bale + Germination, позиционирование, каналы | RB-STEP-6 | — |
+| **7** | [Solution & PMF](STEP-7-SOLUTION-PMF/overview.md) | Product Sprint до PMF, прототип/MVP/Harvesting | RB-STEP-7 | **🟫 PMF** |
+| **8** | [Acquisition & PCF](STEP-8-ACQUISITION-PCF/overview.md) | Harvesting модели роста, дистрибуция | RB-STEP-8 | **⬛ PCF (Discovery завершён)** |
 
-> Каждая fit-точка — это **Stage-Gate по Confidence Point**: пройти дальше можно только при достаточном доверии (насыщенном Нексусе). См. [[fit-points]].
+> Каждая fit-точка — это **Stage-Gate по Confidence Point**: пройти дальше можно только при достаточном доверии (насыщенном Нексусе). См. [fit-points](fit-points.md).
 
 ---
 
@@ -72,7 +72,7 @@ PULSE → SCOUT → BUNCH → PITCH → EXECUTE → HARVEST → (след. ша�
 
 ## 📖 Как пользоваться фреймворком
 
-1. **Сначала прочитай [[operating-model]]** — правила игры (Нексус, Кортекс, Банч, CP, роли, анти-workslop). Без неё шаги не поймёшь.
+1. **Сначала прочитай [operating-model](operating-model.md)** — правила игры (Нексус, Кортекс, Банч, CP, роли, анти-workslop). Без неё шаги не поймёшь.
 2. **Пройди по порядку Step 0 → Step 8.** Step 0 обязателен — без Нексуса и Кортекса остальные шаги усиливают мусор [S1] IX.
 3. **В каждом шаге** читай `overview.md` → проходи фазы Sprint по порядку → на выходе гейт (CP / fit-точка).
 4. **Гейт не пройден** → осознанный отказ или возврат (PAF: «рост контекста = рост скорости процессов, в т.ч. отказа» [S1] VI.3).
@@ -101,7 +101,7 @@ PULSE → SCOUT → BUNCH → PITCH → EXECUTE → HARVEST → (след. ша�
 | **[S3]** | [productframework.ru/skill_map](https://productframework.ru/skill_map) — карта навыков | ✅ |
 | **[S4]** | Профстандарт 06.012 (приказ Минтруда № 636н) | ✅ |
 
-**Связанные артефакты:** [[operating-model]] · [[fit-points]] · [[AI-TRANSFORMATION/reformation|reformation]] · [[AI-TRANSFORMATION/index|index]] · [[sa_documentation/naming_conventions|naming_conventions]] · [[0 КАРТА ПРОЦЕССА — Product Discovery]]
+**Связанные артефакты:** [operating-model](operating-model.md) · [fit-points](fit-points.md) · [reformation](../ai-transformation/reformation.md) · [index](../ai-transformation/index.md) · naming_conventions · 0 КАРТА ПРОЦЕССА — Product Discovery
 
 ---
 **Version:** 1.0 · **Last updated:** 2026-06-20 · **Maintained by:** AI-KORTEX

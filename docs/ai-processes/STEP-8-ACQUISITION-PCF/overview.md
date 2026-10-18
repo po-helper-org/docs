@@ -77,8 +77,8 @@ tags: ["fit-point"]
 ## 🔗 Референсы
 
 - **Методы:** `RB-STEP-8-ACQUISITION-CONFIGURATION/index` + `8.1 Гипотезы конфигурации` · `8.2 Валидация` · `8.3 Оптимизация` · `8.4 Масштабирование` · `8.5 Фиксация, скоринг и PCF`.
-- **«Почему» (PAF-надстройка):** `AI-TRANSFORMATION/RB-STEP-8-ACQUISITION-CONFIGURATION/8.0 instruction` (Stage 8 как Business Lens) · `8.1`–`8.5` + `8.ops` (Кортекс-агенты и Product Ops) · `[[AI-TRANSFORMATION/reformation|reformation]] §8`.
-- **Опер.модель:** `[[operating-model]]` · `[[fit-points#PCF]]` (⬛ — конец Step 8) · `[[sa_documentation/naming_conventions|naming_conventions]]`.
+- **«Почему» (PAF-надстройка):** `AI-TRANSFORMATION/RB-STEP-8-ACQUISITION-CONFIGURATION/8.0 instruction` (Stage 8 как Business Lens) · `8.1`–`8.5` + `8.ops` (Кортекс-агенты и Product Ops) · `[reformation](../../ai-transformation/reformation.md) §8`.
+- **Опер.модель:** `[operating-model](../operating-model.md)` · `[fit-points](../fit-points.md)` (⬛ — конец Step 8) · `naming_conventions`.
 
 ---
 
@@ -112,6 +112,6 @@ tags: ["fit-point"]
 
 ---
 
-**Назад:** `[[STEP-7-SOLUTION-PMF/overview]]` (PMF) · **Дальше:** PCF пройден → **Product Growth** (следующий фреймворк, рыночная интервенция).
+**Назад:** `[overview](../STEP-7-SOLUTION-PMF/overview.md)` (PMF) · **Дальше:** PCF пройден → **Product Growth** (следующий фреймворк, рыночная интервенция).
 
 **Version:** 1.0 · **Last updated:** 2026-06-20 · **Ground truth:** `index.md` [S1,S2], `naming_conventions.md`, `reformation.md` §8, `RB-STEP-8-ACQUISITION-CONFIGURATION/`.

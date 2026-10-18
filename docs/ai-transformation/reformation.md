@@ -17,10 +17,10 @@
 | **[S5]–[S7]** | Medium/Typical, Google Sheet Product Mindset, Miro board | ❌ недоступны (см. `index.md`, раздел «Пробелы») |
 
 **Локальный ground truth:**
-- Призма PAF: [[AI-TRANSFORMATION/index|index.md]]
-- Глоссарий терминов: [[sa_documentation/naming_conventions|naming_conventions.md]]
-- Эталон диагноза (STEP-2): [[PAF-ANALYSIS]]
-- Карта процесса: [[0 КАРТА ПРОЦЕССА — Product Discovery]]
+- Призма PAF: [index.md](index.md)
+- Глоссарий терминов: naming_conventions.md
+- Эталон диагноза (STEP-2): PAF-ANALYSIS
+- Карта процесса: 0 КАРТА ПРОЦЕССА — Product Discovery
 
 ---
 
@@ -734,7 +734,7 @@ AI-TRANSFORMATION/
 ### Соглашения об именовании
 - **Физическая структура:** по подкаталогам на стадию (зеркалит источник `RB-STEP-*`, исключает коллизию номеров — у STEP-1 внутренняя нумерация 1.x/2.x/…/6.x пересекается с нумерацией STEPs 2–8).
 - **Содержимое каждого `N.M instruction`:** Цель в PAF-оптике · Роль (Product Engineer / …) · Что делает Кортекс-агент · Что делает человек (метапознание) · Артефакт = узлы Нексуса · CP-гейт · Связь с 3PL · Анти-workslop чекпоинт · Маппинг к Skill Map/профстандарту · Связь с исходным `RB-STEP-N/N.M` (преемственность методов).
-- **Терминология:** строго по [[sa_documentation/naming_conventions|naming_conventions.md]] (запрещённые синонимы: Беклог→Банч, PM→Product Engineer, приоритизация→скаутинг, потери→риски, T-shaped→Comb-shaped, «документация»→цифровой профиль, метрики разработки→mNSM/NPV/CP).
+- **Терминология:** строго по naming_conventions.md (запрещённые синонимы: Беклог→Банч, PM→Product Engineer, приоритизация→скаутинг, потери→риски, T-shaped→Comb-shaped, «документация»→цифровой профиль, метрики разработки→mNSM/NPV/CP).
 - **Альтернатива (плоская структура):** если предпочтительнее единый список без подкаталогов, использовать схему `N.M` где N=стадия, M=подшаг по порядку (1.1–1.18 для STEP-1, 2.1–2.7, 3.1–3.6, …). Решение за владельцем.
 
 ---
@@ -795,4 +795,4 @@ AI-TRANSFORMATION/
 **Last updated:** 2026-06-20
 **Источники:** [S1]–[S4] (см. `index.md`); диагнозы по этапам — анализ файлов `RB-STEP-1 … RB-STEP-8` через 12-мерную призму PAF.
 **Maintained by:** AI-KORTEX
-**Связанные:** [[AI-TRANSFORMATION/index|index.md]] · [[sa_documentation/naming_conventions|naming_conventions.md]] · [[PAF-ANALYSIS]] · [[0 КАРТА ПРОЦЕССА — Product Discovery]]
+**Связанные:** [index.md](index.md) · naming_conventions.md · PAF-ANALYSIS · 0 КАРТА ПРОЦЕССА — Product Discovery

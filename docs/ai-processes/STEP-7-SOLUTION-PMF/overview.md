@@ -17,7 +17,7 @@ tags: ["fit-point"]
 # overview — Step 7: Solution & PMF
 
 > Веха Discovery · Линза: **Product** · Fit-точка: 🟫 PMF
-> Источник: [[operating-model]] (5 столпов, 3PL, цикл Sprint, CP, роли) · Термины — по [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: [operating-model](../operating-model.md) (5 столпов, 3PL, цикл Sprint, CP, роли) · Термины — по naming_conventions.
 > Версия Нексуса продукта: **v0.3 (из Step 4–6) → v1.0 (Stage 7, CR ≥ 80%, PMF-точка)**.
 
 ---
@@ -107,10 +107,10 @@ Step 7 = объект **Product Lens** [S1] VI.1 → ведущие роли: **
 
 ## 🔗 Референсы
 
-- **Методы:** [[RB-STEP-7-SOLUTION-VALIDATION/index]] + 7.1 (гипотезы решения/UX) · 7.2 (прототипы) · 7.3 (валидация/скоринг) · 7.4 (требования) · 7.5 (MVP) · 7.6 (аналитика/PMF).
-- **«Почему»:** [[AI-TRANSFORMATION/RB-STEP-7-SOLUTION-VALIDATION/7.1 instruction|7.1]] · [[AI-TRANSFORMATION/RB-STEP-7-SOLUTION-VALIDATION/7.2 instruction|7.2]] · [[AI-TRANSFORMATION/RB-STEP-7-SOLUTION-VALIDATION/7.3 instruction|7.3]] · [[AI-TRANSFORMATION/RB-STEP-7-SOLUTION-VALIDATION/7.4 instruction|7.4]] · [[AI-TRANSFORMATION/RB-STEP-7-SOLUTION-VALIDATION/7.5 instruction|7.5]] · [[AI-TRANSFORMATION/RB-STEP-7-SOLUTION-VALIDATION/7.6 instruction|7.6]] · [[AI-TRANSFORMATION/reformation|reformation §7]].
-- Фазы шага: [[1.pulse]] · [[2.scout]] · [[3.bunch]] · [[4.pitch]] · [[5.execute]] · [[6.harvest]].
-- Назад: [[STEP-6-GO-TO-MARKET/overview]] · Дальше: [[STEP-8-ACQUISITION-PCF/overview]] (PCF; Discovery завершён).
+- **Методы:** index + 7.1 (гипотезы решения/UX) · 7.2 (прототипы) · 7.3 (валидация/скоринг) · 7.4 (требования) · 7.5 (MVP) · 7.6 (аналитика/PMF).
+- **«Почему»:** [7.1](../../ai-transformation/RB-STEP-7-SOLUTION-VALIDATION/7.1-instruction.md) · [7.2](../../ai-transformation/RB-STEP-7-SOLUTION-VALIDATION/7.2-instruction.md) · [7.3](../../ai-transformation/RB-STEP-7-SOLUTION-VALIDATION/7.3-instruction.md) · [7.4](../../ai-transformation/RB-STEP-7-SOLUTION-VALIDATION/7.4-instruction.md) · [7.5](../../ai-transformation/RB-STEP-7-SOLUTION-VALIDATION/7.5-instruction.md) · [7.6](../../ai-transformation/RB-STEP-7-SOLUTION-VALIDATION/7.6-instruction.md) · [reformation §7](../../ai-transformation/reformation.md).
+- Фазы шага: [1.pulse](1.pulse.md) · [2.scout](2.scout.md) · [3.bunch](3.bunch.md) · [4.pitch](4.pitch.md) · [5.execute](5.execute.md) · [6.harvest](6.harvest.md).
+- Назад: [overview](../STEP-6-GO-TO-MARKET/overview.md) · Дальше: [overview](../STEP-8-ACQUISITION-PCF/overview.md) (PCF; Discovery завершён).
 
 ---
 

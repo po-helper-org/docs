@@ -17,13 +17,13 @@ tags: ["fit-point"]
 # overview — Step 4: Value
 
 > Веха Discovery · Линза: **Product (+Business)** · Fit-точка: 🟧 **Need/Value Fit**
-> Источник: PAF [S1]–[S4]; методы — `TRADITIONAL/RB-STEP-4-VALUE-VALIDATION/4.1–4.6`; «почему» — `AI-TRANSFORMATION/RB-STEP-4-VALUE-VALIDATION/4.1–4.6`. Термины — по [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: PAF [S1]–[S4]; методы — `TRADITIONAL/RB-STEP-4-VALUE-VALIDATION/4.1–4.6`; «почему» — `AI-TRANSFORMATION/RB-STEP-4-VALUE-VALIDATION/4.1–4.6`. Термины — по naming_conventions.
 
 ---
 
 ## 🎯 Цель шага в PAF-оптике
 
-Сформулировать ценностное предложение (ЦП), валидировать его у реального рынка и зафиксировать **монетизируемую ценность** как якорь всего дальнейшего процесса. Step 4 — единственный шаг, где проходит первая fit-точка Discovery — **🟧 Need/Value Fit** (см. [[fit-points#🟧 Need/Value Fit — конец Step 4 (Value)]]).
+Сформулировать ценностное предложение (ЦП), валидировать его у реального рынка и зафиксировать **монетизируемую ценность** как якорь всего дальнейшего процесса. Step 4 — единственный шаг, где проходит первая fit-точка Discovery — **🟧 Need/Value Fit** (см. [fit-points](../fit-points.md)).
 
 Парадокс шага, который держит вся команда: **реакция потребителя на оффер ≠ подтверждение ценности** [S1]. CTR, клики, заявки — это реакция на оффер (problem-solution message + цена + CTA). Ценность — то, что потребитель **реально получает** после использования; измеряется изменением поведения (повторное использование, оплата, retention), а не реакцией на рекламу. Шаг пройден, когда ЦП подтверждено **поведением**, а не словами.
 
@@ -46,7 +46,7 @@ tags: ["fit-point"]
 | **EXECUTE** | Валидация: smoke / лендинг / fake door / пилот; динамический CP | 🟩 **тяжёлая** (метод 4.3) |
 | **HARVEST** | mNSM-формулировка + дерево метрик; фиксация VP/VPC; CP-gate Need/Value Fit | 🟩 **тяжёлая** (методы 4.4–4.6) |
 
-> Файлы: [[1.pulse]] · [[2.scout]] · [[3.bunch]] · [[4.pitch]] · [[5.execute]] · [[6.harvest]].
+> Файлы: [1.pulse](1.pulse.md) · [2.scout](2.scout.md) · [3.bunch](3.bunch.md) · [4.pitch](4.pitch.md) · [5.execute](5.execute.md) · [6.harvest](6.harvest.md).
 
 ---
 
@@ -84,11 +84,11 @@ tags: ["fit-point"]
 
 **Вопрос гейта:** откликается ли рынок на ценностное предложение?
 
-**Критерии прохождения (CP-gate, см. [[fit-points#🟧 Need/Value Fit]]):**
+**Критерии прохождения (CP-gate, см. [fit-points](../fit-points.md)):**
 - Confidence Point ценностной гипотезы ≥ порога stage-gate **после** валидации (smoke/лендинг/fake door/пилот).
 - По иерархии доказательств есть сигнал уровня **«оплата/предзаказ»** или **«пилот с готовностью продолжать»** (а не только CTR/заявка).
 - Конвергенция **≥2 источников** (количественный + качественный) в одном направлении.
-- Need/value fit зафиксирован в Нексусе продукта (VP-node, VPC-node) — метод [[6.harvest]].
+- Need/value fit зафиксирован в Нексусе продукта (VP-node, VPC-node) — метод [6.harvest](6.harvest.md).
 - **★ mNSM-проверка пройдена:** NSM проверена на монетизируемость → mNSM (не vanity). [Принцип 6]
 - Context Ripeness Нексуса продукта ≥ порога (≥70%).
 
@@ -100,8 +100,8 @@ tags: ["fit-point"]
 
 - **Методы:** `TRADITIONAL/RB-STEP-4-VALUE-VALIDATION/index` + `4.1` (гипотезы ЦП) · `4.2` (первичный скоринг) · `4.3` (валидация) · `4.4` (фиксация need-value fit) · `4.5` (вторичный скоринг + NSM) · `4.6` (дерево метрик).
 - **«Почему» + Кортекс:** `AI-TRANSFORMATION/RB-STEP-4-VALUE-VALIDATION/4.1–4.6 instruction` — агенты (генерация ценностных гипотез, скоринг ICE/RICE→CP, валидатор экспериментов, фиксация в Нексус, mNSM-агент, агент-дерева метрик) и узлы (VP-node / Hypothesis-node / Experiment-node / VPC-node / mNSM-node / MetricTree-node / NPV-node).
-- **Каркас:** [[README]] · [[operating-model]] (5 столпов, 3PL, Принципы 4–6) · [[fit-points]].
-- **Смежные шаги:** [[STEP-2-CUSTOMER/overview|Step 2 Customer]] (потребность) · [[STEP-3-MARKET/overview|Step 3 Market]] (рынок/конкуренты) → **Step 4** → [[STEP-5-BUSINESS-MODEL/overview|Step 5 Business Model]] (NPV/рычаги/AI-COGS).
+- **Каркас:** [README](../README.md) · [operating-model](../operating-model.md) (5 столпов, 3PL, Принципы 4–6) · [fit-points](../fit-points.md).
+- **Смежные шаги:** [Step 2 Customer](../STEP-2-CUSTOMER/overview.md) (потребность) · [Step 3 Market](../STEP-3-MARKET/overview.md) (рынок/конкуренты) → **Step 4** → [Step 5 Business Model](../STEP-5-BUSINESS-MODEL/overview.md) (NPV/рычаги/AI-COGS).
 
 ---
 

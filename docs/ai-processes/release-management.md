@@ -17,7 +17,7 @@ tags: ["release", "scope-drift", "commitment"]
 # 🚦 Release Management — управление релизами и дрейфом объёма
 
 > Нормативное описание процесса, который реализует навык `release-guard`. Достраивает недостающее звено опер.модели: **CP-гейтинг обязательств по поставке**, а не только дискавери.
-> Терминология — по [[operating-model]] и [[fit-points]].
+> Терминология — по [operating-model](operating-model.md) и [fit-points](fit-points.md).
 
 ---
 
@@ -38,7 +38,7 @@ tags: ["release", "scope-drift", "commitment"]
 
 > **CP управляет обязательством по поставке. Обязательство нельзя давать жёстче, чем позволяет текущий Confidence Point.**
 
-Это перенос Stage-Gate с продуктовых fit-точек ([[fit-points]]) на релизные. Обязательство рождается в фазе **PITCH** спринт-цикла ([[operating-model]]), а не в переговорной с бизнесом «до всего».
+Это перенос Stage-Gate с продуктовых fit-точек ([fit-points](fit-points.md)) на релизные. Обязательство рождается в фазе **PITCH** спринт-цикла ([operating-model](operating-model.md)), а не в переговорной с бизнесом «до всего».
 
 ---
 
@@ -109,7 +109,7 @@ total_drift = demand_drift + max(0, supply_drift − buffer)
 
 ## 🔗 Связи
 
-- Вход обязательства: фаза **PITCH** [[operating-model]].
-- Гейтинг по CP: [[fit-points]] (Stage-Gate).
+- Вход обязательства: фаза **PITCH** [operating-model](operating-model.md).
+- Гейтинг по CP: [fit-points](fit-points.md) (Stage-Gate).
 - Требования эпика после baseline: навык `bft-writer` (`/bft-context-gen` …).
 - Квартальные KR, к которым привязан релиз: навык `okr-planner`.
