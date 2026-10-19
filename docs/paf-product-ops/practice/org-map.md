@@ -21,7 +21,7 @@
 | Отчёты спринта и бизнес-отчёт, чат ИИ-агента | `poh-widget-sprint-observe`, `poh-widget-sprint-business`, `poh-sprint-agent` |
 | Трекер, требования | `poh-widget-jira`, `poh-widget-bft` |
 | Почта и календарь | `poh-mail-core`, `poh-widget-mail`, `poh-widget-calendar` |
-| Каналы связи и лента | `comunager-hub`, `poh-widget-news`, коннекторы мессенджеров (`poh-widget-messenger-connector`, `poh-widget-telegram-connector`, `poh-widget-mtslink-room`) |
+| Каналы связи и лента | `comunager-hub`, `poh-widget-news`, коннекторы мессенджеров (`poh-widget-messenger-connector`, `poh-widget-telegram-connector`, `poh-widget-corp-chat-room`) |
 | Созвоны | `poh-widget-meet` |
 | Платформа виджетов и доступ | `poh-widget-manager`, `corp-link` |
 | Поддержка клиентов | `poh-support-desk` |
@@ -39,8 +39,8 @@
 | `poh-helper` | Монолит-предшественник; разнесён по навыкам и виджетам (не всё перенесено — [расхождения](gaps.md)) |
 | `poh-news`, `poh-feed-poc` | Рабочая лента в `comunager-hub` и `poh-widget-news` |
 | `poh-po-task`, `poh-mob-commands` | Голосовая заметка и бот календаря в Инбоксе |
-| `mts-vpn` | Подключение VPN выполняет отдельный киоск на сервере |
-| `sprint-gds`, `sprint-registry` | `poh-widget-sprint-observe`, `poh-sprint-agent` |
+| `corp-vpn` | Подключение VPN выполняет отдельный киоск на сервере |
+| `sprint-team-a`, `sprint-registry` | `poh-widget-sprint-observe`, `poh-sprint-agent` |
 | `poh-scheduller-archive-private` | `poh-widget-calendar` |
 | `poh-focus-mode-plugin`, `dsh-communication-plugin` | Платформа DeepSeek Harness вытеснена агентами Hermes и виджетами Element |
 
