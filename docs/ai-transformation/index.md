@@ -369,4 +369,4 @@ PAF-спринт — не единый поток, а «сезоны» (асин
 ## 🔗 Связанные артефакты
 
 - Провенанс источников: `sources/S5_medium.md` (разбор paywall-источника S5), `sa_documentation/naming_conventions.md` (глоссарий PAF).
-- Существующие ноты: [[1.0 Базовые концепции]] · [[1.1 Нексус Рынка]] · [[1.2 Нексус Продукта]] · [[1.3 Нексус Роста]] · [[2.1 Linza Strategy]] · [[2.2 Linza Business]] · [[2.3 Linza Product]] · [[3.2 Confidence Points]] · [[3.3 AI Bunch Formation]] · [[6.1 Pitching of Trust]]
+- Существующие ноты: 1.0 Базовые концепции · 1.1 Нексус Рынка · 1.2 Нексус Продукта · 1.3 Нексус Роста · 2.1 Linza Strategy · 2.2 Linza Business · 2.3 Linza Product · 3.2 Confidence Points · 3.3 AI Bunch Formation · 6.1 Pitching of Trust

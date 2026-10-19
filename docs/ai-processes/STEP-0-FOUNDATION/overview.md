@@ -17,7 +17,7 @@ tags: []
 # Step 0 — Foundation: бутстрап AI-Native операционной модели
 
 > **Особый шаг.** Step 0 — это НЕ 6-фазный цикл Product Sprint. Это **разовый бутстрап** операционной модели PAF перед любым Product Discovery. Без него «остальные шаги усиливают мусор» [S1] Часть IX. Здесь закладываются Нексус + Кортекс + роли + Progress Pulse — четыре подшага, на которых стоят шаги 1–8.
-> Источник: [[operating-model]] (5 столпов, 3PL, роли, гвардраилы). Термины — по [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: [operating-model](../operating-model.md) (5 столпов, 3PL, роли, гвардраилы). Термины — по naming_conventions.
 
 ---
 
@@ -104,7 +104,7 @@ Step 0 не имеет fit-точки (гейтов) — это не discovery, 
 
 ## 🛡️ Анти-workslop
 
-- **Не «документация»** — Нексус = живой цифровой профиль, не статичный документ [S2] III.5, [[operating-model]] «Запрещённые синонимы».
+- **Не «документация»** — Нексус = живой цифровой профиль, не статичный документ [S2] III.5, [operating-model](../operating-model.md) «Запрещённые синонимы».
 - **Не «Кортекс = один большой промпт»** — Кортекс = агенты + RAG + интеграции + промпты [S1] IX.
 - **Не начинать с Кортекса** — сначала Нексус (Context Ripeness), потом Кортекс [S1] IX.
 - **Не собирать Беклог** — Банч формируется из текущего состояния, в моменте [S1] Принцип 1.
@@ -114,13 +114,13 @@ Step 0 не имеет fit-точки (гейтов) — это не discovery, 
 
 ## 🔗 Связи
 
-- [[README]] — хребет (9 шагов); Step 0 = веха Foundation.
-- [[operating-model]] — правила игры (5 столпов, 3PL, роли, гвардраилы); **главный источник этого шага**.
-- [[fit-points]] — гейты (Step 0 гейта не имеет; первый гейт — Need/Value Fit в конце Step 4).
-- [[AI-TRANSFORMATION/index|index]] — теория PAF [S1]–[S4], особенно Часть IX (практические следствия).
-- [[sa_documentation/naming_conventions|naming_conventions]] — глоссарий + запрещённые синонимы.
-- Подшаги: [[1.nexus-setup]] · [[2.cortex-setup]] · [[3.roles]] · [[4.progress-pulse]].
-- Далее: [[Step 1 — Idea & Context|STEP-1-IDEA/overview]] — BIG Idea, 3 Линзы, первые насыщения Нексусов.
+- [README](../README.md) — хребет (9 шагов); Step 0 = веха Foundation.
+- [operating-model](../operating-model.md) — правила игры (5 столпов, 3PL, роли, гвардраилы); **главный источник этого шага**.
+- [fit-points](../fit-points.md) — гейты (Step 0 гейта не имеет; первый гейт — Need/Value Fit в конце Step 4).
+- [index](../../ai-transformation/index.md) — теория PAF [S1]–[S4], особенно Часть IX (практические следствия).
+- naming_conventions — глоссарий + запрещённые синонимы.
+- Подшаги: [1.nexus-setup](1.nexus-setup.md) · [2.cortex-setup](2.cortex-setup.md) · [3.roles](3.roles.md) · [4.progress-pulse](4.progress-pulse.md).
+- Далее: STEP-1-IDEA/overview — BIG Idea, 3 Линзы, первые насыщения Нексусов.
 
 ---
 **Version:** 1.0 · **Last updated:** 2026-06-20 · **Maintained by:** AI-KORTEX

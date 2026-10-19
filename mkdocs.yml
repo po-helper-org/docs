@@ -5,8 +5,8 @@ site_description: >-
   Исполняемый StepByStep-фреймворк продуктовой команды нового поколения.
 site_author: Po-helper / PAF (Тихомиров С.)
 copyright: >-
-  Материалы AI-Трансформации (PAF) — CC BY-SA 4.0, автор Тихомиров Сергей.
-  Остальное — MIT.
+  Материалы сайта — адаптация Product Architecture Framework (автор Тихомиров Сергей),
+  CC BY-SA 4.0; не является официальной версией PAF. Конфигурация сайта — MIT.
 
 repo_url: https://github.com/po-helper-org/docs
 repo_name: po-helper-org/docs

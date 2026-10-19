@@ -1,0 +1,16 @@
+title: Практика в организации
+nav:
+  - index.md
+  - promises.md
+  - agent-board.md
+  - plan-confirm-reconcile.md
+  - autonomy-and-trust.md
+  - morning-pipeline.md
+  - client-support.md
+  - mail-and-feed.md
+  - observability.md
+  - decisions-and-oss.md
+  - research-as-investment.md
+  - production-contour.md
+  - org-map.md
+  - gaps.md

@@ -17,7 +17,7 @@ tags: []
 # ⚙️ Operating Model — правила игры AI-Native продуктовой команды (PAF)
 
 > Единая операционная модель, на которой стоят **все 9 шагов** AI-PROCESSES. Прочитай ОБЯЗАТЕЛЬНО перед шагами.
-> Источник: PAF [S1]–[S4]. Терминология — строго по [[sa_documentation/naming_conventions|naming_conventions]].
+> Источник: PAF [S1]–[S4]. Терминология — строго по naming_conventions.
 
 ---
 
@@ -45,7 +45,7 @@ tags: []
 - **Растёт** по stage-gate и при появлении информации, снижающей неопределённость (колесо Итамара Гилада, ICE/RICE).
 - **Падает** при срабатывании рисков/отклонениях (Кортекс/инженер).
 - Включает **оценку стоимости риска**: «сколько ещё потратим ресурсов при таком уровне рисков?».
-- CP = **критерий прохождения гейтов** ([[fit-points]]) и **осознанного отказа**.
+- CP = **критерий прохождения гейтов** ([fit-points](fit-points.md)) и **осознанного отказа**.
 
 ### 5. Цикл Product Sprint — повторяющийся движок [S1] VI.4–VI.5
 PAF-спринт — не единый поток, а асинхронные «сезоны». **6 фаз**, которые крутятся в каждом шаге:
@@ -140,7 +140,7 @@ PAF-спринт — не единый поток, а асинхронные «�
 
 6 секторов навыков × 3 уровня (junior / middle-senior / head-CPO): ① Discovery & Researches · ② Value & Solution Design · ③ Development & Delivery · ④ Growth & Experiments · ⑤ Product Marketing · ⑥ Sales & Economics.
 
-Профстандарт 06.012: **A** (ассистент) · **B** (Product Engineer) · **C** (Portfolio Manager) · **D** (CPO). Маппинг每个 шага — в его `overview.md`.
+Профстандарт 06.012: **A** (ассистент) · **B** (Product Engineer) · **C** (Portfolio Manager) · **D** (CPO). Маппинг каждого шага — в его `overview.md`.
 
 ---
 
@@ -157,4 +157,4 @@ PAF-спринт — не единый поток, а асинхронные «�
 | Метрики/скорость разработки | **mNSM / NPV / CP** | [S1] |
 
 ---
-**Связанные:** [[README]] · [[fit-points]] · [[sa_documentation/naming_conventions|naming_conventions]] · [[AI-TRANSFORMATION/index|index]]
+**Связанные:** [README](README.md) · [fit-points](fit-points.md) · naming_conventions · [index](../ai-transformation/index.md)

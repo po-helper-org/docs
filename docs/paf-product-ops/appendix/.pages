@@ -1,0 +1,9 @@
+title: Приложения
+nav:
+  - index.md
+  - ladder.md
+  - gates.md
+  - decay.md
+  - files.md
+  - commands.md
+  - sources.md
