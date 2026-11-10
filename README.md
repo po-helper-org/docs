@@ -13,6 +13,7 @@
 | `docs/ai-processes/` | AI-Native фреймворк Product Discovery: 9 вех (Step 0…8) × движок Product Sprint + опер-модель и fit-точки |
 | `docs/ai-transformation/` | Принципы AI-Native команды по PAF (Тихомиров С.), источники `[S1]–[S7]` |
 | `po-methodology/` | Исходная редакция методологии в Word |
+| `guide/` | **PDF-гайд для руководителей** «ИИ-агенты в управлении»: исходники, вёрстка и готовый файл `guide/dist/ai-agents-leaders-guide.pdf` |
 
 ## Локальный запуск
 
