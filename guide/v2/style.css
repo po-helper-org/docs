@@ -1,0 +1,101 @@
+/* Гайд v2. Визуальная система по образцу аналитических отчётов Cloud.ru:
+   плоская монохромная вёрстка, серые плашки-тезисы, один акцентный цвет,
+   светлые крупные заголовки. Шрифт Onest (SIL OFL) — открытая замена фирменной гарнитуры. */
+
+@font-face { font-family: Onest; src: url(fonts/Onest-300.ttf); font-weight: 300; }
+@font-face { font-family: Onest; src: url(fonts/Onest-400.ttf); font-weight: 400; }
+@font-face { font-family: Onest; src: url(fonts/Onest-500.ttf); font-weight: 500; }
+@font-face { font-family: Onest; src: url(fonts/Onest-700.ttf); font-weight: 700; }
+
+:root {
+  --ink: #222222;      /* основной текст, тёмные страницы */
+  --panel: #f5f5f5;    /* плашки-тезисы, ячейки таблиц */
+  --rule: #e3e3e3;     /* остаток полос диаграмм, линии */
+  --muted: #6f6f6f;    /* подписи, источники */
+  --accent: #14b8a6;   /* единственный акцент: маркеры, полосы диаграмм */
+}
+
+@page {
+  size: A4;
+  margin: 20mm 19mm 19mm 20mm;
+  @bottom-right { content: counter(page); font: 400 7.5pt Onest; color: var(--ink); }
+  @bottom-left { content: string(chapter); font: 400 6.8pt Onest; color: #9a9a9a; letter-spacing: 0.08em; text-transform: uppercase; }
+}
+
+html { font-family: Onest, sans-serif; font-size: 10pt; line-height: 1.42; color: var(--ink); letter-spacing: 0.012em; }
+body { margin: 0; }
+p { margin: 0 0 1.05em 0; hyphens: auto; orphans: 3; widows: 3; }
+strong, b { font-weight: 700; }
+
+/* Заголовок главы: светлый, крупный, в две строки — как у разделов отчёта */
+.kicker { font-size: 7.5pt; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 3mm 0; }
+h1 { font-weight: 300; font-size: 26pt; line-height: 1.08; letter-spacing: 0.005em; margin: 0 0 9mm 0; string-set: chapter attr(data-short); }
+h1 + .lead, .lead { font-size: 10.6pt; line-height: 1.45; margin-bottom: 7mm; }
+/* Подзаголовок внутри главы: жирный, той же высоты, что текст */
+h3 { font-weight: 700; font-size: 10.4pt; margin: 8mm 0 3.5mm 0; page-break-after: avoid; }
+h4 { font-weight: 700; font-size: 9.6pt; margin: 5mm 0 2mm 0; page-break-after: avoid; }
+
+/* Плашка-тезис: серый фон, текст с внутренним отступом слева */
+.thesis { background: var(--panel); padding: 5mm 8mm 4mm 14mm; margin: 2mm 0 8mm 0; page-break-inside: avoid; }
+.thesis p:last-child { margin-bottom: 0.6em; }
+
+/* Маркированный список в плашке: квадратные маркеры акцентного цвета */
+.listbox { background: var(--panel); padding: 4.5mm 8mm 2.5mm 9mm; margin: 2mm 0 8mm 0; page-break-inside: avoid; }
+ul { list-style: none; padding-left: 0; margin: 0 0 1em 0; }
+ul li { position: relative; padding-left: 7mm; margin: 0 0 2.6mm 0; }
+ul li::before { content: ""; position: absolute; left: 0; top: 1.25mm; width: 2.2mm; height: 2.2mm; background: var(--accent); }
+ol { padding-left: 6mm; margin: 0 0 1em 0; }
+ol li { margin: 0 0 2mm 0; padding-left: 1mm; }
+
+/* Цитата: «аватар» слева, серый «пузырь» справа, подпись под аватаром */
+.quote { display: flex; align-items: flex-start; margin: 0 0 9mm 0; page-break-inside: avoid; }
+.quote .who { width: 30mm; flex: none; margin-right: 8mm; }
+.quote .avatar { width: 30mm; height: 33mm; background: var(--panel); display: flex; align-items: center; justify-content: center;
+  font-size: 22pt; font-weight: 300; color: var(--accent); }
+.quote .name { font-size: 7pt; font-weight: 700; margin-top: 2.5mm; line-height: 1.3; }
+.quote .role { font-size: 6.6pt; color: var(--ink); line-height: 1.3; }
+.quote .bubble { position: relative; background: var(--panel); padding: 5mm 9mm 5mm 9mm; flex: 1; font-size: 9.8pt; line-height: 1.42; }
+.quote .bubble::before { content: ""; position: absolute; left: -3.2mm; top: 7mm; border-top: 3.2mm solid transparent; border-bottom: 3.2mm solid transparent; border-right: 3.2mm solid var(--panel); }
+.quote .bubble p { margin: 0; }
+
+/* Сетка нумерованных карточек 2×2 */
+.cards { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 2mm 0 8mm 0; page-break-inside: avoid; }
+.cards .card { width: 49.4%; box-sizing: border-box; background: var(--panel); padding: 3.5mm 4mm 4mm 4mm; margin-bottom: 1.3%; min-height: 31mm; }
+.cards .n { display: inline-block; background: white; font-weight: 700; font-size: 9pt; width: 7mm; height: 7mm; line-height: 7mm; text-align: center; margin-bottom: 5mm; }
+.cards .t { font-weight: 700; display: block; }
+.cards .d { display: block; font-size: 9pt; }
+
+/* Таблица: серые ячейки, белые промежутки */
+table { width: 100%; border-collapse: separate; border-spacing: 1.2mm; margin: 1mm -1.2mm 2mm -1.2mm; font-size: 8.2pt; line-height: 1.35; page-break-inside: avoid; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; }
+th { background: var(--panel); font-weight: 400; font-size: 7.4pt; color: var(--ink); text-align: left; padding: 2.4mm 3mm; vertical-align: bottom; }
+td { background: var(--panel); padding: 2.4mm 3mm; vertical-align: top; }
+td:first-child { font-weight: 700; }
+td.c, th.c { text-align: center; }
+
+/* Подписи рисунков и таблиц */
+.caption { font-size: 8pt; color: var(--muted); margin: 2mm 0 8mm 0; }
+
+/* Горизонтальная столбчатая диаграмма */
+.bars { margin: 4mm 0 2mm 0; page-break-inside: avoid; }
+.bar { display: flex; align-items: center; margin-bottom: 3mm; }
+.bar .lbl { width: 62mm; flex: none; text-align: right; padding-right: 4mm; font-size: 7.8pt; line-height: 1.25; }
+.bar .track { flex: 1; height: 4.4mm; background: var(--rule); display: flex; }
+.bar .fill { background: var(--accent); height: 4.4mm; font-size: 6.6pt; font-weight: 700; text-align: center; line-height: 4.4mm; color: var(--ink); }
+.bar .rest { font-size: 6.6pt; font-weight: 700; flex: 1; text-align: center; line-height: 4.4mm; }
+.legend { font-size: 7.6pt; margin: 3mm 0 0 66mm; }
+.legend span { display: inline-block; width: 3mm; height: 3mm; vertical-align: -0.4mm; margin-right: 1.5mm; }
+
+/* Диалог */
+.dialog p { margin: 0 0 1.6mm 0; }
+.dialog .t { color: var(--muted); }
+
+/* Переход к следующей главе — приём Shape Up */
+.next { border-top: 0.6pt solid var(--rule); padding-top: 4mm; margin-top: 10mm; color: var(--muted); font-size: 9pt; }
+
+/* Источники главы */
+.sources { font-size: 7.4pt; color: var(--muted); margin-top: 6mm; }
+.sources ol { padding-left: 5mm; }
+sup.ref { font-size: 0.7em; }
+a { color: var(--ink); text-decoration: none; }
