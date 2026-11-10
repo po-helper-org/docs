@@ -66,7 +66,7 @@ ol li { margin: 0 0 2mm 0; padding-left: 1mm; }
 .cards .d { display: block; font-size: 9pt; }
 
 /* Таблица: серые ячейки, белые промежутки */
-table { width: 100%; border-collapse: separate; border-spacing: 1.2mm; margin: 1mm -1.2mm 2mm -1.2mm; font-size: 8.2pt; line-height: 1.35; page-break-inside: avoid; }
+table { width: 100%; border-collapse: separate; border-spacing: 1.2mm; margin: 1mm -1.2mm 2mm -1.2mm; font-size: 8.2pt; line-height: 1.35; page-break-inside: auto; }
 thead { display: table-header-group; }
 tr { page-break-inside: avoid; }
 th { background: var(--panel); font-weight: 400; font-size: 7.4pt; color: var(--ink); text-align: left; padding: 2.4mm 3mm; vertical-align: bottom; }
@@ -99,3 +99,9 @@ td.c, th.c { text-align: center; }
 .sources ol { padding-left: 5mm; }
 sup.ref { font-size: 0.7em; }
 a { color: var(--ink); text-decoration: none; }
+
+/* Код и шаблоны файлов */
+pre { font-family: "DejaVu Sans Mono", monospace; font-size: 7.4pt; line-height: 1.5; background: var(--panel); padding: 4mm 6mm 4mm 14mm;
+  margin: 2mm 0 7mm 0; white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; letter-spacing: 0; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 0.84em; letter-spacing: 0; background: var(--panel); padding: 0 0.8mm; }
+pre code { background: none; padding: 0; font-size: inherit; }
