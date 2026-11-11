@@ -101,3 +101,18 @@ pre { font-family: "DejaVu Sans Mono", monospace; font-size: 7.4pt; line-height:
   margin: 2mm 0 6mm 0; white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; }
 code { font-family: "DejaVu Sans Mono", monospace; font-size: 0.84em; background: var(--panel); padding: 0 1mm; }
 pre code { background: none; padding: 0; font-size: inherit; }
+
+/* Разделитель части: белая страница, номер части и название, без декора */
+.partpage { page-break-before: always; page-break-after: always; padding-top: 70mm; }
+.partpage .partnum { font-size: 10pt; color: var(--muted); margin-bottom: 4mm; }
+.partpage h1 { font-size: 34pt; margin-bottom: 12mm; string-set: chapter attr(data-short); }
+.partpage p { max-width: 130mm; }
+.partpage ol { margin-top: 8mm; color: var(--ink); }
+/* Каждая глава — с новой страницы */
+.kicker { page-break-before: always; }
+.partpage + .kicker { page-break-before: auto; }
+
+/* Конец главы не отрывается: мост и источники держатся вместе с последним абзацем */
+.next { page-break-before: avoid; page-break-inside: avoid; }
+.sources { page-break-before: avoid; page-break-inside: avoid; }
+.sources ol li { page-break-inside: avoid; }

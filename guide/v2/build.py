@@ -2,7 +2,7 @@
 """Сборка гайда v2 (тестовая глава): Markdown → HTML (pandoc) → PDF (WeasyPrint).
 
     python3 guide/v2/build.py            # все файлы из src/ → dist/guide-v2.pdf
-    python3 guide/v2/build.py 07         # только файлы, чьё имя начинается с 07
+    python3 guide/v2/build.py p1         # только часть I: файлы, чьё имя начинается с p1
 """
 from __future__ import annotations
 
@@ -42,7 +42,7 @@ def main() -> None:
                           input=text, capture_output=True, text=True, check=True).stdout
     css = (ROOT / "style.css").read_text(encoding="utf-8")
     doc = f'<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>ИИ-агенты в управлении</title><style>{css}</style></head><body>{body}</body></html>'
-    out = ROOT / "dist" / (f"test-chapter-{prefix}.pdf" if prefix else "guide-v2.pdf")
+    out = ROOT / "dist" / (f"{prefix}.pdf" if prefix else "guide-v2.pdf")
     out.parent.mkdir(exist_ok=True)
     (out.with_suffix(".html")).write_text(doc, encoding="utf-8")
     from weasyprint import HTML
