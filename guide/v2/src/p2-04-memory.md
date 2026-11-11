@@ -104,9 +104,9 @@ node_type: dependency
 owner: финансы, владелец системы выплат
 channel: email                # канал, по которому приходят подтверждения
 change_rate: high             # меняется чаще раза в месяц, срок годности 21 день
-updated: 2026-10-17           # дата самого артефакта, а не записи
+updated: 2026-10-16           # дата самого артефакта, а не записи
 cp: 6
-sources: [2026-10-17-test-api-vyplaty.md]
+sources: [2026-10-16-test-api-vyplaty.md]
 status: accepted              # запись агента — draft, пока человек её не примет
 ```
 
