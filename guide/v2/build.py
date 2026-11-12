@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Сборка гайда v2 (тестовая глава): Markdown → HTML (pandoc) → PDF (WeasyPrint).
+"""Сборка книги «ИИ-агенты в управлении»: Markdown → HTML (pandoc) → PDF (WeasyPrint).
 
-    python3 guide/v2/build.py            # все файлы из src/ → dist/guide-v2.pdf
+    python3 guide/v2/build.py            # вся книга → dist/ai-agents-v-upravlenii.pdf
     python3 guide/v2/build.py p1         # только часть I: файлы, чьё имя начинается с p1
 """
 from __future__ import annotations
@@ -30,20 +30,34 @@ def typograph(text: str) -> str:
 
 
 TITLE = "ИИ-агенты в управлении"
-SUBTITLE = "Практическое руководство для руководителей: от личной эффективности до трансформации департамента"
+SUBTITLE = "Практическое пособие для руководителей: от личной эффективности до трансформации департамента"
 AUTHOR = "По материалам Product Architecture Framework (С. Тихомиров) и PAF Product Ops; CC BY-SA 4.0"
 BOOK = "ai-agents-v-upravlenii.pdf"
+EDITION = "Издание 1.0, ноябрь 2026"
+COMPILER = ""  # имя составителя или издателя для выходных данных; пусто — строка не печатается
 
 
 def cover() -> str:
     bars = "".join(f'<div style="height:{(n - 1) / 8 * 100:.1f}%"><span>{n}</span></div>' for n in range(2, 10))
     return f"""<section class="cover">
-<div class="cover-top">Руководство для руководителей</div>
+<div class="cover-top">Практическое пособие для руководителей</div>
 <div class="cover-title">ИИ-агенты<br>в управлении</div>
 <div class="cover-sub">От личной эффективности до трансформации департамента</div>
 <div class="cover-ladder">{bars}</div>
 <div class="cover-ladder-caption">Лестница доказательств: уверенность в обещании от 2 до 9</div>
 <div class="cover-bottom"><span>По материалам Product Architecture Framework и PAF Product Ops</span><span>2026 · CC BY-SA 4.0</span></div>
+</section>"""
+
+
+def imprint() -> str:
+    who = f"<p>Составитель: {COMPILER}.</p>" if COMPILER else ""
+    return f"""<section class="imprint">
+<p class="imprint-title">{TITLE}. Практическое пособие для руководителей</p>
+<p>{EDITION}.</p>{who}
+<p>Книга — производное произведение от Product Architecture Framework (автор — Сергей Тихомиров, productframework.ru) и его адаптации PAF Product Ops для корпоративного PO (А. Ишманов, po-helper-org.github.io/docs). Книга не является официальной версией PAF.</p>
+<p>Текст распространяется на условиях лицензии Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), creativecommons.org/licenses/by-sa/4.0/deed.ru. Книгу можно копировать, распространять и переделывать, в том числе в коммерческих целях, при указании авторства, ссылки на лицензию и распространении производных материалов на тех же условиях. Список изменений относительно исходных материалов — в приложении G.</p>
+<p>Компании, люди, системы, даты и числа сквозного примера вымышлены и служат иллюстрацией. Ориентиры сроков, долей и порогов взяты из практики и требуют проверки на данных своей организации. Описанные инструменты и их возможности меняются быстро; перед подключением агента к рабочим системам проверьте требования к безопасности и обработке данных, действующие в компании. Книга не заменяет юридическую консультацию.</p>
+<p>Шрифт Onest — SIL Open Font License 1.1.</p>
 </section>"""
 
 
@@ -74,7 +88,7 @@ def main() -> None:
     body = subprocess.run(["pandoc", "-f", "markdown+smart", "-t", "html5", "--wrap=none"],
                           input=text, capture_output=True, text=True, check=True).stdout
     css = (ROOT / "style.css").read_text(encoding="utf-8")
-    front = "" if prefix else cover() + toc(body)
+    front = "" if prefix else cover() + imprint() + toc(body)
     doc = (f'<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>{TITLE}</title>'
            f'<meta name="author" content="{AUTHOR}"><meta name="description" content="{SUBTITLE}">'
            f'<style>{css}</style></head><body>{front}{body}</body></html>')
