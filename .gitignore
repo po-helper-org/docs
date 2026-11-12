@@ -3,3 +3,5 @@ site/
 __pycache__/
 *.pyc
 .DS_Store
+guide/dist/guide.html
+guide/v2/dist/*.html

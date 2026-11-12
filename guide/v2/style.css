@@ -1,0 +1,166 @@
+/* Гайд v2. Визуальная система по образцу аналитических отчётов Cloud.ru:
+   плоская монохромная вёрстка, серые ячейки, один акцентный цвет, светлые крупные заголовки.
+   Шрифт Onest (SIL OFL) — открытая замена фирменной гарнитуры.
+   Проверено по чек-листу unslop (github.com/heydamir/unslop, CC BY 4.0, Damir Sokolovsky):
+   без капса с разрядкой, веса 300/400/500/600, отступы по шкале, одна плашка-тезис на главу. */
+
+@font-face { font-family: Onest; src: url(fonts/Onest-300.ttf); font-weight: 300; }
+@font-face { font-family: Onest; src: url(fonts/Onest-400.ttf); font-weight: 400; }
+@font-face { font-family: Onest; src: url(fonts/Onest-500.ttf); font-weight: 500; }
+@font-face { font-family: Onest; src: url(fonts/Onest-600.ttf); font-weight: 600; }
+
+/* Шкала отступов, мм: 1 · 2 · 3 · 4 · 6 · 8 · 12 · 16. Других значений в макете нет. */
+:root {
+  --ink: #222222;      /* основной текст */
+  --panel: #f5f5f5;    /* ячейки таблиц, карточки, единственная плашка-тезис главы */
+  --rule: #e3e3e3;     /* остаток полос диаграмм, линии */
+  --muted: #6f6f6f;    /* подписи, источники, колонтитул */
+  --accent: #14b8a6;   /* единственный акцент: маркеры списков, полосы диаграмм */
+}
+
+@page {
+  size: A4;
+  margin: 20mm 19mm 19mm 20mm;
+  @bottom-right { content: counter(page); font: 400 7.5pt Onest; color: var(--muted); font-variant-numeric: tabular-nums; }
+  @bottom-left { content: string(chapter); font: 400 7.5pt Onest; color: var(--muted); }
+}
+
+html { font-family: Onest, sans-serif; font-size: 10pt; line-height: 1.42; color: var(--ink); }
+body { margin: 0; }
+p { margin: 0 0 3mm 0; hyphens: auto; orphans: 3; widows: 3; }
+strong, b { font-weight: 600; }
+
+/* Заголовок главы: светлый, крупный, как у разделов отчёта. Над ним — номер главы обычным регистром */
+.kicker { font-size: 9pt; color: var(--muted); margin: 0 0 2mm 0; }
+.kicker p { margin: 0; }
+h1 { font-weight: 300; font-size: 26pt; line-height: 1.08; margin: 0 0 8mm 0; string-set: chapter attr(data-short); }
+/* Подзаголовок: размер текста, насыщенность 600 */
+h3 { font-weight: 600; font-size: 10.5pt; margin: 8mm 0 3mm 0; page-break-after: avoid; }
+
+/* Плашка-тезис: одна на главу, для главного вывода */
+.thesis { background: var(--panel); padding: 4mm 8mm 3mm 12mm; margin: 2mm 0 8mm 0; page-break-inside: avoid; }
+.thesis p:last-child { margin-bottom: 1mm; }
+
+/* Списки: квадратные маркеры акцентного цвета, без плашки */
+ul { list-style: none; padding-left: 0; margin: 0 0 4mm 0; }
+ul li { position: relative; padding-left: 6mm; margin: 0 0 2mm 0; }
+ul li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 2mm; height: 2mm; background: var(--accent); }
+ol { padding-left: 6mm; margin: 0 0 4mm 0; }
+ol li { margin: 0 0 2mm 0; padding-left: 1mm; }
+
+/* Цитата эксперта — только с реальным человеком, его фото и согласием. Без них не используется */
+.quote { display: flex; align-items: flex-start; margin: 0 0 8mm 0; page-break-inside: avoid; }
+.quote .who { width: 30mm; flex: none; margin-right: 8mm; }
+.quote .photo { width: 30mm; height: 32mm; object-fit: cover; }
+.quote .name { font-size: 7.5pt; font-weight: 600; margin-top: 2mm; line-height: 1.3; }
+.quote .role { font-size: 7pt; line-height: 1.3; }
+.quote .bubble { position: relative; background: var(--panel); padding: 4mm 8mm; flex: 1; line-height: 1.42; }
+.quote .bubble::before { content: ""; position: absolute; left: -3mm; top: 6mm; border-top: 3mm solid transparent; border-bottom: 3mm solid transparent; border-right: 3mm solid var(--panel); }
+.quote .bubble p { margin: 0; }
+
+/* Карточки 2×2 — для шагов, у которых есть порядок */
+.cards { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 2mm 0 8mm 0; page-break-inside: avoid; }
+.cards .card { width: 49.3%; box-sizing: border-box; background: var(--panel); padding: 4mm; margin-bottom: 1.4%; }
+.cards .n { display: block; font-size: 9pt; color: var(--muted); margin-bottom: 2mm; font-variant-numeric: tabular-nums; }
+.cards .t { font-weight: 600; display: block; margin-bottom: 1mm; }
+.cards .d { display: block; font-size: 9pt; }
+
+/* Таблица: серые ячейки, белые промежутки, без линий */
+table { width: 100%; border-collapse: separate; border-spacing: 1mm; margin: 1mm -1mm 2mm -1mm; font-size: 8.4pt; line-height: 1.35; page-break-inside: auto; font-variant-numeric: tabular-nums; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; }
+th { background: var(--panel); font-weight: 400; font-size: 7.5pt; color: var(--muted); text-align: left; padding: 2mm 3mm; vertical-align: bottom; }
+td { background: var(--panel); padding: 2mm 3mm; vertical-align: top; }
+td.c, th.c { text-align: center; }
+tr.total td { font-weight: 600; }
+
+/* Подписи рисунков и таблиц */
+.caption { font-size: 8pt; color: var(--muted); margin: 2mm 0 8mm 0; }
+
+/* Горизонтальная столбчатая диаграмма: заливка акцентом, остаток серым */
+.bars { margin: 4mm 0 2mm 0; page-break-inside: avoid; }
+.bar { display: flex; align-items: center; margin-bottom: 3mm; }
+.bar .lbl { width: 62mm; flex: none; text-align: right; padding-right: 4mm; font-size: 8pt; line-height: 1.25; }
+.bar .track { flex: 1; height: 4mm; background: var(--rule); display: flex; }
+.bar .fill { background: var(--accent); height: 4mm; font-size: 7pt; font-weight: 500; text-align: center; line-height: 4mm; font-variant-numeric: tabular-nums; }
+
+/* Диалог */
+.dialog p { margin: 0 0 1mm 0; }
+
+/* Мост к следующей главе — приём Shape Up */
+.next { border-top: 0.5pt solid var(--rule); padding-top: 4mm; margin-top: 12mm; color: var(--muted); font-size: 9pt; }
+
+/* Источники главы */
+.sources { font-size: 7.5pt; color: var(--muted); margin-top: 6mm; }
+.sources p { margin-bottom: 1mm; }
+.sources ol { padding-left: 4mm; }
+a { color: var(--ink); text-decoration: none; }
+
+/* Код и шаблоны файлов */
+pre { font-family: "DejaVu Sans Mono", monospace; font-size: 7.4pt; line-height: 1.5; background: var(--panel); padding: 4mm 6mm 4mm 12mm;
+  margin: 2mm 0 6mm 0; white-space: pre-wrap; word-break: break-all; page-break-inside: avoid; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 0.84em; background: var(--panel); padding: 0 1mm; }
+pre code { background: none; padding: 0; font-size: inherit; }
+
+/* Разделитель части: белая страница, номер части и название, без декора */
+.partpage { page-break-before: always; page-break-after: always; padding-top: 70mm; }
+.partpage .partnum { font-size: 10pt; color: var(--muted); margin-bottom: 4mm; }
+.partpage h1 { font-size: 34pt; margin-bottom: 12mm; string-set: chapter attr(data-short); }
+.partpage p { max-width: 130mm; }
+.partpage ol { margin-top: 8mm; color: var(--ink); }
+/* Каждая глава — с новой страницы */
+.kicker { page-break-before: always; }
+.partpage + .kicker { page-break-before: auto; }
+
+/* Конец главы не отрывается: мост и источники держатся вместе с последним абзацем */
+.next { page-break-before: avoid; page-break-inside: avoid; }
+.sources { page-break-before: avoid; page-break-inside: avoid; }
+.sources ol li { page-break-inside: avoid; }
+
+/* ---------- Обложка: тёмная поверхность, один яркий элемент — лестница 2–9 ---------- */
+@page cover { margin: 0; @bottom-left { content: none } @bottom-right { content: none } }
+.cover { page: cover; height: 297mm; box-sizing: border-box; padding: 24mm 20mm 18mm 20mm; background: var(--ink); color: #f2f2f2;
+  display: flex; flex-direction: column; page-break-after: always; }
+.cover-top { font-size: 9pt; color: #a8a8a8; }
+.cover-title { font-weight: 300; font-size: 44pt; line-height: 1.04; margin-top: 30mm; color: #ffffff; }
+.cover-sub { font-size: 14pt; line-height: 1.35; margin-top: 8mm; color: #d8d8d8; max-width: 140mm; }
+.cover-ladder { display: flex; align-items: flex-end; height: 72mm; margin-top: auto; margin-bottom: 14mm; }
+.cover-ladder div { flex: 1; margin-right: 2mm; background: var(--accent); position: relative; }
+.cover-ladder div span { position: absolute; top: -6mm; left: 0; font-size: 9pt; color: #a8a8a8; font-variant-numeric: tabular-nums; }
+.cover-ladder-caption { font-size: 8pt; color: #a8a8a8; margin-bottom: 10mm; }
+.cover-bottom { font-size: 8pt; color: #a8a8a8; display: flex; justify-content: space-between; border-top: 0.5pt solid #444; padding-top: 4mm; }
+
+/* ---------- Оглавление ---------- */
+@page toc { @bottom-left { content: none } }
+.toc { page: toc; page-break-after: always; }
+.toc h1 { string-set: chapter "Содержание"; margin-bottom: 10mm; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc li { padding-left: 0; margin: 0; }
+.toc li::before { content: none; }
+.toc li a { color: var(--ink); }
+.toc li a::after { content: leader(".") target-counter(attr(href), page); color: var(--muted); font-variant-numeric: tabular-nums; }
+.toc li.toc-part { font-weight: 600; margin-top: 4mm; padding-top: 2mm; border-top: 0.5pt solid var(--rule); font-size: 10pt; }
+.toc li.toc-ch { font-size: 9pt; margin: 0.8mm 0 0.8mm 0; }
+.toc li.toc-ch .lbl { display: inline-block; width: 26mm; color: var(--muted); }
+
+/* ---------- Тёмные страницы источников ---------- */
+@page dark { background: var(--ink); @bottom-right { color: #9a9a9a } @bottom-left { color: #7a7a7a } }
+.darkpages { page: dark; color: #e6e6e6; }
+.darkpages h1 { color: #ffffff; }
+.darkpages h3 { color: #ffffff; }
+.darkpages .kicker { color: #9a9a9a; }
+.darkpages ol { list-style: decimal; padding-left: 8mm; }
+.darkpages ol li { margin-bottom: 2.5mm; font-size: 8.8pt; padding-left: 1mm; }
+.darkpages ol li::marker { color: var(--accent); font-weight: 600; }
+.darkpages p { font-size: 9pt; color: #cfcfcf; }
+
+/* ---------- Чек-листы: пустой квадрат вместо маркера ---------- */
+.checklist ul li::before { background: none; border: 0.8pt solid var(--accent); width: 2.4mm; height: 2.4mm; top: 1.1mm; }
+.darkpages ol[start="7"] { counter-reset: list-item 6; }
+.darkpages ol[start="15"] { counter-reset: list-item 14; }
+
+/* ---------- Выходные данные: оборот обложки ---------- */
+@page imprint { @bottom-left { content: none } @bottom-right { content: none } }
+.imprint { page: imprint; page-break-after: always; padding-top: 150mm; font-size: 8pt; line-height: 1.4; color: var(--muted); max-width: 130mm; }
+.imprint p { margin: 0 0 2mm 0; hyphens: auto; }
+.imprint .imprint-title { color: var(--ink); font-weight: 600; font-size: 9pt; margin-bottom: 3mm; }
