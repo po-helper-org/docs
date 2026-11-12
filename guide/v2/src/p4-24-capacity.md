@@ -27,7 +27,7 @@
 <div class="bar"><div class="lbl">Штатная ёмкость, 7 × 13</div><div class="track"><div class="fill" style="width:100%">91</div></div></div>
 <div class="bar"><div class="lbl">Минус отпуска и больничные</div><div class="track"><div class="fill" style="width:91.2%">83</div></div></div>
 <div class="bar"><div class="lbl">Минус поддержка и инциденты, 20% по истории трекера</div><div class="track"><div class="fill" style="width:72.5%">66</div></div></div>
-<div class="bar"><div class="lbl">Минус резерв на выяснение, 15%</div><div class="track"><div class="fill" style="width:61.5%">56</div></div></div>
+<div class="bar"><div class="lbl">Минус резерв на выяснение, 15% квартала</div><div class="track"><div class="fill" style="width:61.5%">56</div></div></div>
 <div class="bar"><div class="lbl">Минус незапланированное, 10% по истории</div><div class="track"><div class="fill" style="width:54.9%">50</div></div></div>
 <div class="bar"><div class="lbl">Твёрдые обещания, 70%</div><div class="track"><div class="fill" style="width:38.5%">35</div></div></div>
 </div>
