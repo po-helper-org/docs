@@ -1,13 +1,8 @@
 # overrides/ — точка расширения темы
 
-Каталог `custom_dir` темы Material. Сейчас пуст (каркас).
+Каталог `custom_dir` темы Material.
 
-Сюда позже подключается виджет AI-чата по документации. Типовой путь:
-создать `main.html`, расширяющий базовый шаблон, и добавить `<script>` виджета
-(Inkeep / DocsGPT / Kapa) в блок `extrahead` или `footer`:
+- `main.html` — если в front matter страницы есть `robots`, выводит `<meta name="robots">`. Так закрыта от поисковиков страница книги `ai-agenty-v-upravlenii/`.
+- `sitemap.xml` — карта сайта без страниц с `robots` в front matter.
 
-    {% extends "base.html" %}
-    {% block extrahead %}
-      {{ super() }}
-      <!-- сюда скрипт AI-чата -->
-    {% endblock %}
+Сюда же позже подключается виджет AI-чата по документации: скрипт добавляется в блок `extrahead` в `main.html`.

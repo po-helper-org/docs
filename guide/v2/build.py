@@ -98,6 +98,10 @@ def main() -> None:
     from weasyprint import HTML
     HTML(string=doc, base_url=str(ROOT)).write_pdf(str(out))
     print(f"готово: {out.relative_to(ROOT.parent.parent)}")
+    if not prefix:
+        site = ROOT.parent.parent / "docs" / "ai-agenty-v-upravlenii" / BOOK
+        site.write_bytes(out.read_bytes())
+        print(f"копия для сайта: {site.relative_to(ROOT.parent.parent)}")
 
 
 if __name__ == "__main__":
